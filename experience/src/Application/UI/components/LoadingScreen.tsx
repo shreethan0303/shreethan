@@ -37,7 +37,7 @@ const LoadingScreen: React.FC = () => {
             const t = Math.max(0, Math.min(1, (now - began - 100) / 2200));
             const eased = t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
             const height = window.innerHeight;
-            const panelHeight = height / 8;
+            const panelHeight = height / 4;
             const radius = panelHeight * 1.15;
             const lift = eased * (height + Math.PI * radius / 2 + height * .25);
             const bend = Math.min(1, lift / radius);
@@ -85,16 +85,20 @@ const LoadingScreen: React.FC = () => {
         <div className={`garage-entry garage-entry--${phase}`} aria-label="Workshop entrance">
             <div className="garage-door" aria-hidden="true">
                 <div className="garage-panels">
-                    {Array.from({ length: 8 }, (_, i) => <div key={i} ref={node => { panels.current[i] = node; }} style={{ top: `${i * 12.5}%` }} className="garage-panel" />)}
+                    {Array.from({ length: 4 }, (_, i) => (
+                        <div key={i} ref={node => { panels.current[i] = node; }} style={{ top: `${i * 25}%` }} className="garage-panel">
+                            {Array.from({ length: 4 }, (_, j) => <span key={j} className="garage-recess" />)}
+                        </div>
+                    ))}
                 </div>
             </div>
-                <section className="garage-nameplate" aria-label="Shreethan Palla portfolio">
-                    <h1 className="garage-name">Shreethan Palla</h1>
-                    <p className="garage-subtitle">Portfolio</p>
-                    <button className="garage-start" onClick={start} disabled={!ready}>Start</button>
-                    <p className="garage-sr-only" role="status">{failed ? 'Unable to load the workshop.' : ready ? 'Ready when you are.' : 'Loading workshop.'}</p>
-                    <a className="garage-direct" href="/desktop">Open without 3D</a>
-                </section>
+            <section className="garage-nameplate" aria-label="Shreethan Palla portfolio">
+                <h1 className="garage-name">Shreethan Palla</h1>
+                <p className="garage-subtitle">Portfolio</p>
+                <button className="garage-start" onClick={start} disabled={!ready}>Start</button>
+                <p className="garage-sr-only" role="status">{failed ? 'Unable to load the workshop.' : ready ? 'Ready when you are.' : 'Loading workshop.'}</p>
+                <a className="garage-direct" href="/desktop">Open without 3D</a>
+            </section>
         </div>
     );
 };

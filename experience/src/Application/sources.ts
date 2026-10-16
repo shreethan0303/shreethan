@@ -12,12 +12,12 @@ const sources: Resource[] = [
     {
         name: 'environmentModel',
         type: 'gltfModel',
-        path: 'models/World/environment.glb',
+        path: 'models/World/empty_workbench.glb',
     },
     {
         name: 'environmentTexture',
         type: 'texture',
-        path: 'models/World/baked_environment.jpg',
+        path: 'models/World/baked_empty_workbench.jpg',
     },
     {
         name: 'decorModel',

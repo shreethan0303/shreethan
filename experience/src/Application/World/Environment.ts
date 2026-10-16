@@ -27,7 +27,15 @@ export default class Environment {
     }
 
     setModel() {
-        this.scene.add(this.bakedModel.getModel());
+        const model = this.bakedModel.getModel();
+        // Match the reference desk's darker charcoal-brown surface after clearing its bake.
+        const tabletop = model.getObjectByName('Tabletop') as THREE.Mesh;
+        if (tabletop) {
+            const material = this.bakedModel.material.clone();
+            material.color.setRGB(.36, .36, .36);
+            tabletop.material = material;
+        }
+        this.scene.add(model);
     }
 
     update() {}

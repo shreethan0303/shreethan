@@ -30,10 +30,7 @@ export default class World {
         this.resources.on('ready', () => {
             // Setup
             this.environment = new Environment();
-            this.decor = new Decor();
-            this.computerSetup = new ComputerSetup();
-            this.monitorScreen = new MonitorScreen();
-            this.coffeeSteam = new CoffeeSteam();
+            // Empty desk checkpoint: restore props one at a time after review.
             this.audioManager = new AudioManager();
             // const hb = new Hitboxes();
             // this.cursor = new Cursor();

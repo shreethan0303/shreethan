@@ -1,8 +1,8 @@
 # Current decisions
 
-## Active checkpoint: reference baseline
+## Active checkpoint: empty desk
 
-Start from Henry Heffernan's licensed 3D implementation. Preserve the original environment, desk/computer meshes, baked textures, screen layers, camera states and loading behavior before introducing replacements. It is intentionally not yet the modern workbench scene.
+Build from Henry Heffernan's licensed 3D implementation. The current scene contains only an empty tabletop and four legs, with the original desk dimensions, neutral backdrop, camera and color direction. Computer, decor, chair and plant are temporarily absent. The original assets remain available for adding selected objects back later.
 
 Replace personal metadata and iframe content immediately, remove upstream analytics and email destinations, retain copyright. Reference branding baked into textures remains visibly upstream until those assets are replaced; do not call the baseline a finished personal site.
 
@@ -25,4 +25,6 @@ No simultaneous redesign of all six steps. No claims of real robot accuracy with
 
 ## Garage entrance implemented
 
-The reference room is revealed by a white sectional-door overlay. A small, rounded, centered card shows Shreethan Palla, Portfolio, Start, and a quiet Open without 3D link. Loading status is available to assistive technology. Eight panels follow a curved overhead track and tilt independently during the 2.4-second reveal while the existing room camera glides. Reduced-motion skips the opening animation. The direct desktop route remains available during loading or failure. The rest of the reference scene remains the next asset-replacement checkpoint.
+A white sectional door has four rows of recessed panels, following the supplied reference. A rounded rectangular card shows Shreethan Palla, Portfolio, Start, and Open without 3D. Each row follows the curved overhead track during the 2.4-second reveal. Reduced-motion skips the opening animation. The desktop route remains available during loading or failure.
+
+The empty desk uses a generated GLB and baked atlas. Its backdrop samples the original texture; only the region containing obsolete prop shadows is cleared and shaded for the bare desk. Regenerate with `blender -b --factory-startup -t 8 --python experience/tools/build-empty-workbench.py`. Blender is an offline authoring tool and is not needed by Vercel.
