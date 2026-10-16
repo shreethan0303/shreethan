@@ -25,7 +25,9 @@ No simultaneous redesign of all six steps. No claims of real robot accuracy with
 
 ## Garage entrance implemented
 
-A flat white/off-white sectional door uses four sections with thin seams and no decorative recesses, gradients or shadows. A rounded rectangular card introduces “Hey, I’m Shreethan Palla. I love building things that move.” with Scroll to open, Enter and Open without 3D. Scroll/swipe progress moves each section along the curved overhead track and can reverse before entry completes. Enter animates the same path automatically. The room camera starts its approach after the door opens. The room overlay keeps the name and live local clock, without a role subtitle. Reduced-motion skips the opening animation.
+A flat white/off-white sectional door uses four sections with thin seams and no decorative recesses, gradients or shadows. The intro is bold text directly on the door: “Hey! I’m Shreethan Palla. I build robots, RC cars, and software.” There is no intro card or Enter button. The first 30% of scroll progress moves/fades the text away; the remaining 70% opens the door. Reversing scroll restores earlier stages until entry completes. Page Down/arrow keys advance the same sequence; End or keyboard Enter can continue directly. The room camera starts its approach after the door opens.
+
+A small circular loader appears only while real assets are loading. Its messages are “Loading graphics workspace…”, “Setting up the workbench…” and “One last bolt…”, chosen by completed-asset progress. There is no forced loading delay. Open without 3D remains available during loading and entry. Asset failures show a short error and preserve that direct route. Reduced-motion skips entry animation.
 
 The entrance and room controls share CSS color variables: white `#ffffff`, off-white `#f5f5f3`, border `#dededb`, charcoal `#272725`, muted text `#71716d`. Existing desk materials and baked room lighting remain intact.
 

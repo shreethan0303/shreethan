@@ -73,3 +73,15 @@ The full production build and formatting/whitespace checks passed. Final Chromiu
 Full production build, final renderer build and formatting checks passed. Chromium verified greeting/copy, partial wheel opening, reverse scrolling back to closed, complete entry, Enter button/keyboard entry, PageDown entry, reduced-motion entry, mobile layout and the touch-event path. A separate native CDP touch swipe also opened the door. After resizing a partly open entrance from 1440×1000 to 390×844, panel dimensions updated, reverse scrolling closed it, and scrolling reopened it. The résumé still opens/closes with touch; its HTML body and direct route contain lorem ipsum without project/contact content. The downloaded PDF is valid; text extraction confirms lorem ipsum and no project/contact text. Regular functional runs reported no page errors or failed asset requests.
 
 The PC remains deferred. Source research verified Henry's baked-model helper, Bruno's mesh-name/material parser and resource manifest, and the glTF Transform CLI README. No exact Corsair 5000T asset has been selected or verified.
+
+## Text-only entrance and real asset loader
+
+Full production build, formatting and whitespace checks passed. Chromium checks held actual scene assets to verify the circular progress UI and no greeting before readiness; after release, the loader cleared without an added delay. The card and Enter button are absent. Initial scroll moved/faded the text while all door panel rotations stayed at zero; further scroll hid the copy and tilted the door sections; reversing restored the text and closed door. End-key entry, reduced-motion entry, native touch swipe and narrow text layout passed. The existing résumé still opens by keyboard and contains lorem ipsum.
+
+An intentionally aborted audio asset produced a short failure alert, removed the spinner and left a functioning direct desktop link. Regular functional runs reported no page errors or failed resource responses; that explicit failure scenario is separate.
+
+![Actual workspace loader](images/workspace-loader.png)
+
+![Text-only introduction](images/garage-door.png)
+
+![Phone introduction](images/intro-mobile.png)

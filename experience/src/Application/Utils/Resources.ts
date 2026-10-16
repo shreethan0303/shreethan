@@ -16,6 +16,7 @@ export default class Resources extends EventEmitter {
     };
     toLoad: number;
     loaded: number;
+    failed = false;
     loaders: {
         gltfLoader: GLTFLoader;
         textureLoader: THREE.TextureLoader;
@@ -55,22 +56,27 @@ export default class Resources extends EventEmitter {
             if (source.type === 'gltfModel') {
                 this.loaders.gltfLoader.load(source.path, (file) => {
                     this.sourceLoaded(source, file);
-                }, undefined, () => { UIEventBus.dispatch('resourceLoadFailed', { name: source.name }); });
+                }, undefined, () => { this.sourceFailed(source); });
             } else if (source.type === 'texture') {
                 this.loaders.textureLoader.load(source.path, (file) => {
                     file.encoding = THREE.sRGBEncoding;
                     this.sourceLoaded(source, file);
-                }, undefined, () => { UIEventBus.dispatch('resourceLoadFailed', { name: source.name }); });
+                }, undefined, () => { this.sourceFailed(source); });
             } else if (source.type === 'cubeTexture') {
                 this.loaders.cubeTextureLoader.load(source.path, (file) => {
                     this.sourceLoaded(source, file);
-                }, undefined, () => { UIEventBus.dispatch('resourceLoadFailed', { name: source.name }); });
+                }, undefined, () => { this.sourceFailed(source); });
             } else if (source.type === 'audio') {
                 this.loaders.audioLoader.load(source.path, (buffer) => {
                     this.sourceLoaded(source, buffer);
-                });
+                }, undefined, () => { this.sourceFailed(source); });
             }
         }
+    }
+
+    sourceFailed(source: Resource) {
+        this.failed = true;
+        UIEventBus.dispatch('resourceLoadFailed', { name: source.name });
     }
 
     sourceLoaded(source: Resource, file: LoadedResource) {

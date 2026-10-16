@@ -102,13 +102,13 @@ A deployment-specific Vercel URL identifies one build and stays on that version.
 
 Read `experience/src/Application/UI/components/LoadingScreen.tsx` alongside `experience/src/Application/UI/style.css`.
 
-1. Asset-loading events update progress. Entry controls are enabled once the listed assets finish loading.
-2. The closed door consists of four HTML sections with flat off-white surfaces and thin seams. The introduction says “Hey, I’m Shreethan Palla. I love building things that move.” Shared CSS variables define the neutral palette.
-3. Downward scroll or upward touch movement accumulates into a target value between zero and one. A small smoothing loop brings the displayed progress toward that value. Scrolling back reverses the door before entry completes. Enter automatically animates that same progress to one; keyboard PageDown/arrow keys also advance it.
-4. Each section's endpoints follow a vertical path that curves overhead. The endpoints determine its center and tilt; CSS `translate3d` and `rotateX` show the movement. The door is a screen-space illusion rather than physical geometry in the room.
-5. Once the door has opened, its overlay is removed, scene interactions are unlocked, and `loadingScreenDone` starts the room camera approach. Until then, clicks cannot move the camera underneath the entrance. Reduced-motion opens immediately when entry is requested.
+1. Asset-loading events update the loader's progress. A small CSS ring rotates beside a short status message. The displayed percentage is completed asset count divided by listed asset count, not downloaded bytes. Progress chooses the copy; there is no artificial wait to display all messages. Model, texture and audio failures are stored and reported, so a failed asset does not leave an endless spinner.
+2. When assets are ready, the loader disappears and bold text sits directly on the closed door: “Hey! I’m Shreethan Palla. I build robots, RC cars, and software.” There is no card or Enter button. Open without 3D is a permanent entry alternative.
+3. Downward scroll or upward touch movement accumulates into a target value between zero and one. A smoothing loop brings displayed progress toward that target. In the first 30%, the text moves upward and fades while the door stays closed. In the remaining 70%, the panels follow the curved overhead track. Scrolling back restores previous states until entry finishes.
+4. Each door section's endpoints determine its center and tilt; CSS `translate3d` and `rotateX` show the movement. The door is a screen-space illusion rather than physical geometry in the room. Keyboard arrows/PageDown advance the same sequence; End or keyboard Enter can continue directly. Reduced-motion enters immediately.
+5. Once the door has opened, its overlay is removed, scene interactions unlock, and `loadingScreenDone` starts the room camera approach. Until then, clicks cannot move the camera underneath the entrance.
 
-The browser's `requestAnimationFrame` schedules updates before display frames. Scroll distance chooses a desired position; smoothing helps it settle toward that position. This differs from playing an entire timed animation after the first wheel event: stopping partway leaves the door partway open. The Enter alternative is intentionally timed for users who prefer a button.
+The browser's `requestAnimationFrame` schedules updates before display frames. Scroll distance chooses a desired position; smoothing helps it settle toward that position. Stopping partway leaves the sequence partway through, rather than starting a compulsory timed movie. The static loader, direct content link and keyboard controls keep the portfolio usable without a pointer or motion effects.
 
 ## 6. How the 3D room works
 

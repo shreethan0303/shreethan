@@ -2,14 +2,14 @@ import React, { useEffect, useRef, useState } from 'react';
 import Application from '../../Application';
 import eventBus from '../EventBus';
 
-/** Scroll controls the sectional door; Enter completes the same path automatically. */
+/** Real asset loading, then text moves away before the sectional door opens. */
 const LoadingScreen: React.FC = () => {
     const [progress, setProgress] = useState(0);
     const [failed, setFailed] = useState(false);
     const [phase, setPhase] = useState<'closed' | 'opening' | 'done'>('closed');
     const panels = useRef<(HTMLDivElement | null)[]>([]);
-    const enter = useRef<() => void>(() => {});
-    const motion = useRef({ current: 0, target: 0, automatic: false, from: 0, began: 0, finished: false });
+    const copy = useRef<HTMLElement>(null);
+    const motion = useRef({ current: 0, target: 0, finished: false });
 
     useEffect(() => {
         const update = (event: Event) => setProgress(Math.min(1, (event as CustomEvent).detail.progress || 0));
@@ -19,6 +19,7 @@ const LoadingScreen: React.FC = () => {
         const application = new Application();
         application.camera.interactionLocked = true;
         const resources = application.resources;
+        if (resources.failed) setFailed(true);
         if (resources.toLoad > 0) setProgress(resources.loaded / resources.toLoad);
         return () => {
             document.removeEventListener('loadedSource', update);
@@ -52,10 +53,17 @@ const LoadingScreen: React.FC = () => {
             removeListeners();
         };
         const draw = (value: number) => {
+            // The first 30% is only the introduction; the door stays closed.
+            const textProgress = Math.min(1, value / .30);
+            if (copy.current) {
+                copy.current.style.transform = `translateY(${-textProgress * innerHeight * .6}px)`;
+                copy.current.style.opacity = `${1 - Math.max(0, (textProgress - .2) / .8)}`;
+            }
+            const doorProgress = Math.max(0, (value - .30) / .70);
             const height = window.innerHeight;
             const panelHeight = height / 4;
             const radius = panelHeight * 1.15;
-            const lift = value * (height + Math.PI * radius / 2 + height * .25);
+            const lift = doorProgress * (height + Math.PI * radius / 2 + height * .25);
             const bend = Math.min(1, lift / radius);
             const track = (distance: number) => {
                 const flatY = height - distance;
@@ -80,14 +88,8 @@ const LoadingScreen: React.FC = () => {
         const animate = (now: number) => {
             frame = 0;
             if (state.finished) return;
-            if (state.automatic) {
-                const t = Math.min(1, (now - state.began) / 2000);
-                const eased = t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-                state.current = state.from + (1 - state.from) * eased;
-            } else {
-                const blend = 1 - Math.exp(-Math.min(64, now - previous) / 70);
-                state.current += (state.target - state.current) * blend;
-            }
+            const blend = 1 - Math.exp(-Math.min(64, now - previous) / 70);
+            state.current += (state.target - state.current) * blend;
             previous = now;
             draw(state.current);
             if (state.target >= 1 && state.current > .999) { finish(); return; }
@@ -97,13 +99,13 @@ const LoadingScreen: React.FC = () => {
                 setPhase('closed');
                 return;
             }
-            if (state.automatic || Math.abs(state.target - state.current) > .0001) frame = requestAnimationFrame(animate);
+            if (Math.abs(state.target - state.current) > .0001) frame = requestAnimationFrame(animate);
         };
         const schedule = () => {
             if (!frame) { previous = performance.now(); frame = requestAnimationFrame(animate); }
         };
         const advance = (amount: number) => {
-            if (state.finished || state.automatic) return;
+            if (state.finished) return;
             if (reduced && amount > 0) { finish(); return; }
             state.target = Math.max(0, Math.min(1, state.target + amount));
             if (state.target > 0) setPhase('opening');
@@ -126,19 +128,10 @@ const LoadingScreen: React.FC = () => {
         }
         function keyboard(event: KeyboardEvent) {
             if ((event.target as Element).closest('a,button,input')) return;
-            if (['ArrowDown', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); advance(.3); }
-            if (['ArrowUp', 'PageUp'].includes(event.key)) { event.preventDefault(); advance(-.3); }
+            if (['ArrowDown', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); advance(.25); }
+            if (['ArrowUp', 'PageUp'].includes(event.key)) { event.preventDefault(); advance(-.25); }
+            if (['Enter', 'End'].includes(event.key)) { event.preventDefault(); advance(1); }
         }
-        enter.current = () => {
-            if (state.finished) return;
-            if (reduced) { finish(); return; }
-            state.from = state.current;
-            state.began = performance.now();
-            state.automatic = true;
-            state.target = 1;
-            setPhase('opening');
-            schedule();
-        };
         window.addEventListener('resize', resize);
         document.addEventListener('wheel', wheel, { passive: false });
         document.addEventListener('touchstart', touchStart, { passive: true });
@@ -148,6 +141,7 @@ const LoadingScreen: React.FC = () => {
     }, [ready]);
 
     if (phase === 'done') return null;
+    const loadingText = progress < .35 ? 'Loading graphics workspace…' : progress < .8 ? 'Setting up the workbench…' : 'One last bolt…';
     return (
         <div className={`garage-entry garage-entry--${phase}`} aria-label="Workshop entrance">
             <div className="garage-door" aria-hidden="true">
@@ -157,14 +151,20 @@ const LoadingScreen: React.FC = () => {
                     ))}
                 </div>
             </div>
-            <section className="garage-nameplate" aria-label="Shreethan Palla portfolio">
-                <h1 className="garage-name">Hey, I’m <span className="garage-person">Shreethan Palla.</span></h1>
-                <p className="garage-intro">I love building things that move.</p>
+            {!ready && <div className="workspace-loading">
+                {failed ? <p className="workspace-load-error" role="alert">The 3D workspace couldn’t load.</p> : <>
+                    <div className="workspace-spinner" role="progressbar" aria-label="Loading graphics workspace" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progress * 100)} />
+                    <p className="workspace-load-message" role="status">{loadingText}</p>
+                    <span className="workspace-load-percent" aria-hidden="true">{Math.round(progress * 100)}%</span>
+                </>}
+            </div>}
+            {ready && <section className="garage-copy" ref={copy} aria-label="About Shreethan">
+                <h1 className="garage-name">Hey! I’m <span className="garage-person">Shreethan Palla.</span></h1>
+                <p className="garage-intro">I build robots, RC cars, and software.</p>
                 <p className="garage-hint">Scroll to open</p>
-                <button className="garage-start" onClick={() => enter.current()} disabled={!ready}>Enter</button>
-                <p className="garage-sr-only" role="status">{failed ? 'Unable to load the workshop.' : ready ? 'Scroll, swipe up, or press Enter to open.' : 'Loading workshop.'}</p>
-                <a className="garage-direct" href="/desktop">Open without 3D</a>
-            </section>
+                <p className="garage-sr-only">Scroll, swipe up, or use Page Down to open. Press End to continue directly.</p>
+            </section>}
+            <a className="garage-direct" href="/desktop">Open without 3D</a>
         </div>
     );
 };

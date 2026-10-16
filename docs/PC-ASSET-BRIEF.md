@@ -64,3 +64,7 @@ The live Onshape help, model-viewer editor and glTF Transform documentation site
 First day: choose/reference the exact case and GPU; find or block out one model; gather the final résumé/contact/project content; keep the existing interaction design stable. Review the PC silhouette at its actual desk size before adding detail.
 
 Second day: integrate the prepared asset, tune its materials and placement, verify phones/keyboard/loading, replace approved content and check the actual Vercel deployment. A full hardware-accurate PC interior is a later iteration. Keep the first release focused on the résumé and project stories rather than adding multiple new interaction systems.
+
+## Latest model-source check
+
+Direct requests to Sketchfab search/API, CGTrader, GrabCAD and Google search were blocked by this environment's network policy. Public GitHub code search required sign-in. No downloadable exact 5000T model or full matching PC build was verified. Use the asset-library search links above in a normal browser; inspect a candidate's actual downloadable geometry, parts and license before choosing it. The site still contains no placeholder PC.

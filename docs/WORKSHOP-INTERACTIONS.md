@@ -57,4 +57,4 @@ The download is a real, one-page PDF at `public/resume/shreethan-palla-placehold
 
 Run `npm run build:experience` after editing the layout or paper code, then refresh a running development server. The renderer watcher can do this during an editing session. For deployment, run the normal full build.
 
-Check: scroll/swipe or Enter → click desk → hover/focus paper → click/Enter → read/download → Back/Escape → open again. Repeat on a phone or narrow viewport and with reduced motion. Confirm the downloaded PDF actually contains the expected résumé text. A functioning link alone does not validate the document.
+Check: scroll/swipe or keyboard End → click desk → hover/focus paper → click/Enter → read/download → Back/Escape → open again. Repeat on a phone or narrow viewport and with reduced motion. Confirm the downloaded PDF actually contains the expected résumé text. A functioning link alone does not validate the document.

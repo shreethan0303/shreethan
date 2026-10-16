@@ -1,6 +1,6 @@
 # Shreethan Palla — portfolio
 
-A personal portfolio adapted from Henry Heffernan’s licensed Three.js room. The current checkpoint has a scroll-controlled garage-door entrance, a four-legged desk and an interactive résumé sheet. Real project CAD, a new computer and final personal content come next.
+A personal portfolio adapted from Henry Heffernan’s licensed Three.js room. The current checkpoint has a text-first, scroll-controlled garage-door entrance with an asset loader, a four-legged desk and an interactive résumé sheet. Real project CAD, a new computer and final personal content come next.
 
 ![Current desk with résumé paper](docs/images/paper-resting.png)
 
