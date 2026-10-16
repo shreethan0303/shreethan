@@ -1,8 +1,8 @@
 # Shreethan Palla — portfolio
 
-A personal portfolio being rebuilt from Henry Heffernan’s licensed Three.js room. The first checkpoint preserves the reference rendering and camera behavior; subsequent changes will introduce Shreethan’s workshop and real projects.
+A personal portfolio adapted from Henry Heffernan’s licensed Three.js room. The current checkpoint has a classic garage-door entrance and an empty four-legged desk. Real project CAD, a new computer and final personal content come next.
 
-![Current reference baseline](docs/images/reference-overview.png)
+![Current empty desk checkpoint](docs/images/empty-desk.png)
 
 See the [garage-door entrance](docs/images/garage-door.png) and [validation evidence and limits](docs/VALIDATION.md).
 
@@ -65,7 +65,9 @@ CI runs formatting and the production build. Browser validation is described in 
 
 ## Status
 
-The reference scene and local desktop integration work. `/projects/robotics` now includes an illustrative scroll-controlled exploded assembly. The original baked models still contain Henry’s visual branding and paper artwork. This is a development baseline, not a finished Shreethan portfolio. The garage-door introduction now works. Replacement workbench/PC, real project models, physical project/paper interactions and final résumé are outstanding. Public deployment status must be verified in Vercel. Do not publish someone else’s résumé artwork as your own.
+The garage-door entrance and bare desk work. The computer, chair, plant and desk props are disabled; their original source assets remain in the repository. `/desktop` is available directly. `/projects/robotics` includes an illustrative scroll-controlled assembly, not real project CAD. A material-preserving model loader exists but still needs to be connected to a real asset/viewer. Modern PC, physical project/paper interactions, verified project content and final résumé remain outstanding. Public deployment status must be verified in Vercel. Original branded assets require replacement before reintroducing them.
+
+The [fundamentals guide](docs/FUNDAMENTALS.md) explains browser basics, the actual build/deployment pipeline, storage, the room and entrance code, Onshape exports, model integration, and hands-on exercises.
 
 The previous procedural prototype is preserved in `/workspace/portfolio-backups/workshop-before-reference-rebuild.tar.gz` in this cloud machine. That archive is not a GitHub backup or a public asset.
 

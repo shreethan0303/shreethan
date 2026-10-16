@@ -11,7 +11,7 @@ The original GLB geometry and baked textures are included under the repository's
 Kept: Three.js renderer, original authored computer/environment/decor models, baked textures, screen effects, camera states, and asset-loading events.
 Changed: garage-door entrance replacing the original BIOS screen; name/metadata; same-origin /desktop instead of Henry's OS; origin/source validation on iframe messages; build output path; HTML-loader asset handling; pinned compatible Node types. Removed Henry's analytics, contact-email server, personal biography metadata, and unused media. His separate inner OS repository was not copied.
 
-The room is intentionally unchanged at this checkpoint. The garage-door entrance is implemented as a screen-space door over the original room, using the existing camera event. Workbench, modern PC, paper interaction, and custom project models remain subsequent reviewable changes. Do not describe them as implemented in this renderer yet.
+The current checkpoint displays a bare tabletop and four legs, using the original desk dimensions and backdrop with regenerated shadows. The computer, decor, chair and monitor are disabled; their original assets remain available. The classic recessed-panel garage entrance is a screen-space HTML/CSS door using the existing camera event. Modern PC, paper interaction and custom project CAD remain future changes. The empty environment is reproducible with tools/build-empty-workbench.py and Blender; committed generated assets are used at runtime.
 
 Install: npm ci --prefix experience --cache /workspace/.npm
 Build: npm run build:experience from repository root.
