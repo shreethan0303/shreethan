@@ -1,4 +1,3 @@
-import UIEventBus from '../UI/EventBus';
 import EventEmitter from './EventEmitter';
 
 export default class Time extends EventEmitter {
@@ -20,9 +19,6 @@ export default class Time extends EventEmitter {
             this.tick();
         });
 
-        UIEventBus.on('loadingScreenDone', () => {
-            this.start = Date.now();
-        });
     }
 
     tick() {

@@ -2,7 +2,7 @@
 
 ## Change the intro yourself
 
-The entrance text lives in one file: [`experience/src/portfolio-copy.ts`](../experience/src/portfolio-copy.ts). `intro` is the entire sentence, rendered with one consistent text style. The other fields control the scroll hint and three loading messages.
+The entrance text lives in one file: [`experience/src/portfolio-copy.ts`](../experience/src/portfolio-copy.ts). `intro` is the entire introduction, rendered with one consistent text style. The optional `\n` in that string starts a new line after your name while keeping the same font and size. The other fields control the scroll hint and three loading messages.
 
 On GitHub:
 
@@ -21,9 +21,9 @@ For local editing, save the file with `npm run dev` running and `npm run watch:e
 
 Current introduction:
 
-> Hey, I'm Shreethan Palla and I build robots and software and enjoy learning new things.
+> Hey, I'm Shreethan Palla. I build robots and software and enjoy learning new things.
 
-The loader's circle fills from actual asset-count progress, then the entrance appears after the first room frame has rendered. The rotating desk view is prepared behind the door. There is no Open without 3D link on the entrance; `/desktop` remains a direct route. Failed loading shows a Reload button.
+The loader's circle never leads actual asset progress. A short presentation window of at least 1.1 seconds makes the circle visible even on fast connections; it also waits for all assets and the first room frame. It fades into a plain, balanced introduction with no visible door or scroll hint. Scroll to reveal the closed garage door and its small centered Scroll to open hint. Scroll again to open the door. The rotating room appears with one immediately available Click anywhere to begin prompt. One click approaches the desk; the name, clock and controls appear together when the camera arrives. Back to room returns to the overview. There is no second boot/typing sequence and no animation-clock reset. `/desktop` remains a direct route; failed loading shows Reload.
 
 ## Proposed direction: a portfolio document inspired by CAD
 

@@ -10,7 +10,7 @@ Replace personal metadata and iframe content immediately, remove upstream analyt
 
 An empty, seamless white/cream studio with no visible wall edges or decorative page header. A workbench, computer and project objects are the focus. A full FRC robot sits beside the bench. Black PC, restrained white/red lighting. Rackets represent tennis. Bike/car are deferred.
 
-Entrance: text directly on a garage door; scroll the text away, then reveal the already prepared rotating desk view. Approach the monitor smoothly. Projects returns to physical project objects; select an object to open a readable case study. Paper reveals résumé access. Essential content is also reachable as normal pages. A proposed Onshape-inspired monitor interface is described in [the content/interface guide](CONTENT-AND-INTERFACE.md); it is not implemented yet.
+Entrance: plain introduction; scroll to the closed garage door, then scroll to reveal the already prepared rotating desk view. Approach the monitor smoothly. Projects returns to physical project objects; select an object to open a readable case study. Paper reveals résumé access. Essential content is also reachable as normal pages. The Onshape-inspired monitor direction, including a timeline of real build iterations, is accepted for the next phase after the entrance and desk flow are stable. The interface is described in [the content/interface guide](CONTENT-AND-INTERFACE.md); it is not implemented yet.
 
 ## Ordered changes
 
@@ -25,9 +25,13 @@ No simultaneous redesign of all six steps. No claims of real robot accuracy with
 
 ## Garage entrance implemented
 
-A flat white/off-white sectional door uses four sections with thin seams and no decorative recesses, gradients or shadows. The intro is one uniformly styled sentence: "Hey, I'm Shreethan Palla and I build robots and software and enjoy learning new things." Edit it in `experience/src/portfolio-copy.ts`. There is no card, Enter button or Open without 3D link. The first 30% of scroll moves/fades the sentence away; the remaining 70% opens the door. Reverse scroll restores earlier stages until entry completes. Page Down/arrow keys advance; End or keyboard Enter continues directly.
+The entrance has four distinct stages: a visible progress ring, a plain text introduction, the closed garage door, and the rotating room. Its editable introduction is "Hey, I'm Shreethan Palla. I build robots and software and enjoy learning new things." All text uses one consistent style with balanced wrapping. The introduction has no visible door or scroll hint. There is no card, Enter button or Open without 3D link.
 
-The circular loading indicator fills from real completed-asset progress and uses “Loading cool projects”, “Loading CAD” and “Loading graphics”. It waits for assets and the first rendered room frame, with no forced delay. The rotating overview is prepared behind the closed door, so opening reveals that view without a second distant-camera approach. Asset failure shows an error and Reload button. Reduced-motion skips entry animation. The transparent renderer and page use a neutral base instead of black so uncovered backdrop edges do not expose black corners. Baked desk lighting, shadows and grain remain unchanged.
+The circular loader uses “Loading cool projects”, “Loading CAD” and “Loading graphics”. Its displayed arc never leads real asset-count progress. It stays visible for at least 1.1 seconds on fast connections, waits for assets and the first room frame, then fades into the introduction over 320ms. Slow loads wait for actual readiness. Failed loading shows Reload.
+
+The first scroll segment (40%) fades/moves the introduction away and reveals the closed door. A small Scroll to open prompt sits exactly in its center. A single large first gesture stops at the closed door; subsequent scrolling moves the four sections along their overhead track. Reverse scroll restores earlier stages until entry finishes. Page Down/arrow keys advance; End or keyboard Enter can continue directly. Reduced-motion removes the fades, text motion and animated door travel.
+
+The rotating overview is prepared behind the closed door. Its clock is not restarted on reveal, preventing a camera-orbit jump. The room shows one complete Click anywhere to begin prompt immediately, without typing delays or synthetic keyboard events. One click approaches the desk; further clicks during travel are ignored. Name, live clock and controls appear together on arrival. Empty desk clicks do not reverse the camera; Back to room is explicit. Baked desk lighting, soft shadows and grain remain unchanged; the neutral base prevents uncovered edges from exposing a black background.
 
 The entrance and room controls share CSS color variables: white `#ffffff`, off-white `#f5f5f3`, border `#dededb`, charcoal `#272725`, muted text `#71716d`. Existing desk materials and baked room lighting remain intact.
 

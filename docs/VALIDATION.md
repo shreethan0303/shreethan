@@ -99,3 +99,17 @@ Production build, formatting and whitespace checks passed. Chromium verified one
 Text-first scroll, reverse scroll, full door reveal, keyboard entry, reduced-motion entry and the existing lorem ipsum résumé open/close passed. The room is framed in its rotating overview before reveal, with no second distant-camera approach. Desktop 1440×1000, phone 390×844 and ultrawide 2560×1080 layouts passed; both bottom-corner 24px samples contained zero dark pixels (all channels below 90), including immediately after reveal. Visual inspection confirmed the neutral backdrop, existing soft shadows and grain. An aborted audio request showed the Reload action; removing the fault and using Reload recovered the intro. Regular requests reported zero page errors or HTTP failures.
 
 ![Room already framed when the door opens](images/desk-entry.png)
+
+## Coordinated loading, introduction, door and desk flow
+
+The production build and final renderer compile passed, along with formatting and whitespace checks. Final Chromium checks covered a held scene asset, a warm reload, separate intro/closed-door stages, a single large first gesture stopping at the closed door, reverse scroll, independently tilting sections, immediate full room prompt, and one camera approach despite repeated clicks. The name, clock and controls appear together on arrival; clicking empty desk space leaves the desk stable. Back to room and the existing lorem ipsum résumé open/close both passed.
+
+On the warm reload, the visible loader-to-intro interval measured about 1.94 seconds in software-rendered Chromium, exceeding the 1.1-second minimum and including circle completion/fade. Displayed progress never leads actual readiness. The plain intro has no visible door or scroll hint; the closed door has only its small, geometrically centered hint. Native phone swipes and taps at 390×844, keyboard entry immediately after skipping the door, reduced-motion stages, and failed-asset Reload recovery passed. Regular requests reported zero page errors or HTTP failures. No synthetic typing key messages were sent during the sequence.
+
+The animation-clock reset and independent prompt/header typing timers were removed. Camera transition events now coordinate the prompt and interface. These are local checks; they do not establish that Vercel has published this commit.
+
+![Plain intro before the door](images/intro-text.png)
+
+![Desk interface shown together after approach](images/desk-interface.png)
+
+![Phone desk interface](images/desk-interface-mobile.png)

@@ -69,17 +69,35 @@ export default class Camera extends EventEmitter {
         };
 
         document.addEventListener('click', (event) => {
-            if (event.defaultPrevented || this.interactionLocked || this.freeCam) return;
+            if (event.defaultPrevented || this.interactionLocked || this.freeCam || this.targetKeyframe) return;
             if ((event.target as Element).closest('button,a,input,[data-no-camera],#ui-interactive')) return;
             if (
                 this.currentKeyframe === CameraKey.IDLE ||
                 this.targetKeyframe === CameraKey.IDLE
             ) {
                 this.transition(CameraKey.DESK, workshopLayout.deskView.duration);
-            } else if (
-                this.currentKeyframe === CameraKey.DESK ||
-                this.targetKeyframe === CameraKey.DESK
-            ) {
+            }
+        });
+
+        UIEventBus.on('approachDesk', () => {
+            if (!this.interactionLocked && !this.freeCam && !this.targetKeyframe && this.currentKeyframe === CameraKey.IDLE) {
+                this.transition(CameraKey.DESK, workshopLayout.deskView.duration);
+            }
+        });
+        UIEventBus.on('returnToOverview', () => {
+            if (!this.interactionLocked && !this.freeCam && !this.targetKeyframe && this.currentKeyframe === CameraKey.DESK) {
+                this.transition(CameraKey.IDLE);
+            }
+        });
+
+        document.addEventListener('keydown', event => {
+            if (event.defaultPrevented || this.interactionLocked || this.freeCam || this.targetKeyframe) return;
+            if ((event.target as Element).closest('button,a,input,textarea,[contenteditable]')) return;
+            if (this.currentKeyframe === CameraKey.IDLE && ['Enter', ' '].includes(event.key)) {
+                event.preventDefault();
+                this.transition(CameraKey.DESK, workshopLayout.deskView.duration);
+            } else if (this.currentKeyframe === CameraKey.DESK && event.key === 'Escape') {
+                event.preventDefault();
                 this.transition(CameraKey.IDLE);
             }
         });
@@ -103,6 +121,7 @@ export default class Camera extends EventEmitter {
 
         this.currentKeyframe = undefined;
         this.targetKeyframe = key;
+        UIEventBus.dispatch('cameraViewChanged', { view: key, moving: true });
 
         const keyframe = this.keyframes[key];
 
@@ -113,6 +132,7 @@ export default class Camera extends EventEmitter {
                 this.currentKeyframe = key;
                 this.targetKeyframe = undefined;
                 if (callback) callback();
+                UIEventBus.dispatch('cameraViewChanged', { view: key, moving: false });
             });
 
         const focTween = new TWEEN.Tween(this.focalPoint)
