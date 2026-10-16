@@ -184,21 +184,22 @@ br {
     }
 }
 
-/* Garage entrance: no models, external fonts or artificial loading delays. */
-.garage-entry{position:fixed;inset:0;z-index:50;overflow:hidden;pointer-events:auto}
+/* Sectional door and minimal centered card. */
+.garage-entry{position:fixed;inset:0;z-index:50;overflow:hidden;pointer-events:auto;display:grid;place-items:center}
 .garage-entry--opening{pointer-events:none}
-.garage-door{position:absolute;inset:0;display:grid;place-items:center;background:#fafaf9;box-shadow:0 15px 40px #00000015;transform:translate3d(0,0,0);transition:transform 1.7s cubic-bezier(.65,0,.2,1);will-change:transform}
-.garage-entry--opening .garage-door{transform:translate3d(0,-108%,0)}
-.garage-panels{position:absolute;inset:0;display:grid;grid-template-rows:repeat(8,1fr);pointer-events:none}
-.garage-panel{background:linear-gradient(180deg,#fdfdfc 0%,#f6f6f4 100%);border-bottom:1px solid #dfe1db;box-shadow:inset 0 1px #ffffff;box-sizing:border-box}
-.garage-nameplate{position:relative;width:320px;height:320px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff;border:1px solid #e3e4df;text-align:center}
-.garage-name{font:400 30px/1.2 Arial,Helvetica,sans-serif!important;letter-spacing:-.8px;color:#202522!important;margin:0!important}
-.garage-subtitle{font:12px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:1px;color:#858c82!important;margin:12px 0 28px!important}
-.garage-start{min-width:104px;border:1px solid #bdc4b9;background:#fff;padding:11px 22px;font:13px Arial,Helvetica,sans-serif;color:#273126;cursor:pointer;text-align:center}
-.garage-start:hover:not(:disabled){background:#f4f6f1}
+.garage-door{position:absolute;inset:0;transform-style:preserve-3d;pointer-events:none}
+.garage-panels{position:absolute;inset:0;perspective:140vh;perspective-origin:50% 0%;transform-style:preserve-3d}
+.garage-panel{position:absolute;left:0;width:100%;height:calc(12.5% + 1px);background:linear-gradient(180deg,#fdfdfc 0%,#f5f5f3 100%);border-bottom:1px solid #dcdfd8;box-shadow:inset 0 1px #fff,0 2px 3px #00000003;box-sizing:border-box;backface-visibility:visible;transform-origin:50% 50%;will-change:transform}
+.garage-nameplate{position:relative;z-index:2;width:264px;height:264px;padding:20px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff;border:1px solid #e7e9e3;border-radius:18px;box-shadow:0 6px 24px #20252205;text-align:center;transition:opacity .2s ease,transform .25s ease}
+.garage-entry--opening .garage-nameplate{opacity:0;transform:translateY(-6px)}
+.garage-name{font:400 26px/1.2 Arial,Helvetica,sans-serif!important;letter-spacing:-.7px;color:#202522!important;margin:0!important}
+.garage-subtitle{font:11px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:1px;color:#858c82!important;margin:10px 0 22px!important}
+.garage-start{min-width:104px;border:1px solid #c9d0c4;border-radius:8px;background:#f8faf6;padding:10px 22px;font:13px Arial,Helvetica,sans-serif;color:#273126;cursor:pointer;text-align:center}
+.garage-start:hover:not(:disabled){background:#eef2e9;border-color:#aebba5}
 .garage-start:disabled{opacity:.4;cursor:wait}
-.garage-direct{font:11px/1.6 Arial,Helvetica,sans-serif;color:#70796b;margin-top:15px;text-underline-offset:3px}
+.garage-direct{font:10px/1.6 Arial,Helvetica,sans-serif;color:#858d7e;margin-top:12px;text-decoration:none}
+.garage-direct:hover{text-decoration:underline;text-underline-offset:3px}
 .garage-sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .garage-nameplate button:focus-visible,.garage-direct:focus-visible{outline:2px solid #5f7756;outline-offset:4px}
-@media(max-width:600px){.garage-nameplate{width:252px;height:252px;padding:20px}.garage-name{font-size:26px!important}}
-@media(prefers-reduced-motion:reduce){.garage-door{transition:none}}
+@media(max-width:600px){.garage-nameplate{width:244px;height:244px}.garage-name{font-size:24px!important}}
+@media(prefers-reduced-motion:reduce){.garage-nameplate{transition:none}}
