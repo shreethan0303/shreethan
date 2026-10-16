@@ -7,14 +7,15 @@ export default function Resume() {
         ← Desktop
       </Link>
       <h1>Shreethan Palla</h1>
-      <p>Robotics · Engineering · Software · Tennis</p>
-      <h2>Projects</h2>
-      <p>RC car · Cube-solving robot · FRC robotics · Tennis and software</p>
+      <p>Résumé · placeholder</p>
       <p>
-        This is a profile draft. Education, dates, skills and individual
-        contributions await verification from my records.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <a href="https://github.com/shreethan0303">github.com/shreethan0303</a>
+      <p>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat.
+      </p>
       <button className="no-print" onClick={() => window.print()}>
         Print / Save as PDF
       </button>

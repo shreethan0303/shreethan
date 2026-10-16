@@ -102,14 +102,13 @@ A deployment-specific Vercel URL identifies one build and stays on that version.
 
 Read `experience/src/Application/UI/components/LoadingScreen.tsx` alongside `experience/src/Application/UI/style.css`.
 
-1. Asset-loading events update progress. Start is disabled until the listed assets finish loading.
-2. The closed door consists of four HTML sections. CSS supplies flat off-white surfaces, thin seams and perspective. Shared CSS variables define the entrance and control palette; there are no gradients or decorative shadows.
-3. Start changes state from `closed` to `opening` and dispatches `loadingScreenDone`.
-4. An animation loop uses `requestAnimationFrame`, the browser's callback for updating before a display frame. Elapsed time becomes progress from zero to one. Easing makes motion accelerate and settle smoothly.
-5. Each section's ends follow a vertical path that curves overhead. Its center position and tilt are calculated from those endpoints. CSS `translate3d` and `rotateX` display that movement.
-6. The camera independently receives the same start event and transitions toward the overview. The door overlay is removed after the reveal. Reduced-motion preference skips the reveal animation.
+1. Asset-loading events update progress. Entry controls are enabled once the listed assets finish loading.
+2. The closed door consists of four HTML sections with flat off-white surfaces and thin seams. The introduction says “Hey, I’m Shreethan Palla. I love building things that move.” Shared CSS variables define the neutral palette.
+3. Downward scroll or upward touch movement accumulates into a target value between zero and one. A small smoothing loop brings the displayed progress toward that value. Scrolling back reverses the door before entry completes. Enter automatically animates that same progress to one; keyboard PageDown/arrow keys also advance it.
+4. Each section's endpoints follow a vertical path that curves overhead. The endpoints determine its center and tilt; CSS `translate3d` and `rotateX` show the movement. The door is a screen-space illusion rather than physical geometry in the room.
+5. Once the door has opened, its overlay is removed, scene interactions are unlocked, and `loadingScreenDone` starts the room camera approach. Until then, clicks cannot move the camera underneath the entrance. Reduced-motion opens immediately when entry is requested.
 
-The garage door is a screen-space illusion with CSS perspective, rather than physical geometry in the Three.js room. It looks dimensional while remaining lightweight. Converting it to actual room geometry would be a separate implementation decision.
+The browser's `requestAnimationFrame` schedules updates before display frames. Scroll distance chooses a desired position; smoothing helps it settle toward that position. This differs from playing an entire timed animation after the first wheel event: stopping partway leaves the door partway open. The Enter alternative is intentionally timed for users who prefer a button.
 
 ## 6. How the 3D room works
 

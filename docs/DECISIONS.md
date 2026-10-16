@@ -25,7 +25,7 @@ No simultaneous redesign of all six steps. No claims of real robot accuracy with
 
 ## Garage entrance implemented
 
-A flat white/off-white sectional door uses four sections with thin seams and no decorative recesses, gradients or shadows. A rounded rectangular card shows only Shreethan Palla, Enter and Open without 3D. Each section follows the curved overhead track during the 2.4-second reveal. The room overlay keeps the name and live local clock, without a role subtitle. Reduced-motion skips the opening animation.
+A flat white/off-white sectional door uses four sections with thin seams and no decorative recesses, gradients or shadows. A rounded rectangular card introduces “Hey, I’m Shreethan Palla. I love building things that move.” with Scroll to open, Enter and Open without 3D. Scroll/swipe progress moves each section along the curved overhead track and can reverse before entry completes. Enter animates the same path automatically. The room camera starts its approach after the door opens. The room overlay keeps the name and live local clock, without a role subtitle. Reduced-motion skips the opening animation.
 
 The entrance and room controls share CSS color variables: white `#ffffff`, off-white `#f5f5f3`, border `#dededb`, charcoal `#272725`, muted text `#71716d`. Existing desk materials and baked room lighting remain intact.
 
@@ -36,3 +36,7 @@ The empty desk uses a generated GLB and baked atlas. Its backdrop samples the or
 ## Résumé interaction
 
 Paper rests at front-left and lifts/brightens on hover or keyboard focus in the desk view. Click/tap opens a readable HTML sheet with a faint room behind it, a placeholder PDF download, and Back/Escape. The rest of the desktop stays empty. Camera and object placement settings live in `World/WorkshopLayout.ts`; see [the interaction guide](WORKSHOP-INTERACTIONS.md).
+
+## Next PC asset
+
+Use a suitable Corsair 5000T model with an exact Gigabyte GPU to be chosen later, dark shell/interior and red/white RGB. No temporary PC has been inserted. See [the asset/modeling brief](PC-ASSET-BRIEF.md) for references, search leads, named-part workflow and two-day scope. Résumé placeholder content is lorem ipsum only.

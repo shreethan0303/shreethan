@@ -67,3 +67,9 @@ The full production build and formatting/whitespace checks passed. Final Chromiu
 ![Readable résumé over the faint room](images/resume-paper-open.png)
 
 ![Phone résumé view](images/resume-paper-mobile.png)
+
+## Scroll entrance and lorem ipsum placeholder
+
+Full production build, final renderer build and formatting checks passed. Chromium verified greeting/copy, partial wheel opening, reverse scrolling back to closed, complete entry, Enter button/keyboard entry, PageDown entry, reduced-motion entry, mobile layout and the touch-event path. A separate native CDP touch swipe also opened the door. After resizing a partly open entrance from 1440×1000 to 390×844, panel dimensions updated, reverse scrolling closed it, and scrolling reopened it. The résumé still opens/closes with touch; its HTML body and direct route contain lorem ipsum without project/contact content. The downloaded PDF is valid; text extraction confirms lorem ipsum and no project/contact text. Regular functional runs reported no page errors or failed asset requests.
+
+The PC remains deferred. Source research verified Henry's baked-model helper, Bruno's mesh-name/material parser and resource manifest, and the glTF Transform CLI README. No exact Corsair 5000T asset has been selected or verified.

@@ -49,7 +49,7 @@ Keyboard users can Tab to Open résumé after entering the desk view, press Ente
 
 ## Placeholder and final résumé
 
-The current HTML sheet and PDF are explicitly labeled as placeholders. They include the user's name, supplied project names and known GitHub URL; no education, dates, awards or experience have been invented.
+The current HTML sheet, direct résumé page and PDF are explicitly labeled as placeholders. Their bodies contain only lorem ipsum; no project list, contact details, education or experience is shown.
 
 The download is a real, one-page PDF at `public/resume/shreethan-palla-placeholder.pdf`, served as `/resume/shreethan-palla-placeholder.pdf`. The HTML and PDF are separate presentations. When the final résumé arrives, replace the download and update the readable sheet's content/labels together. Replacing the PDF alone will not rewrite the HTML.
 
@@ -57,4 +57,4 @@ The download is a real, one-page PDF at `public/resume/shreethan-palla-placehold
 
 Run `npm run build:experience` after editing the layout or paper code, then refresh a running development server. The renderer watcher can do this during an editing session. For deployment, run the normal full build.
 
-Check: Enter → click desk → hover/focus paper → click/Enter → read/download → Back/Escape → open again. Repeat on a phone or narrow viewport and with reduced motion. Confirm the downloaded PDF actually contains the expected résumé text. A functioning link alone does not validate the document.
+Check: scroll/swipe or Enter → click desk → hover/focus paper → click/Enter → read/download → Back/Escape → open again. Repeat on a phone or narrow viewport and with reduced motion. Confirm the downloaded PDF actually contains the expected résumé text. A functioning link alone does not validate the document.

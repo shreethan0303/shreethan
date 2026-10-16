@@ -65,17 +65,10 @@ const ResumePaper: React.FC = () => {
                 <div className="resume-writing">
                     <h2 id="resume-title">Shreethan Palla</h2>
                     <p className="resume-note">Résumé · placeholder</p>
-                    <p>Your final résumé will replace this sheet.</p>
-                    <h3>Projects</h3>
-                    <ul>
-                        <li>RC car</li>
-                        <li>Cube-solving robot</li>
-                        <li>FRC robotics</li>
-                        <li>Tennis and software</li>
-                    </ul>
-                    <h3>Contact</h3>
-                    <a href="https://github.com/shreethan0303" target="_blank" rel="noreferrer">github.com/shreethan0303</a>
-                    <p className="resume-note resume-footer">Education, experience and project details will be added with the final résumé.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </section>
         </div>}

@@ -1,6 +1,6 @@
 # Shreethan Palla — portfolio
 
-A personal portfolio adapted from Henry Heffernan’s licensed Three.js room. The current checkpoint has a minimal garage-door entrance, a four-legged desk and an interactive résumé sheet. Real project CAD, a new computer and final personal content come next.
+A personal portfolio adapted from Henry Heffernan’s licensed Three.js room. The current checkpoint has a scroll-controlled garage-door entrance, a four-legged desk and an interactive résumé sheet. Real project CAD, a new computer and final personal content come next.
 
 ![Current desk with résumé paper](docs/images/paper-resting.png)
 
@@ -47,6 +47,8 @@ For a plain-language explanation, read [how the website works](docs/FUNDAMENTALS
 
 See the [workshop interaction guide](docs/WORKSHOP-INTERACTIONS.md) to change the authored zoom view or paper placement.
 
+See the [PC asset brief](docs/PC-ASSET-BRIEF.md) for the Corsair 5000T/Gigabyte direction and a two-day CAD workflow. No PC placeholder has been added.
+
 ## Iterate
 
 Change one visual concern per commit. Rebuild the renderer after changes under `experience`:
@@ -67,7 +69,7 @@ CI runs formatting and the production build. Browser validation is described in 
 
 ## Status
 
-The garage-door entrance, desk and interactive lined résumé paper work. The computer, chair, plant and desk props are disabled; their original source assets remain in the repository. `/desktop` is available directly. `/projects/robotics` includes an illustrative scroll-controlled assembly, not real project CAD. A material-preserving model loader exists but still needs to be connected to a real asset/viewer. The paper lifts/brightens on hover and opens a readable placeholder with a PDF download. Modern PC, physical project interactions, verified project content and final résumé remain outstanding. Public deployment status must be verified in Vercel. Original branded assets require replacement before reintroducing them.
+The garage-door entrance, desk and interactive lined résumé paper work. The computer, chair, plant and desk props are disabled; their original source assets remain in the repository. `/desktop` is available directly. `/projects/robotics` includes an illustrative scroll-controlled assembly, not real project CAD. A material-preserving model loader exists but still needs to be connected to a real asset/viewer. The paper lifts/brightens on hover and opens a readable lorem ipsum placeholder with a PDF download. Modern PC, physical project interactions, verified project content and final résumé remain outstanding. Public deployment status must be verified in Vercel. Original branded assets require replacement before reintroducing them.
 
 The [fundamentals guide](docs/FUNDAMENTALS.md) explains browser basics, the actual build/deployment pipeline, storage, the room and entrance code, Onshape exports, model integration, and hands-on exercises.
 
