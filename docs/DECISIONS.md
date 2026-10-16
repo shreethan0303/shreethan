@@ -1,8 +1,8 @@
 # Current decisions
 
-## Active checkpoint: empty desk
+## Active checkpoint: first interactive desk object
 
-Build from Henry Heffernan's licensed 3D implementation. The current scene contains only an empty tabletop and four legs, with the original desk dimensions, neutral backdrop, camera and color direction. Computer, decor, chair and plant are temporarily absent. The original assets remain available for adding selected objects back later.
+Build from Henry Heffernan's licensed 3D implementation. The current scene contains a tabletop, four legs and a lined résumé sheet, with the original desk dimensions, neutral backdrop, camera and color direction. Computer, decor, chair and plant are temporarily absent. The original assets remain available for adding selected objects back later.
 
 Replace personal metadata and iframe content immediately, remove upstream analytics and email destinations, retain copyright. Reference branding baked into textures remains visibly upstream until those assets are replaced; do not call the baseline a finished personal site.
 
@@ -25,10 +25,14 @@ No simultaneous redesign of all six steps. No claims of real robot accuracy with
 
 ## Garage entrance implemented
 
-A flat white/off-white sectional door uses four sections with thin seams and no decorative recesses, gradients or shadows. A rounded rectangular card shows only Shreethan Palla, Start and Open without 3D. Each section follows the curved overhead track during the 2.4-second reveal. The room overlay keeps the name and live local clock, without a role subtitle. Reduced-motion skips the opening animation.
+A flat white/off-white sectional door uses four sections with thin seams and no decorative recesses, gradients or shadows. A rounded rectangular card shows only Shreethan Palla, Enter and Open without 3D. Each section follows the curved overhead track during the 2.4-second reveal. The room overlay keeps the name and live local clock, without a role subtitle. Reduced-motion skips the opening animation.
 
 The entrance and room controls share CSS color variables: white `#ffffff`, off-white `#f5f5f3`, border `#dededb`, charcoal `#272725`, muted text `#71716d`. Existing desk materials and baked room lighting remain intact.
 
 Camera framing uses the bounds of the tabletop and legs, excluding the backdrop. Both overview and close-up look at their center; close-up no longer depends on mouse position. Fit distance accounts for field of view and viewport aspect ratio so the desk stays visible on narrow screens.
 
 The empty desk uses a generated GLB and baked atlas. Its backdrop samples the original texture; only the region containing obsolete prop shadows is cleared and shaded for the bare desk. Regenerate with `blender -b --factory-startup -t 8 --python experience/tools/build-empty-workbench.py`. Blender is an offline authoring tool and is not needed by Vercel.
+
+## Résumé interaction
+
+Paper rests at front-left and lifts/brightens on hover or keyboard focus in the desk view. Click/tap opens a readable HTML sheet with a faint room behind it, a placeholder PDF download, and Back/Escape. The rest of the desktop stays empty. Camera and object placement settings live in `World/WorkshopLayout.ts`; see [the interaction guide](WORKSHOP-INTERACTIONS.md).

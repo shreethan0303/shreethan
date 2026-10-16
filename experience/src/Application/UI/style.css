@@ -210,3 +210,24 @@ br {
 .garage-nameplate button:focus-visible,.garage-direct:focus-visible{outline:2px solid var(--studio-muted);outline-offset:4px}
 @media(max-width:600px){.garage-nameplate{min-height:206px;padding:28px 20px}.garage-name{font-size:29px!important}}
 @media(prefers-reduced-motion:reduce){.garage-nameplate,.garage-start{transition:none}}
+
+/* The paper's screen projection gives keyboard users an equivalent desk object. */
+.paper-access{position:fixed;z-index:4;transform:translateX(-50%);opacity:0;pointer-events:none;border:1px solid var(--studio-line);border-radius:6px;background:var(--studio-white);color:var(--studio-ink);padding:8px 12px;font:13px Arial,sans-serif}
+.paper-access:focus-visible{opacity:1;outline:2px solid var(--studio-muted);outline-offset:3px}
+.paper-access[hidden]{display:none}
+.resume-overlay{position:fixed;inset:0;z-index:100;display:grid;place-items:center;pointer-events:auto;background:rgba(245,245,243,.78);backdrop-filter:blur(3px);padding:20px;box-sizing:border-box}
+.resume-sheet{position:relative;width:min(720px,calc(100vw - 40px));height:min(932px,calc(100dvh - 40px));overflow:auto;background:#fffefb;border:1px solid var(--studio-line);box-sizing:border-box;transform-origin:center;box-shadow:0 12px 50px #2727250a;color:var(--studio-ink);font:16px/32px Arial,Helvetica,sans-serif}
+.resume-actions{position:sticky;top:0;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fffefb;padding:16px 24px;border-bottom:1px solid var(--studio-line)}
+.resume-actions button,.resume-actions a{border:0;background:none;padding:6px 0;color:var(--studio-ink);font:13px/1.5 Arial,sans-serif;text-decoration:none;cursor:pointer}
+.resume-actions a:hover,.resume-actions button:hover{text-decoration:underline;text-underline-offset:4px}
+.resume-sheet a:focus-visible,.resume-sheet button:focus-visible{outline:2px solid var(--studio-muted);outline-offset:4px}
+.resume-writing{min-height:calc(100% - 72px);box-sizing:border-box;padding:40px 56px 48px 80px;background-image:linear-gradient(90deg,transparent 55px,#d9d0c7 55px,#d9d0c7 56px,transparent 56px),repeating-linear-gradient(transparent 0,transparent 31px,#e3e4df 31px,#e3e4df 32px)}
+.resume-writing h2{font:400 32px/40px Georgia,serif;color:var(--studio-ink);margin:0 0 8px}
+.resume-writing h3{font:600 15px/32px Arial,sans-serif;color:var(--studio-ink);margin:32px 0 0}
+.resume-writing p{font:16px/32px Arial,sans-serif;color:var(--studio-ink);margin:0 0 16px}
+.resume-writing ul{padding-left:20px;margin:0}
+.resume-writing li{font:16px/32px Arial,sans-serif}
+.resume-writing a{color:var(--studio-ink);text-underline-offset:4px;overflow-wrap:anywhere}
+.resume-writing .resume-note{font:12px/24px Arial,sans-serif;color:var(--studio-muted)}
+.resume-writing .resume-footer{margin-top:48px}
+@media(max-width:600px){.resume-overlay{padding:12px}.resume-sheet{width:calc(100vw - 24px);height:calc(100dvh - 24px)}.resume-actions{padding:12px 16px}.resume-writing{padding:28px 24px 32px 42px;background-image:linear-gradient(90deg,transparent 24px,#d9d0c7 24px,#d9d0c7 25px,transparent 25px),repeating-linear-gradient(transparent 0,transparent 31px,#e3e4df 31px,#e3e4df 32px)}.resume-writing h2{font-size:28px}}

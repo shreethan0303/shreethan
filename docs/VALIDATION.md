@@ -57,3 +57,13 @@ Production build and final renderer build passed. Chromium checked the wider 390
 Production build, final renderer build, formatting and whitespace checks passed. Final Chromium run verified flat door surfaces without background images or box shadows, independent sectional motion, completed reveal, name and ticking clock without a role subtitle, narrow entrance/desk views, and reduced-motion entry. It reported no page errors or failed asset responses. Camera projection checks against the actual keyframe classes passed at 1440×1000, 390×844 and 1920×1080; all desk bounds remain visible with horizontal centers within 1% of viewport width. Visual review of desktop and phone screenshots confirmed centered framing.
 
 ![Centered close-up with name and clock](images/desk-centered.png)
+
+## Interactive résumé paper
+
+The full production build and formatting/whitespace checks passed. Final Chromium checks passed: Enter reveals the room; clicking reaches the desk; the actual projected paper surface picks correctly; hovering raises/brightens it; clicking opens the readable sheet; the PDF download contains a valid one-page placeholder; Back and Escape preserve the desk view; keyboard opening, focus trapping, return focus and reopening work. Narrow 390×844 layout has no reader overflow. Touch-enabled Chromium opened and closed the sheet with taps. Reduced-motion opens without the expansion animation. The run reported no page errors or failed resource responses. PDF text extraction confirmed the user's name, placeholder label, supplied project names and GitHub URL.
+
+![Paper resting on the desk](images/paper-resting.png)
+
+![Readable résumé over the faint room](images/resume-paper-open.png)
+
+![Phone résumé view](images/resume-paper-mobile.png)

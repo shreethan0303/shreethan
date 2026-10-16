@@ -92,7 +92,7 @@ const LoadingScreen: React.FC = () => {
             </div>
             <section className="garage-nameplate" aria-label="Shreethan Palla portfolio">
                 <h1 className="garage-name">Shreethan Palla</h1>
-                <button className="garage-start" onClick={start} disabled={!ready}>Start</button>
+                <button className="garage-start" onClick={start} disabled={!ready}>Enter</button>
                 <p className="garage-sr-only" role="status">{failed ? 'Unable to load the workshop.' : ready ? 'Ready when you are.' : 'Loading workshop.'}</p>
                 <a className="garage-direct" href="/desktop">Open without 3D</a>
             </section>

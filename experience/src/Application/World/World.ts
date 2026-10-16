@@ -10,6 +10,7 @@ import CoffeeSteam from './CoffeeSteam';
 import Cursor from './Cursor';
 import Hitboxes from './Hitboxes';
 import AudioManager from '../Audio/AudioManager';
+import ResumePaper from './ResumePaper';
 export default class World {
     application: Application;
     scene: THREE.Scene;
@@ -23,6 +24,7 @@ export default class World {
     coffeeSteam: CoffeeSteam;
     cursor: Cursor;
     audioManager: AudioManager;
+    resumePaper: ResumePaper;
 
     constructor() {
         this.application = new Application();
@@ -38,7 +40,7 @@ export default class World {
             });
             (this.application.camera.keyframes.desk as DeskKeyframe).setBounds(bounds);
             (this.application.camera.keyframes.idle as IdleKeyframe).setBounds(bounds);
-            // Empty desk checkpoint: restore props one at a time after review.
+            this.resumePaper = new ResumePaper();
             this.audioManager = new AudioManager();
             // const hb = new Hitboxes();
             // this.cursor = new Cursor();
@@ -46,6 +48,7 @@ export default class World {
     }
 
     update() {
+        if (this.resumePaper) this.resumePaper.update();
         if (this.monitorScreen) this.monitorScreen.update();
         if (this.environment) this.environment.update();
         if (this.coffeeSteam) this.coffeeSteam.update();

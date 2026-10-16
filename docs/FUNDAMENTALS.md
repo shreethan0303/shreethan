@@ -124,7 +124,7 @@ Three.js manages a 3D scene and asks WebGL to draw it using the GPU.
 - **Transform:** position, rotation and scale. A group lets several meshes share a transform.
 - **Renderer:** turns the scene and camera into canvas pixels.
 
-`Application.ts` creates the scene, resources, camera, renderer and world. `sources.ts` lists asset URLs. `World.ts` waits for those assets and adds the active environment. At this checkpoint it adds the background, tabletop and four legs. The old computer, decor, chair and monitor are not displayed.
+`Application.ts` creates the scene, resources, camera, renderer and world. `sources.ts` lists asset URLs. `World.ts` waits for those assets and adds the active environment. At this checkpoint it adds the background, tabletop, four legs and an interactive résumé sheet. The old computer, decor, chair and monitor are not displayed.
 
 The room uses **baked lighting**: Blender calculates much of the appearance offline and stores it in a texture. `BakedModel.ts` applies that image with a basic material; the browser largely displays the already-shaded surface. This is different from recalculating every shadow with live lights every frame.
 
@@ -225,7 +225,7 @@ Try one experiment at a time:
 1. Temporarily change the entrance name in `LoadingScreen.tsx`. Predict what should change, rebuild the renderer, and verify it.
 2. Change the card radius in the UI stylesheet. This changes CSS appearance without changing 3D geometry.
 3. Change the tabletop tint in `World/Environment.ts`. Explain why it changes a mesh material rather than the backdrop.
-4. Change the close-up fill value in `CameraKeyframes.ts` from `.74` to `.65`. Reload, click, and explain why the smaller fill value leaves larger margins.
+4. Change the close-up fill value in `World/WorkshopLayout.ts` from `.74` to `.65`. Reload, click, and explain why the smaller fill value leaves larger margins.
 5. Change an offset multiplier in `assembly-scene.tsx`. Scroll both directions and explain why the model returns to its initial pose.
 6. Import your three-part practice CAD before attempting the full robot.
 
@@ -250,3 +250,5 @@ Learn JavaScript values/functions/objects, then React components/state/events, t
 File size, triangle count and draw calls are different costs. One enormous texture can use substantial GPU memory even when its JPEG download is small. TypeScript does not remove these costs. The inherited room still has a continuous render loop and listed legacy assets; it has not been established as a finished performance target. The sample project viewer uses demand-driven rendering and a capped pixel ratio. Measure on actual devices before increasing detail.
 
 A useful explanation of your site is: “It is a Next.js portfolio with a Three.js workshop adapted from Henry Heffernan's licensed renderer. An HTML/CSS garage entrance reveals a baked scene. Project viewers map normalized scroll progress to component transforms. GitHub stores the source; Vercel builds and hosts commits; each visitor's browser renders the interactive graphics.”
+
+The [workshop interaction guide](WORKSHOP-INTERACTIONS.md) explains the authored zoom destination, paper model/placement, hover picking, readable overlay, and placeholder PDF.

@@ -3,6 +3,7 @@ import { CameraKey } from './Camera';
 import Time from '../Utils/Time';
 import Application from '../Application';
 import Sizes from '../Utils/Sizes';
+import { workshopLayout } from '../World/WorkshopLayout';
 
 export class CameraKeyframeInstance {
     position: THREE.Vector3;
@@ -109,9 +110,11 @@ export class DeskKeyframe extends CameraKeyframeInstance {
 
     update() {
         if (!this.bounds) return;
-        const frame = frameBounds(this.bounds, new THREE.Vector3(-.35, .7, 1), this.sizes, .74);
-        this.position.copy(frame.position);
-        this.focalPoint.copy(frame.center);
+        const view = workshopLayout.deskView;
+        const frame = frameBounds(this.bounds, new THREE.Vector3().fromArray(view.direction), this.sizes, view.fill);
+        const offset = new THREE.Vector3().fromArray(view.targetOffset);
+        this.position.copy(frame.position).add(offset);
+        this.focalPoint.copy(frame.center).add(offset);
     }
 }
 

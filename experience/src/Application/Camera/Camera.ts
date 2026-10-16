@@ -9,6 +9,7 @@ import Resources from '../Utils/Resources';
 import UIEventBus from '../UI/EventBus';
 import Time from '../Utils/Time';
 import BezierEasing from 'bezier-easing';
+import { workshopLayout } from '../World/WorkshopLayout';
 import {
     CameraKeyframeInstance,
     MonitorKeyframe,
@@ -37,6 +38,7 @@ export default class Camera extends EventEmitter {
     position: THREE.Vector3;
     focalPoint: THREE.Vector3;
 
+    interactionLocked = false;
     freeCam: boolean;
     orbitControls: OrbitControls;
 
@@ -66,16 +68,14 @@ export default class Camera extends EventEmitter {
             orbitControlsStart: new OrbitControlsStart(),
         };
 
-        document.addEventListener('mousedown', (event) => {
-            event.preventDefault();
-            // @ts-ignore
-            if (event.target.id === 'prevent-click') return;
-            // print target and current keyframe
+        document.addEventListener('click', (event) => {
+            if (event.defaultPrevented || this.interactionLocked || this.freeCam) return;
+            if ((event.target as Element).closest('button,a,input,[data-no-camera],#ui-interactive')) return;
             if (
                 this.currentKeyframe === CameraKey.IDLE ||
                 this.targetKeyframe === CameraKey.IDLE
             ) {
-                this.transition(CameraKey.DESK);
+                this.transition(CameraKey.DESK, workshopLayout.deskView.duration);
             } else if (
                 this.currentKeyframe === CameraKey.DESK ||
                 this.targetKeyframe === CameraKey.DESK
@@ -97,6 +97,7 @@ export default class Camera extends EventEmitter {
         callback?: () => void
     ) {
         if (this.currentKeyframe === key) return;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) duration = 0;
 
         if (this.targetKeyframe) TWEEN.removeAll();
 
