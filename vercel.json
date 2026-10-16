@@ -1,0 +1,5 @@
+{
+  "framework": "nextjs",
+  "installCommand": "npm ci && npm ci --prefix experience",
+  "buildCommand": "npm run build"
+}
