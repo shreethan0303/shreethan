@@ -4,7 +4,7 @@ A personal portfolio being rebuilt from Henry Heffernan’s licensed Three.js ro
 
 ![Current reference baseline](docs/images/reference-overview.png)
 
-See [validation evidence and limits](docs/VALIDATION.md).
+See the [garage-door entrance](docs/images/garage-door.png) and [validation evidence and limits](docs/VALIDATION.md).
 
 ## Run locally
 
@@ -65,7 +65,7 @@ CI runs formatting and the production build. Browser validation is described in 
 
 ## Status
 
-The reference scene and local desktop integration work. `/projects/robotics` now includes an illustrative scroll-controlled exploded assembly. The original baked models still contain Henry’s visual branding and paper artwork. This is a development baseline, not a finished Shreethan portfolio. The garage-door introduction, replacement workbench/PC, real project models, physical project/paper interactions, final résumé and public deployment are outstanding. Do not publish someone else’s résumé artwork as your own.
+The reference scene and local desktop integration work. `/projects/robotics` now includes an illustrative scroll-controlled exploded assembly. The original baked models still contain Henry’s visual branding and paper artwork. This is a development baseline, not a finished Shreethan portfolio. The garage-door introduction now works. Replacement workbench/PC, real project models, physical project/paper interactions and final résumé are outstanding. Public deployment status must be verified in Vercel. Do not publish someone else’s résumé artwork as your own.
 
 The previous procedural prototype is preserved in `/workspace/portfolio-backups/workshop-before-reference-rebuild.tar.gz` in this cloud machine. That archive is not a GitHub backup or a public asset.
 

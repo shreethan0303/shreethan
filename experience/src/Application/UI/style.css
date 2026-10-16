@@ -183,3 +183,27 @@ br {
         padding-bottom: 32px;
     }
 }
+
+/* Garage entrance: no models, external fonts or artificial loading delays. */
+.garage-entry{position:fixed;inset:0;z-index:50;overflow:hidden;pointer-events:auto}
+.garage-entry--opening{pointer-events:none}
+.garage-door{position:absolute;inset:0;display:grid;place-items:center;background:#fafaf9;box-shadow:0 15px 40px #00000015;transform:translate3d(0,0,0);transition:transform 1.7s cubic-bezier(.65,0,.2,1);will-change:transform}
+.garage-entry--opening .garage-door{transform:translate3d(0,-108%,0)}
+.garage-panels{position:absolute;inset:0;display:grid;grid-template-rows:repeat(8,1fr);pointer-events:none}
+.garage-panel{background:linear-gradient(180deg,#fdfdfc 0%,#f6f6f4 100%);border-bottom:1px solid #dfe1db;box-shadow:inset 0 1px #ffffff;box-sizing:border-box}
+.garage-nameplate{position:relative;width:320px;min-height:320px;padding:24px;box-sizing:border-box;background:#fff;border:1px solid #dedfd9;box-shadow:0 3px 12px #00000004;text-align:left}
+.garage-eyebrow{font:9px/1.6 Arial,Helvetica,sans-serif;letter-spacing:2px;color:#899087}
+.garage-name{font:400 46px/1.02 Arial,Helvetica,sans-serif!important;letter-spacing:-2px;color:#202522!important;margin:24px 0 27px!important}
+.garage-start-row{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.garage-start{min-width:100px;display:flex;justify-content:space-between;gap:25px;border:1px solid #bdc4b9;background:#fff;padding:10px 14px;font:12px Arial,Helvetica,sans-serif;color:#273126;cursor:pointer}
+.garage-start:hover:not(:disabled){background:#f4f6f1}
+.garage-start:disabled,.garage-skip:disabled{opacity:.4;cursor:wait}
+.garage-skip{border:0;background:none;font:10px Arial,Helvetica,sans-serif;color:#7c8578;cursor:pointer;padding:8px 0}
+.garage-load-track{margin-top:22px;height:1px;background:#e9ece6;overflow:hidden}
+.garage-load-track span{display:block;width:100%;height:100%;background:#858f7f;transform-origin:left center;transition:transform .2s}
+.garage-status{font:10px/1.6 Arial,Helvetica,sans-serif!important;color:#8b9286!important;margin:8px 0 0!important}
+.garage-direct{display:inline-block;font:9px/1.6 Arial,Helvetica,sans-serif;color:#8b9286;text-underline-offset:3px;margin-top:9px}
+.garage-handle{position:absolute;bottom:8%;left:50%;transform:translateX(-50%);width:56px;height:5px;border:1px solid #bbc0b5;border-radius:2px;background:#eff0eb}
+.garage-nameplate button:focus-visible,.garage-direct:focus-visible{outline:2px solid #5f7756;outline-offset:4px}
+@media(max-width:600px){.garage-nameplate{width:252px;min-height:265px;padding:24px}.garage-name{font-size:40px!important}.garage-panels{grid-template-rows:repeat(8,1fr)}}
+@media(prefers-reduced-motion:reduce){.garage-door,.garage-load-track span{transition:none}}

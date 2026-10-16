@@ -123,6 +123,7 @@ export class IdleKeyframe extends CameraKeyframeInstance {
     }
 
     update() {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         this.position.x =
             Math.sin((this.time.elapsed + 19000) * 0.00008) * this.origin.x;
         this.position.y =

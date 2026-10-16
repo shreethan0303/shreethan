@@ -22,3 +22,7 @@ Entrance: garage door and centered Start card; open and pan once to overview. Ap
 6. Validate responsiveness, fallback and performance; deploy a public preview.
 
 No simultaneous redesign of all six steps. No claims of real robot accuracy without supplied CAD/photos. No games or vehicle-model search before core projects work.
+
+## Garage entrance implemented
+
+The reference room is now revealed by a lightweight white sectional-door overlay. Its centered nameplate shows actual asset-loading progress, Start, Skip intro and a direct desktop link. Start lifts the door in 1.7 seconds while the existing room camera glides for 2.5 seconds. Skip/reduced-motion snap the camera to the overview. Model load errors show the direct content route. Physical door tracks and panel bending are not simulated. The rest of the reference scene remains the next asset-replacement checkpoint.

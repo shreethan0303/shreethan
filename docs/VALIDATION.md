@@ -41,3 +41,7 @@ Known limits:
 ![Illustrative assembly before scrolling](images/assembly-assembled.png)
 
 ![Illustrative assembly after scrolling](images/assembly-exploded.png)
+
+## Garage intro validation
+
+Production build passed. Chromium checks passed: Start disabled while an intentionally delayed asset loads; keyboard Start; door moves upward and is removed after reveal; original room remains visible; Skip; reduced-motion immediate camera event; aborted model load gives a working Open without 3D route; 390px entrance has no horizontal overflow. No page errors in that run. Final styled door/reveal captures are in the images folder. The final cosmetic pass also passed a fresh build and door/reveal check.

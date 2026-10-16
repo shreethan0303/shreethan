@@ -33,7 +33,7 @@ Real CAD needs a hierarchy with named components, materials, dimensions and sens
 
 1. Establish one working Vercel project and one public URL.
 2. Accept the reference scene before replacing its assets.
-3. Change only the entrance to a garage door.
+3. The garage-door entrance is implemented: a CSS overlay lifts above the real scene after asset readiness; the original camera event handles the glide.
 4. Replace the desk/computer with the workbench and PC.
 5. Add one real project model, its story and exploded assembly.
 6. Finish profile/resume facts and test phone, keyboard, model failures and loading.
