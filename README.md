@@ -2,6 +2,10 @@
 
 A personal portfolio being rebuilt from Henry Heffernan’s licensed Three.js room. The first checkpoint preserves the reference rendering and camera behavior; subsequent changes will introduce Shreethan’s workshop and real projects.
 
+![Current reference baseline](docs/images/reference-overview.png)
+
+See [validation evidence and limits](docs/VALIDATION.md).
+
 ## Run locally
 
 Use Node 24 (the version verified in the cloud workspace).
