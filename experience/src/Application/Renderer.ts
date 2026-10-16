@@ -52,7 +52,7 @@ export default class Renderer {
         // this.instance.toneMappingExposure = 0.9;
         this.instance.setSize(this.sizes.width, this.sizes.height);
         this.instance.setPixelRatio(Math.min(this.sizes.pixelRatio, 2));
-        this.instance.setClearColor(0x000000, 0.0);
+        this.instance.setClearColor(0xf5f5f3, 0.0);
 
         // Style
         this.instance.domElement.style.position = 'absolute';

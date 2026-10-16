@@ -7,9 +7,6 @@ export default function Home() {
         title="Shreethan Palla workshop"
         allow="autoplay; fullscreen"
       />
-      <a className="direct-desktop" href="/desktop">
-        Open accessible desktop
-      </a>
     </main>
   );
 }

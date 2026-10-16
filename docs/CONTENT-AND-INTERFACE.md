@@ -2,7 +2,7 @@
 
 ## Change the intro yourself
 
-The entrance text lives in one file: [`experience/src/portfolio-copy.ts`](../experience/src/portfolio-copy.ts). `greeting` and `name` make the first line. `intro` makes the description underneath. The other fields control the scroll hint, direct link label and three loading messages.
+The entrance text lives in one file: [`experience/src/portfolio-copy.ts`](../experience/src/portfolio-copy.ts). `intro` is the entire sentence, rendered with one consistent text style. The other fields control the scroll hint and three loading messages.
 
 On GitHub:
 
@@ -21,15 +21,9 @@ For local editing, save the file with `npm run dev` running and `npm run watch:e
 
 Current introduction:
 
-> Hey! I’m Shreethan Palla.
-> I build robots and software—from CAD sketches to moving parts.
+> Hey, I'm Shreethan Palla and I build robots and software and enjoy learning new things.
 
-Two alternative directions, if you prefer:
-
-- Systems: “I build robots and software. My favorite part is making the pieces work together.”
-- Iteration: “I build robots and software. Sketch, test, find the weak point, repeat.”
-
-These describe an approach without inventing awards, credentials or project results. The case studies should provide the evidence: your role, the constraint, your design decision, and what actually happened.
+The loader's circle fills from actual asset-count progress, then the entrance appears after the first room frame has rendered. The rotating desk view is prepared behind the door. There is no Open without 3D link on the entrance; `/desktop` remains a direct route. Failed loading shows a Reload button.
 
 ## Proposed direction: a portfolio document inspired by CAD
 

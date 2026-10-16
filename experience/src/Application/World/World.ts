@@ -11,6 +11,7 @@ import Cursor from './Cursor';
 import Hitboxes from './Hitboxes';
 import AudioManager from '../Audio/AudioManager';
 import ResumePaper from './ResumePaper';
+import { CameraKey } from '../Camera/Camera';
 export default class World {
     application: Application;
     scene: THREE.Scene;
@@ -40,6 +41,8 @@ export default class World {
             });
             (this.application.camera.keyframes.desk as DeskKeyframe).setBounds(bounds);
             (this.application.camera.keyframes.idle as IdleKeyframe).setBounds(bounds);
+            // Prepare the rotating desk view while the loading screen/door still covers it.
+            this.application.camera.transition(CameraKey.IDLE, 0);
             this.resumePaper = new ResumePaper();
             this.audioManager = new AudioManager();
             // const hb = new Hitboxes();

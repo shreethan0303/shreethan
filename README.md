@@ -31,7 +31,7 @@ For a public preview, follow [the deployment guide](docs/DEPLOYMENT.md). Use `ma
 
 For a plain-language explanation, read [how the website works](docs/FUNDAMENTALS.md).
 
-To change your greeting, introduction or loading messages yourself, edit [portfolio-copy.ts](experience/src/portfolio-copy.ts). See [editing text and the proposed Onshape-inspired interface](docs/CONTENT-AND-INTERFACE.md) for the GitHub steps and next design direction.
+To change your intro sentence or loading messages yourself, edit [portfolio-copy.ts](experience/src/portfolio-copy.ts). See [editing text and the proposed Onshape-inspired interface](docs/CONTENT-AND-INTERFACE.md) for the GitHub steps and next design direction.
 
 ## Where things live
 

@@ -7,6 +7,7 @@ import { portfolioCopy } from '../../../portfolio-copy';
 const LoadingScreen: React.FC = () => {
     const [progress, setProgress] = useState(0);
     const [failed, setFailed] = useState(false);
+    const [rendered, setRendered] = useState(false);
     const [phase, setPhase] = useState<'closed' | 'opening' | 'done'>('closed');
     const panels = useRef<(HTMLDivElement | null)[]>([]);
     const copy = useRef<HTMLElement>(null);
@@ -15,20 +16,24 @@ const LoadingScreen: React.FC = () => {
     useEffect(() => {
         const update = (event: Event) => setProgress(Math.min(1, (event as CustomEvent).detail.progress || 0));
         const error = () => setFailed(true);
+        const firstFrame = () => setRendered(true);
         document.addEventListener('loadedSource', update);
         document.addEventListener('resourceLoadFailed', error);
+        document.addEventListener('workspaceReady', firstFrame);
         const application = new Application();
         application.camera.interactionLocked = true;
         const resources = application.resources;
+        setRendered(application.workspaceReady);
         if (resources.failed) setFailed(true);
         if (resources.toLoad > 0) setProgress(resources.loaded / resources.toLoad);
         return () => {
             document.removeEventListener('loadedSource', update);
             document.removeEventListener('resourceLoadFailed', error);
+            document.removeEventListener('workspaceReady', firstFrame);
         };
     }, []);
 
-    const ready = progress >= 1 && !failed;
+    const ready = progress >= 1 && rendered && !failed;
     useEffect(() => {
         if (!ready || motion.current.finished) return;
         const state = motion.current;
@@ -142,7 +147,7 @@ const LoadingScreen: React.FC = () => {
     }, [ready]);
 
     if (phase === 'done') return null;
-    const loadingText = progress < .35 ? portfolioCopy.loading.graphics : progress < .8 ? portfolioCopy.loading.workbench : portfolioCopy.loading.finishing;
+    const loadingText = progress < .35 ? portfolioCopy.loading.projects : progress < .8 ? portfolioCopy.loading.cad : portfolioCopy.loading.graphics;
     return (
         <div className={`garage-entry garage-entry--${phase}`} aria-label="Workshop entrance">
             <div className="garage-door" aria-hidden="true">
@@ -153,19 +158,22 @@ const LoadingScreen: React.FC = () => {
                 </div>
             </div>
             {!ready && <div className="workspace-loading">
-                {failed ? <p className="workspace-load-error" role="alert">The 3D workspace couldn’t load.</p> : <>
-                    <div className="workspace-spinner" role="progressbar" aria-label="Loading graphics workspace" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progress * 100)} />
+                {failed ? <>
+                    <p className="workspace-load-error" role="alert">The workspace couldn’t load.</p>
+                    <button className="workspace-retry" onClick={() => window.location.reload()}>Reload</button>
+                </> : <>
+                    <svg className="workspace-spinner" viewBox="0 0 40 40" role="progressbar" aria-label="Loading website" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progress * 100)}>
+                        <circle className="workspace-track" cx="20" cy="20" r="17" />
+                        <circle className="workspace-progress" cx="20" cy="20" r="17" pathLength="100" strokeDasharray="100" strokeDashoffset={100 - progress * 100} transform="rotate(-90 20 20)" />
+                    </svg>
                     <p className="workspace-load-message" role="status">{loadingText}</p>
-                    <span className="workspace-load-percent" aria-hidden="true">{Math.round(progress * 100)}%</span>
                 </>}
             </div>}
             {ready && <section className="garage-copy" ref={copy} aria-label="About Shreethan">
-                <h1 className="garage-name">{portfolioCopy.greeting} <span className="garage-person">{portfolioCopy.name}</span></h1>
-                <p className="garage-intro">{portfolioCopy.intro}</p>
+                <h1 className="garage-intro">{portfolioCopy.intro}</h1>
                 <p className="garage-hint">{portfolioCopy.scrollHint}</p>
                 <p className="garage-sr-only">Scroll, swipe up, or use Page Down to open. Press End to continue directly.</p>
             </section>}
-            <a className="garage-direct" href="/desktop">{portfolioCopy.directLink}</a>
         </div>
     );
 };

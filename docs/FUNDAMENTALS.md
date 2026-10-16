@@ -102,13 +102,13 @@ A deployment-specific Vercel URL identifies one build and stays on that version.
 
 Read `experience/src/Application/UI/components/LoadingScreen.tsx` alongside `experience/src/Application/UI/style.css`.
 
-1. Asset-loading events update the loader's progress. A small CSS ring rotates beside a short status message. The displayed percentage is completed asset count divided by listed asset count, not downloaded bytes. Progress chooses the copy; there is no artificial wait to display all messages. Model, texture and audio failures are stored and reported, so a failed asset does not leave an endless spinner.
-2. When assets are ready, the loader disappears and bold text sits directly on the closed door: “Hey! I’m Shreethan Palla. I build robots, RC cars, and software.” There is no card or Enter button. Open without 3D is a permanent entry alternative.
+1. Asset-loading events update an SVG circle. Its completed arc is the completed asset count divided by listed asset count, not downloaded bytes. Progress chooses “Loading cool projects”, “Loading CAD” or “Loading graphics”; no artificial wait forces all messages to appear. Model, texture and audio failures show an error with Reload instead of leaving an endless loader.
+2. After assets and the first rendered room frame are ready, the loader disappears. One uniformly styled sentence sits directly on the door: "Hey, I'm Shreethan Palla and I build robots and software and enjoy learning new things." Edit it in `experience/src/portfolio-copy.ts`. There is no card, Enter button or Open without 3D link.
 3. Downward scroll or upward touch movement accumulates into a target value between zero and one. A smoothing loop brings displayed progress toward that target. In the first 30%, the text moves upward and fades while the door stays closed. In the remaining 70%, the panels follow the curved overhead track. Scrolling back restores previous states until entry finishes.
 4. Each door section's endpoints determine its center and tilt; CSS `translate3d` and `rotateX` show the movement. The door is a screen-space illusion rather than physical geometry in the room. Keyboard arrows/PageDown advance the same sequence; End or keyboard Enter can continue directly. Reduced-motion enters immediately.
-5. Once the door has opened, its overlay is removed, scene interactions unlock, and `loadingScreenDone` starts the room camera approach. Until then, clicks cannot move the camera underneath the entrance.
+5. Once the door has opened, its overlay is removed, scene interactions unlock, and `loadingScreenDone` reveals the rotating desk view already prepared behind the door. There is no second camera approach from the distant loading position. Until then, clicks cannot move the camera underneath the entrance.
 
-The browser's `requestAnimationFrame` schedules updates before display frames. Scroll distance chooses a desired position; smoothing helps it settle toward that position. Stopping partway leaves the sequence partway through, rather than starting a compulsory timed movie. The static loader, direct content link and keyboard controls keep the portfolio usable without a pointer or motion effects.
+The browser's `requestAnimationFrame` schedules updates before display frames. Scroll distance chooses a desired position; smoothing helps it settle toward that position. Stopping partway leaves the sequence partway through, rather than starting a compulsory timed movie. The progress circle and keyboard controls remain usable without a pointer or motion effects. The `/desktop` content route still works when opened directly.
 
 ## 6. How the 3D room works
 
@@ -137,7 +137,7 @@ The camera is driven by positions and points it looks at, defined in `CameraKeyf
 
 The retained reference implementation can place `/desktop` inside a 3D monitor using CSS3DRenderer. Its buttons/text remain HTML. Pointer events are forwarded from that iframe so the room can react and move the camera.
 
-That monitor is currently disabled along with the other desk objects. `/desktop` still works directly through Open without 3D. Adding the monitor back requires restoring the physical model and screen integration together. A monitor mesh alone will not produce a usable screen.
+That monitor is currently disabled along with the other desk objects. `/desktop` still works when opened directly; its entrance shortcut has been removed. Adding the monitor back requires restoring the physical model and screen integration together. A monitor mesh alone will not produce a usable screen.
 
 The app uses two isolated dependency sets: the inherited room has its compatible React/Three.js versions; `app/` uses modern Next/React and React Three Fiber for the project viewer. React Three Fiber expresses Three.js scenes as React components, and Drei supplies helpers. They do not replace the underlying 3D concepts. We keep the old room isolated to avoid breaking its rendering APIs during visual customization.
 

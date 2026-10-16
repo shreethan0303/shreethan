@@ -17,6 +17,7 @@ import Stats from 'stats.js';
 import Loading from './Utils/Loading';
 
 import UI from './UI';
+import UIEventBus from './UI/EventBus';
 
 let instance: Application | null = null;
 
@@ -35,6 +36,7 @@ export default class Application {
     loading: Loading;
     ui: UI;
     stats: Stats | undefined;
+    workspaceReady = false;
 
     constructor() {
         // Singleton
@@ -94,6 +96,11 @@ export default class Application {
         this.camera.update();
         this.world.update();
         this.renderer.update();
+        // Uncover the room only after its assets and first rendered frame are ready.
+        if (!this.workspaceReady && !this.resources.failed && this.resources.loaded === this.resources.toLoad) {
+            this.workspaceReady = true;
+            UIEventBus.dispatch('workspaceReady', {});
+        }
         if (this.stats) this.stats.end();
     }
 
