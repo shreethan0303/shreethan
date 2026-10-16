@@ -27,7 +27,9 @@ npm run start
 
 The build generates `public/experience` before building Next. Install both dependency sets. Vercel settings are in `vercel.json`; importing the GitHub repository requires your hosting account. A saved config or a local server does not mean the site is deployed.
 
-For a public preview, follow [the deployment guide](docs/DEPLOYMENT.md). Deploy `codex/reference-baseline`; main is still the starter.
+For a public preview, follow [the deployment guide](docs/DEPLOYMENT.md). Use `main` for the current deployment; `codex/reference-baseline` retains the development branch.
+
+For a plain-language explanation, read [how the website works](docs/FUNDAMENTALS.md).
 
 ## Where things live
 

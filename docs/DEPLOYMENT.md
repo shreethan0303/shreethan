@@ -6,14 +6,14 @@ No domain purchase is needed. A successful deployment supplies an HTTPS `vercel.
 
 1. Create/sign into Vercel using GitHub.
 2. Add New → Project, and import `shreethan0303/shreethan`. Grant access to this repository if requested.
-3. Deploy the branch `codex/reference-baseline`. **Main still contains the original placeholder.** If the import screen offers a source/ref selector, choose this branch. If import starts from main, create the project, then open Deployments → Create Deployment and enter `codex/reference-baseline` to create its preview.
+3. Use the `main` branch. The current implementation is being promoted from `codex/reference-baseline` so default-branch deployments receive the actual site. For subsequent changes, use branch previews before merging.
 4. Root Directory: repository root. Framework: Next.js. The checked-in `vercel.json` provides:
    - Install: `npm ci && npm ci --prefix experience`
    - Build: `npm run build`
 5. Deploy and open the successful deployment's generated HTTPS URL. If deployment protection requires login, adjust access for the intended preview audience in Vercel settings before sharing.
 6. Test the room, monitor, Projects, `/projects/robotics`, and `/resume` on that public URL. Successful local tests do not replace this check.
 
-For a production site later, review and merge the branch into main and use main as the production branch. Do not change GitHub's default branch merely to preview this work. The reference still includes Henry's baked branding and original assets, so use this as a development preview until customization is complete.
+For subsequent updates, review and merge development branches into main; keep main as the production branch. Do not change GitHub's default branch merely to preview this work. The reference still includes Henry's baked branding and original assets, so use this as a development preview until customization is complete.
 
 ## Custom domain later
 
@@ -21,7 +21,7 @@ In the Vercel project, open Settings → Domains, add the purchased domain, and 
 
 ## Troubleshooting
 
-- Original starter page appears: wrong branch deployed; use `codex/reference-baseline`.
+- Original starter page appears: check the deployed commit. The starter commit was `aa7a328`; deploy the latest `main` commit.
 - Missing GLBs, textures or renderer index: verify the build runs `build:experience` and the output `public/experience` is generated.
 - Module missing under `experience`: verify the install command installs both lockfiles.
 - Site works in cloud localhost but not your browser: localhost refers to the machine running the server. Use the actual hosted HTTPS URL.
@@ -32,3 +32,9 @@ In the Vercel project, open Settings → Domains, add the purchased domain, and 
 `/projects/robotics` includes a sample rover that separates across three assemblies as you scroll down and reassembles when scrolling up. This is illustrative geometry, not the user's actual FRC robot. The slider controls the same scroll position for keyboard/touch access. Actual CAD needs named components and separation offsets before adapting this interaction.
 
 Implementation: `app/projects/[slug]/viewer.tsx` owns scroll progress; `app/components/assembly-scene.tsx` renders the components. The room's reference renderer is unchanged. Root Next.js is pinned to 15.5.28, the non-major patched release identified by npm audit during deployment preparation. Its PostCSS dependency is overridden to the compatible patched 8.5.30 release; the production build is checked with that override.
+
+## Current account diagnosis
+
+The user opened a dashboard deployment under `shreethan-v474`. A public GitHub check for commit `719e2c7` links feedback to `shreethan-git-codex-reference-e3f1bd-shreethan-pallas-projects.vercel.app`, indicating another Vercel project named `shreethan` is connected. This is evidence of a preview address, not proof of its current runtime state. Avoid creating more duplicate projects. Choose one connected project and inspect its actual deployment status. Do not delete either project until the intended site works.
+
+This agent cannot read the signed-in browser tab or Vercel logs with its current tools. GitHub public check pages can expose limited status/preview metadata. If deployment fails, the first error and deployed commit remain necessary evidence.
