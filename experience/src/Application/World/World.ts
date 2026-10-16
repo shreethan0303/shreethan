@@ -1,4 +1,6 @@
+import * as THREE from 'three';
 import Application from '../Application';
+import { DeskKeyframe, IdleKeyframe } from '../Camera/CameraKeyframes';
 import Resources from '../Utils/Resources';
 import ComputerSetup from './Computer';
 import MonitorScreen from './MonitorScreen';
@@ -30,6 +32,12 @@ export default class World {
         this.resources.on('ready', () => {
             // Setup
             this.environment = new Environment();
+            const bounds = new THREE.Box3();
+            this.environment.bakedModel.getModel().children.forEach(part => {
+                if (part.name !== 'Background') bounds.union(new THREE.Box3().setFromObject(part));
+            });
+            (this.application.camera.keyframes.desk as DeskKeyframe).setBounds(bounds);
+            (this.application.camera.keyframes.idle as IdleKeyframe).setBounds(bounds);
             // Empty desk checkpoint: restore props one at a time after review.
             this.audioManager = new AudioManager();
             // const hb = new Hitboxes();

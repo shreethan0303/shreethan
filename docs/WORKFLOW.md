@@ -6,6 +6,10 @@ Keep executable code and project history in `shreethan0303/shreethan` on GitHub.
 
 Use small branches/PRs for the reference baseline, entrance, workbench/PC, project viewer and real content. Review before merging into main. Connect the hosting provider to the GitHub repository once. Use preview deployments for branches and production for main. The checked-in Vercel config installs both npm projects; it does not connect a hosting account, deploy or buy a domain.
 
+## Communication preference
+
+Explain each change in plain language, including what caused a problem, how the implementation fixes it, and the underlying browser/3D concept. Teach the fundamentals alongside the work. Keep the website itself minimal; educational explanations belong in the conversation and documentation.
+
 ## ChatGPT / Codex organization
 
 Create one ChatGPT Project named “Shreethan Portfolio” for the design brief, reference screenshots, content drafts and decisions. Keep the current brief and asset list there, not multiple competing copies of the entire repository. Suggested chats: Design review; Project stories; Model preparation.

@@ -7,13 +7,11 @@ interface InfoOverlayProps {
 }
 
 const NAME_TEXT = 'Shreethan Palla';
-const TITLE_TEXT = 'Builder · Robotics · Software';
 const MULTIPLIER = 1;
 
 const InfoOverlay: React.FC<InfoOverlayProps> = ({ visible }) => {
     const visRef = useRef(visible);
     const [nameText, setNameText] = useState('');
-    const [titleText, setTitleText] = useState('');
     const [time, setTime] = useState(new Date().toLocaleTimeString());
     const timeRef = useRef(time);
     const [timeText, setTimeText] = useState('');
@@ -59,18 +57,16 @@ const InfoOverlay: React.FC<InfoOverlayProps> = ({ visible }) => {
         if (visible && nameText == '') {
             setTimeout(() => {
                 typeText(0, '', NAME_TEXT, setNameText, () => {
-                    typeText(0, '', TITLE_TEXT, setTitleText, () => {
-                        typeText(
-                            0,
-                            '',
-                            time,
-                            setTimeText,
-                            () => {
-                                setTextDone(true);
-                            },
-                            timeRef
-                        );
-                    });
+                    typeText(
+                        0,
+                        '',
+                        time,
+                        setTimeText,
+                        () => {
+                            setTextDone(true);
+                        },
+                        timeRef
+                    );
                 });
             }, 400);
         }
@@ -111,11 +107,6 @@ const InfoOverlay: React.FC<InfoOverlayProps> = ({ visible }) => {
                     <p>{nameText}</p>
                 </div>
             )}
-            {titleText !== '' && (
-                <div style={styles.container}>
-                    <p>{titleText}</p>
-                </div>
-            )}
             {timeText !== '' && (
                 <div style={styles.lastRow}>
                     <div
@@ -145,7 +136,7 @@ const InfoOverlay: React.FC<InfoOverlayProps> = ({ visible }) => {
 
 const styles: StyleSheetCSS = {
     container: {
-        background: 'black',
+        background: 'var(--studio-ink)',
         padding: 4,
         paddingLeft: 16,
         paddingRight: 16,

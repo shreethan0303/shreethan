@@ -103,7 +103,7 @@ A deployment-specific Vercel URL identifies one build and stays on that version.
 Read `experience/src/Application/UI/components/LoadingScreen.tsx` alongside `experience/src/Application/UI/style.css`.
 
 1. Asset-loading events update progress. Start is disabled until the listed assets finish loading.
-2. The closed door consists of four HTML sections; each has four decorative recessed panels. CSS supplies their white surfaces, bevel-like shading, seams and perspective. On a narrow screen each section displays two panels.
+2. The closed door consists of four HTML sections. CSS supplies flat off-white surfaces, thin seams and perspective. Shared CSS variables define the entrance and control palette; there are no gradients or decorative shadows.
 3. Start changes state from `closed` to `opening` and dispatches `loadingScreenDone`.
 4. An animation loop uses `requestAnimationFrame`, the browser's callback for updating before a display frame. Elapsed time becomes progress from zero to one. Easing makes motion accelerate and settle smoothly.
 5. Each section's ends follow a vertical path that curves overhead. Its center position and tilt are calculated from those endpoints. CSS `translate3d` and `rotateX` display that movement.
@@ -132,7 +132,7 @@ We rebuilt the bare desk and its floor shadows using `experience/tools/build-emp
 
 A baked shadow does not automatically update when an object moves. Future moving robot parts should retain their own materials and use suitable lighting/shadows. Do not send colored project CAD through `BakedModel`, because that helper replaces its materials with the room's shared texture.
 
-The camera is driven by positions and points it looks at, defined in `CameraKeyframes.ts`. Tweens interpolate between those values over time. The room currently uses unusually large coordinates: its model geometry is scaled by 900. New imports need explicit scale and placement; raw meter-scale CAD can otherwise seem invisible.
+The camera is driven by positions and points it looks at, defined in `CameraKeyframes.ts`. The current overview and desk close-up derive their target from the bounding box of the tabletop and legs, excluding the huge backdrop. The center is the midpoint of the minimum and maximum coordinates. Camera distance is calculated from the box corners, field of view, and viewport aspect ratio to leave consistent margins. Close-up no longer follows cursor coordinates. Tweens interpolate between views over time. The room currently uses unusually large coordinates: its model geometry is scaled by 900. New imports need explicit scale and placement; raw meter-scale CAD can otherwise seem invisible.
 
 ## 7. Where the computer interface fits later
 
@@ -222,10 +222,10 @@ In a second terminal, use `npm run watch:experience` when editing the room/entra
 
 Try one experiment at a time:
 
-1. Change the entrance subtitle in `LoadingScreen.tsx`. Predict what should change, rebuild the renderer, and verify it.
+1. Temporarily change the entrance name in `LoadingScreen.tsx`. Predict what should change, rebuild the renderer, and verify it.
 2. Change the card radius in the UI stylesheet. This changes CSS appearance without changing 3D geometry.
 3. Change the tabletop tint in `World/Environment.ts`. Explain why it changes a mesh material rather than the backdrop.
-4. Change an idle camera position in `CameraKeyframes.ts`. Reset/reload and compare the framing.
+4. Change the close-up fill value in `CameraKeyframes.ts` from `.74` to `.65`. Reload, click, and explain why the smaller fill value leaves larger margins.
 5. Change an offset multiplier in `assembly-scene.tsx`. Scroll both directions and explain why the model returns to its initial pose.
 6. Import your three-part practice CAD before attempting the full robot.
 

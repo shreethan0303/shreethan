@@ -25,6 +25,10 @@ No simultaneous redesign of all six steps. No claims of real robot accuracy with
 
 ## Garage entrance implemented
 
-A white sectional door has four rows of recessed panels, following the supplied reference. A rounded rectangular card shows Shreethan Palla, Portfolio, Start, and Open without 3D. Each row follows the curved overhead track during the 2.4-second reveal. Reduced-motion skips the opening animation. The desktop route remains available during loading or failure.
+A flat white/off-white sectional door uses four sections with thin seams and no decorative recesses, gradients or shadows. A rounded rectangular card shows only Shreethan Palla, Start and Open without 3D. Each section follows the curved overhead track during the 2.4-second reveal. The room overlay keeps the name and live local clock, without a role subtitle. Reduced-motion skips the opening animation.
+
+The entrance and room controls share CSS color variables: white `#ffffff`, off-white `#f5f5f3`, border `#dededb`, charcoal `#272725`, muted text `#71716d`. Existing desk materials and baked room lighting remain intact.
+
+Camera framing uses the bounds of the tabletop and legs, excluding the backdrop. Both overview and close-up look at their center; close-up no longer depends on mouse position. Fit distance accounts for field of view and viewport aspect ratio so the desk stays visible on narrow screens.
 
 The empty desk uses a generated GLB and baked atlas. Its backdrop samples the original texture; only the region containing obsolete prop shadows is cleared and shaded for the bare desk. Regenerate with `blender -b --factory-startup -t 8 --python experience/tools/build-empty-workbench.py`. Blender is an offline authoring tool and is not needed by Vercel.

@@ -86,15 +86,12 @@ const LoadingScreen: React.FC = () => {
             <div className="garage-door" aria-hidden="true">
                 <div className="garage-panels">
                     {Array.from({ length: 4 }, (_, i) => (
-                        <div key={i} ref={node => { panels.current[i] = node; }} style={{ top: `${i * 25}%` }} className="garage-panel">
-                            {Array.from({ length: 4 }, (_, j) => <span key={j} className="garage-recess" />)}
-                        </div>
+                        <div key={i} ref={node => { panels.current[i] = node; }} style={{ top: `${i * 25}%` }} className="garage-panel" />
                     ))}
                 </div>
             </div>
             <section className="garage-nameplate" aria-label="Shreethan Palla portfolio">
                 <h1 className="garage-name">Shreethan Palla</h1>
-                <p className="garage-subtitle">Portfolio</p>
                 <button className="garage-start" onClick={start} disabled={!ready}>Start</button>
                 <p className="garage-sr-only" role="status">{failed ? 'Unable to load the workshop.' : ready ? 'Ready when you are.' : 'Loading workshop.'}</p>
                 <a className="garage-direct" href="/desktop">Open without 3D</a>

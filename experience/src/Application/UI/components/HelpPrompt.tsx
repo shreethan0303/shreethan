@@ -81,7 +81,7 @@ const styles: StyleSheetCSS = {
     container: {
         position: 'absolute',
         bottom: 64,
-        background: 'black',
+        background: 'var(--studio-ink)',
         padding: 4,
         paddingLeft: 16,
         paddingRight: 16,
