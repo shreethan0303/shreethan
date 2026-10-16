@@ -27,6 +27,8 @@ npm run start
 
 The build generates `public/experience` before building Next. Install both dependency sets. Vercel settings are in `vercel.json`; importing the GitHub repository requires your hosting account. A saved config or a local server does not mean the site is deployed.
 
+For a public preview, follow [the deployment guide](docs/DEPLOYMENT.md). Deploy `codex/reference-baseline`; main is still the starter.
+
 ## Where things live
 
 - `experience/src/Application/`: original renderer, camera, scene and screen integration.
@@ -61,7 +63,7 @@ CI runs formatting and the production build. Browser validation is described in 
 
 ## Status
 
-The reference scene and local desktop integration work. The original baked models still contain Henry’s visual branding and paper artwork. This is a development baseline, not a finished Shreethan portfolio. The garage-door introduction, replacement workbench/PC, real project models, physical project/paper interactions, final résumé and public deployment are outstanding. Do not publish someone else’s résumé artwork as your own.
+The reference scene and local desktop integration work. `/projects/robotics` now includes an illustrative scroll-controlled exploded assembly. The original baked models still contain Henry’s visual branding and paper artwork. This is a development baseline, not a finished Shreethan portfolio. The garage-door introduction, replacement workbench/PC, real project models, physical project/paper interactions, final résumé and public deployment are outstanding. Do not publish someone else’s résumé artwork as your own.
 
 The previous procedural prototype is preserved in `/workspace/portfolio-backups/workshop-before-reference-rebuild.tar.gz` in this cloud machine. That archive is not a GitHub backup or a public asset.
 

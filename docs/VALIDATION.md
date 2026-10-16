@@ -27,3 +27,17 @@ Known limits:
 ![Original reference scene with local integration](images/reference-overview.png)
 
 ![Embedded personal desktop inside the original monitor](images/reference-monitor.png)
+
+## Scroll assembly / deployment preparation
+
+- `/projects/robotics`: normalized scroll positions 0%, 50%, 100% map to component separation.
+- Reverse scroll returns to assembled state.
+- Keyboard End on the range control moves to fully separated state and corresponding scroll position.
+- 390px viewport has no horizontal overflow; reduced-motion mode preserves direct scroll control.
+- Chromium run reported zero page errors.
+- These checks use explicitly illustrative geometry, not an accurate user robot.
+- Next.js upgraded to 15.5.28 and its PostCSS dependency overridden to 8.5.30; npm audit no longer reports Next/PostCSS advisories in the root production dependency tree. This does not claim a complete audit of the inherited renderer/tooling.
+
+![Illustrative assembly before scrolling](images/assembly-assembled.png)
+
+![Illustrative assembly after scrolling](images/assembly-exploded.png)

@@ -272,3 +272,116 @@ h2 {
     min-height: 0;
   }
 }
+.scroll-assembly {
+  height: 220svh;
+  position: relative;
+  margin: 35px -35px;
+}
+.assembly-sticky {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 35px;
+  background: #fff;
+  border-top: 1px solid #e6e9eb;
+  border-bottom: 1px solid #e6e9eb;
+}
+.assembly-heading h2 {
+  margin: 12px 0 7px;
+  font-size: 30px;
+}
+.assembly-heading p {
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.6;
+}
+.assembly-stage {
+  flex: 1;
+  min-height: 150px;
+  position: relative;
+}
+.assembly-stage > div {
+  height: 100%;
+}
+.assembly-fallback {
+  padding: 25px;
+  text-align: center;
+}
+.assembly-status {
+  padding-top: 10px;
+  border-top: 1px solid #e7ebed;
+}
+.assembly-status label {
+  display: flex;
+  justify-content: space-between;
+  font: 11px monospace;
+}
+.assembly-status input {
+  width: 100%;
+  margin: 12px 0;
+  accent-color: #547385;
+}
+.assembly-status ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 5px 0 0;
+  padding: 0;
+}
+.assembly-status li {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.assembly-status li strong {
+  font-size: 10px;
+  font-family: monospace;
+  font-weight: 400;
+}
+.assembly-status li span {
+  color: #7e8a92;
+}
+@media (max-width: 600px) {
+  .scroll-assembly {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+  .assembly-sticky {
+    padding: 18px 20px;
+  }
+  .assembly-heading h2 {
+    font-size: 24px;
+  }
+  .assembly-heading .kicker {
+    font-size: 8px;
+  }
+  .assembly-status ol {
+    gap: 10px;
+  }
+  .assembly-status li {
+    font-size: 10px;
+  }
+  .assembly-status li strong {
+    font-size: 9px;
+  }
+}
+@media print {
+  .scroll-assembly {
+    height: auto;
+    break-inside: avoid;
+  }
+  .assembly-sticky {
+    height: auto;
+    min-height: 0;
+    position: static;
+  }
+  .assembly-stage {
+    display: none;
+  }
+}
