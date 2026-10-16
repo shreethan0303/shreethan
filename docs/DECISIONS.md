@@ -10,7 +10,7 @@ Replace personal metadata and iframe content immediately, remove upstream analyt
 
 An empty, seamless white/cream studio with no visible wall edges or decorative page header. A workbench, computer and project objects are the focus. A full FRC robot sits beside the bench. Black PC, restrained white/red lighting. Rackets represent tennis. Bike/car are deferred.
 
-Entrance: garage door and centered Start card; open and pan once to overview. Approach the monitor smoothly. Projects returns to physical project objects; select an object to open a readable case study. Paper reveals résumé access. Essential content is also reachable as normal pages.
+Entrance: text directly on a garage door; scroll the text away, then open and pan once to overview. Approach the monitor smoothly. Projects returns to physical project objects; select an object to open a readable case study. Paper reveals résumé access. Essential content is also reachable as normal pages. A proposed Onshape-inspired monitor interface is described in [the content/interface guide](CONTENT-AND-INTERFACE.md); it is not implemented yet.
 
 ## Ordered changes
 
@@ -25,7 +25,7 @@ No simultaneous redesign of all six steps. No claims of real robot accuracy with
 
 ## Garage entrance implemented
 
-A flat white/off-white sectional door uses four sections with thin seams and no decorative recesses, gradients or shadows. The intro is bold text directly on the door: “Hey! I’m Shreethan Palla. I build robots, RC cars, and software.” There is no intro card or Enter button. The first 30% of scroll progress moves/fades the text away; the remaining 70% opens the door. Reversing scroll restores earlier stages until entry completes. Page Down/arrow keys advance the same sequence; End or keyboard Enter can continue directly. The room camera starts its approach after the door opens.
+A flat white/off-white sectional door uses four sections with thin seams and no decorative recesses, gradients or shadows. The intro is bold text directly on the door: “Hey! I’m Shreethan Palla. I build robots and software—from CAD sketches to moving parts.” Its wording lives in `experience/src/portfolio-copy.ts`. There is no intro card or Enter button. The first 30% of scroll progress moves/fades the text away; the remaining 70% opens the door. Reversing scroll restores earlier stages until entry completes. Page Down/arrow keys advance the same sequence; End or keyboard Enter can continue directly. The room camera starts its approach after the door opens.
 
 A small circular loader appears only while real assets are loading. Its messages are “Loading graphics workspace…”, “Setting up the workbench…” and “One last bolt…”, chosen by completed-asset progress. There is no forced loading delay. Open without 3D remains available during loading and entry. Asset failures show a short error and preserve that direct route. Reduced-motion skips entry animation.
 

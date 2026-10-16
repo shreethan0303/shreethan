@@ -31,9 +31,12 @@ For a public preview, follow [the deployment guide](docs/DEPLOYMENT.md). Use `ma
 
 For a plain-language explanation, read [how the website works](docs/FUNDAMENTALS.md).
 
+To change your greeting, introduction or loading messages yourself, edit [portfolio-copy.ts](experience/src/portfolio-copy.ts). See [editing text and the proposed Onshape-inspired interface](docs/CONTENT-AND-INTERFACE.md) for the GitHub steps and next design direction.
+
 ## Where things live
 
 - `experience/src/Application/`: original renderer, camera, scene and screen integration.
+- `experience/src/portfolio-copy.ts`: editable entrance and loading text.
 - `experience/static/`: selected upstream GLB models, baked textures and media.
 - `experience/UPSTREAM.md`, `experience/LICENSE.md`: exact upstream commit, attribution and adaptations.
 - `app/desktop/`: same-origin personal desktop route shown inside the monitor.

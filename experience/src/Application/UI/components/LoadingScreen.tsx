@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Application from '../../Application';
 import eventBus from '../EventBus';
+import { portfolioCopy } from '../../../portfolio-copy';
 
 /** Real asset loading, then text moves away before the sectional door opens. */
 const LoadingScreen: React.FC = () => {
@@ -141,7 +142,7 @@ const LoadingScreen: React.FC = () => {
     }, [ready]);
 
     if (phase === 'done') return null;
-    const loadingText = progress < .35 ? 'Loading graphics workspace…' : progress < .8 ? 'Setting up the workbench…' : 'One last bolt…';
+    const loadingText = progress < .35 ? portfolioCopy.loading.graphics : progress < .8 ? portfolioCopy.loading.workbench : portfolioCopy.loading.finishing;
     return (
         <div className={`garage-entry garage-entry--${phase}`} aria-label="Workshop entrance">
             <div className="garage-door" aria-hidden="true">
@@ -159,12 +160,12 @@ const LoadingScreen: React.FC = () => {
                 </>}
             </div>}
             {ready && <section className="garage-copy" ref={copy} aria-label="About Shreethan">
-                <h1 className="garage-name">Hey! I’m <span className="garage-person">Shreethan Palla.</span></h1>
-                <p className="garage-intro">I build robots, RC cars, and software.</p>
-                <p className="garage-hint">Scroll to open</p>
+                <h1 className="garage-name">{portfolioCopy.greeting} <span className="garage-person">{portfolioCopy.name}</span></h1>
+                <p className="garage-intro">{portfolioCopy.intro}</p>
+                <p className="garage-hint">{portfolioCopy.scrollHint}</p>
                 <p className="garage-sr-only">Scroll, swipe up, or use Page Down to open. Press End to continue directly.</p>
             </section>}
-            <a className="garage-direct" href="/desktop">Open without 3D</a>
+            <a className="garage-direct" href="/desktop">{portfolioCopy.directLink}</a>
         </div>
     );
 };

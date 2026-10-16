@@ -85,3 +85,9 @@ An intentionally aborted audio asset produced a short failure alert, removed the
 ![Text-only introduction](images/garage-door.png)
 
 ![Phone introduction](images/intro-mobile.png)
+
+## Editable introduction and interface proposal
+
+The full production build, formatting and whitespace checks passed. Entrance and loading copy now come from `experience/src/portfolio-copy.ts`; the intro no longer mentions RC cars. Chromium inspected the updated HTML at 1440×1000 and 390×844: the full greeting, description and hint fit within the viewport, with no horizontal overflow or page errors. Updated desktop/phone entrance screenshots are above. The existing entrance animation and scene geometry were not changed in this pass.
+
+The content/interface guide records GitHub editing steps, branch/deployment distinctions and an Onshape-inspired monitor proposal. Public source retrieval verified Henry's separate room/inner-site structure and Brittany Chiang's v4 hero hierarchy. The proposed monitor interface has not been implemented. A local passing build is not a claim that Vercel has finished publishing this commit.
