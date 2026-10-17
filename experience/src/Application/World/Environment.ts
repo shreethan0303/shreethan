@@ -35,7 +35,55 @@ export default class Environment {
             material.color.setRGB(.36, .36, .36);
             tabletop.material = material;
         }
+        this.extendBackdrop(model);
         this.scene.add(model);
+    }
+
+    /** Keep the original baked floor under the workshop; remove the finite
+     * curved walls and blend its outer edge into a much larger matching floor. */
+    extendBackdrop(model: THREE.Group) {
+        const background = model.getObjectByName('Background') as THREE.Mesh;
+        const geometry = background.geometry.clone();
+        const position = geometry.getAttribute('position');
+        geometry.computeBoundingBox();
+        const floorY = geometry.boundingBox!.min.y;
+        const source = geometry.index;
+        const floor: number[] = [];
+        for (let i = 0; i < (source ? source.count : position.count); i += 3) {
+            const indices = [0, 1, 2].map(offset => source ? source.getX(i + offset) : i + offset);
+            if (indices.every(index => Math.abs(position.getY(index) - floorY) < .00001)) floor.push(...indices);
+        }
+        geometry.setIndex(floor);
+        background.geometry = geometry;
+        background.updateWorldMatrix(true, false);
+
+        // Sample an unoccupied floor point from its actual baked texture.
+        const probe = new THREE.Vector3(16, floorY, 0).applyMatrix4(background.matrixWorld);
+        const ray = new THREE.Raycaster(probe.clone().add(new THREE.Vector3(0, 1000, 0)), new THREE.Vector3(0, -1, 0));
+        const uv = ray.intersectObject(background)[0].uv!;
+        const image = this.bakedModel.texture.image as HTMLImageElement;
+        const canvas = document.createElement('canvas'); canvas.width = canvas.height = 1;
+        const context = canvas.getContext('2d')!;
+        context.drawImage(image, Math.min(image.width - 1, Math.floor(uv.x * image.width)),
+            Math.min(image.height - 1, Math.floor(uv.y * image.height)), 1, 1, 0, 0, 1, 1);
+        const pixel = context.getImageData(0, 0, 1, 1).data;
+        const color = new THREE.Color(pixel[0] / 255, pixel[1] / 255, pixel[2] / 255).convertSRGBToLinear();
+        const material = this.bakedModel.material.clone();
+        material.onBeforeCompile = shader => {
+            shader.uniforms.backdropColor = { value: color };
+            shader.vertexShader = 'varying vec2 backdropPosition;\n' + shader.vertexShader;
+            shader.vertexShader = shader.vertexShader.replace('#include <begin_vertex>',
+                '#include <begin_vertex>\nbackdropPosition = position.xz;');
+            shader.fragmentShader = 'uniform vec3 backdropColor;\nvarying vec2 backdropPosition;\n' + shader.fragmentShader;
+            shader.fragmentShader = shader.fragmentShader.replace('#include <map_fragment>',
+                '#include <map_fragment>\nfloat edge = smoothstep(15.0, 19.5, max(abs(backdropPosition.x), abs(backdropPosition.y)));\ndiffuseColor.rgb = mix(diffuseColor.rgb, backdropColor, edge);');
+        };
+        background.material = material;
+        const extension = new THREE.Mesh(new THREE.PlaneGeometry(2000000, 2000000), new THREE.MeshBasicMaterial({ color }));
+        extension.name = 'BackdropExtension';
+        extension.rotation.x = -Math.PI / 2;
+        extension.position.y = probe.y - 1;
+        this.scene.add(extension);
     }
 
     update() {}

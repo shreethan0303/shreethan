@@ -193,3 +193,9 @@ The production build passed, including the isolated renderer TypeScript compilat
 At 390 × 844 with touch input and reduced motion, all four visible models opened the correct cards by tap, dates matched, cards had no horizontal overflow, poses returned to rest and the résumé still worked. Both desktop and mobile passes recorded zero page errors and zero failed asset responses. An earlier touch test caught the moving-target selection bug; the final pass includes its fix. These are emulated-device functional checks, not physical-phone frame-rate measurements.
 
 The user corrected the cube to seventh grade (March 2023), named the second robot's 2025 REEFSCAPE season and supplied the car's 2023 three-month narrative. The first robot's 2026 season label is inferred from the earlier “last season with balls” description. Full mechanism stroke limits and CAD constraints are not validated by these presentation animations. Public Vercel Ready status remains unverified from this cloud environment.
+
+## Seamless backdrop and closer overview — 2026-10-17
+
+The larger workshop exposed the finite curved backdrop when the overview fit the scene into 30% of the view. Overview framing now uses 55%. The rendered backdrop keeps its original flat floor and baked shading under the projects; curved wall triangles are removed, and its outer floor edges blend into a matching large plane. Floor color is sampled from one unoccupied baked texel using a 1×1 canvas. Desk/project framing, model placement, lights, entrance and hover behavior are unchanged.
+
+Production build passed. Chromium checks covered 1440×900 desktop, 390×844 portrait and 2560×1080 ultrawide overviews, the desk approach and an elevator project open/close. The views had no curved room cutouts or visible floor seams, and no page, shader or asset errors were recorded. Live Vercel deployment status remains a separate check.

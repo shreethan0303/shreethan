@@ -139,7 +139,7 @@ export class IdleKeyframe extends CameraKeyframeInstance {
         if (!this.bounds) return;
         const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         const orbit = reduced ? -1 : -Math.sin((this.time.elapsed + 19000) * .00008);
-        const frame = frameBounds(this.bounds, new THREE.Vector3(orbit, .65, 1), this.sizes, .30);
+        const frame = frameBounds(this.bounds, new THREE.Vector3(orbit, .65, 1), this.sizes, .55);
         this.position.copy(frame.position);
         this.focalPoint.copy(frame.center);
     }
