@@ -52,3 +52,7 @@ Use a suitable Corsair 5000T model with an exact Gigabyte GPU to be chosen later
 ## First real project
 
 The supplied STEP assembly is converted to a separate optimized GLB with its actual part geometry. Six cube face colors are assigned during preparation, without requiring CAD edits. It rests near the center/front of the desk and lifts/brightens subtly on hover or keyboard focus. Tap selects it without triggering the background camera. Video, GitHub URL, description, project reader and explosion presentation are deferred until model placement/hover is accepted. See [the asset workflow](CUBE-SOLVER-ASSET.md). Preserve entrance, black bars, typing, desk and baked lighting.
+
+## Cube project reader
+
+The robot is displayed at 85% of its initial scale and tilted onto a measured three-motor support plane. Its hover label reads “Rubik’s Cube Solving Robot”, with an approximate March 2025 date underneath. A click, tap or keyboard activation opens a rounded card with the room faintly behind it and a smooth model-focused camera move. The card contains a video placeholder, short verified brief, lorem ipsum body and pending CAD/GitHub links. Content is edited in `experience/src/cube-project.ts`; no external URLs or project achievements are invented. Close/Escape/backdrop returns to the desk. The entrance, original room bars, desk and lighting are preserved.

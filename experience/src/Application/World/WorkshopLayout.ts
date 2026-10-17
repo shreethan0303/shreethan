@@ -8,9 +8,16 @@ export const workshopLayout = {
         duration: 1000, // Milliseconds to travel from overview to desk.
     },
     cubeRobot: {
-        position: [-400, -448, 550] as [number, number, number],
+        position: [-400, -451.9, 550] as [number, number, number],
         rotation: -.3,
-        width: 1350,
+        width: 1147.5, // 85% of the original size; scaling uses the unrotated model.
+        // A measured support plane through three motor tips, mapped onto the tabletop.
+        restQuaternion: [-.3104557349, 0, .3105470733, .8984307163] as [number, number, number, number],
+        contactPoints: [
+            [-.0178030636, .0838162508, -.1038856693],
+            [-.1037331812, .0835490879, -.0176360440],
+            [-.0262711700, .0002321897, -.0033639789],
+        ] as [number, number, number][],
         lift: 25,
     },
     resume: {

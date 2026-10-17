@@ -2,6 +2,9 @@ import * as THREE from 'three';
 import Application from '../Application';
 import { CameraKey } from '../Camera/Camera';
 import { workshopLayout } from './WorkshopLayout';
+import { cubeProject } from '../../cube-project';
+import UIEventBus from '../UI/EventBus';
+import { ProjectKeyframe } from '../Camera/CameraKeyframes';
 
 /** The owner's real CAD, retaining glTF materials and named assembly parts. */
 export default class CubeRobot {
@@ -17,6 +20,8 @@ export default class CubeRobot {
     lift = 0;
     button: HTMLButtonElement;
     shadow: THREE.Mesh;
+    open = false;
+    rect = { x: 0, y: 0, width: 0, height: 0 };
 
     constructor() {
         const { application, group } = this;
@@ -24,10 +29,24 @@ export default class CubeRobot {
         this.model = application.resources.items.gltfModel.cubeRobotModel.scene;
         const bounds = new THREE.Box3().setFromObject(this.model);
         const size = bounds.getSize(new THREE.Vector3());
-        const center = bounds.getCenter(new THREE.Vector3());
         const scale = layout.width / Math.max(size.x, size.z);
-        this.model.position.set(-center.x * scale, -bounds.min.y * scale, -center.z * scale);
         this.model.scale.setScalar(scale);
+        this.model.quaternion.fromArray(layout.restQuaternion).normalize();
+        this.model.updateMatrixWorld(true);
+        // Evaluate actual vertices after tilting, not rotated bounding-box corners.
+        // This puts the real three-point support plane on the tabletop.
+        const restingBounds = new THREE.Box3();
+        const vertex = new THREE.Vector3();
+        this.model.traverse(object => {
+            if (!(object instanceof THREE.Mesh)) return;
+            const positions = object.geometry.attributes.position;
+            for (let i = 0; i < positions.count; i++) {
+                vertex.fromBufferAttribute(positions, i).applyMatrix4(object.matrixWorld);
+                restingBounds.expandByPoint(vertex);
+            }
+        });
+        const center = restingBounds.getCenter(new THREE.Vector3());
+        this.model.position.set(-center.x, -restingBounds.min.y, -center.z);
         group.name = 'Cube-solving robot project';
         group.position.fromArray(layout.position);
         group.rotation.y = layout.rotation;
@@ -60,18 +79,42 @@ export default class CubeRobot {
         this.shadow.rotation.x = -Math.PI / 2;
         this.shadow.position.set(layout.position[0], -449, layout.position[2]);
         application.scene.add(this.shadow);
+        this.model.updateMatrixWorld(true);
+        group.updateMatrixWorld(true);
+        // Small contact shadows at the three measured motor tips, plus the soft base shadow.
+        for (const point of layout.contactPoints) {
+            const contact = new THREE.Vector3().fromArray(point).applyMatrix4(this.model.matrixWorld);
+            const patch = new THREE.Mesh(new THREE.PlaneGeometry(layout.width * .13, layout.width * .13),
+                new THREE.MeshBasicMaterial({ map: (this.shadow.material as THREE.MeshBasicMaterial).map,
+                    transparent: true, opacity: .8, depthWrite: false }));
+            patch.rotation.x = -Math.PI / 2;
+            patch.position.set(contact.x, -451.5, contact.z);
+            application.scene.add(patch);
+        }
 
         this.button = document.createElement('button');
         this.button.id = 'cube-robot-access';
         this.button.className = 'cube-robot-access';
-        this.button.textContent = 'Cube-solving robot';
-        this.button.setAttribute('aria-label', 'Highlight cube-solving robot');
+        const title = document.createElement('span'); title.textContent = cubeProject.title;
+        const date = document.createElement('span'); date.className = 'cube-robot-date'; date.textContent = cubeProject.date;
+        this.button.append(title, date);
+        this.button.setAttribute('aria-label', `Open ${cubeProject.title}`);
+        this.button.setAttribute('aria-haspopup', 'dialog');
+        this.button.addEventListener('click', () => { if (this.active()) this.showProject(); });
         this.button.hidden = true;
         document.getElementById('ui-app')!.appendChild(this.button);
         this.button.addEventListener('focus', () => { this.focused = true; });
         this.button.addEventListener('blur', () => { this.focused = false; });
         this.button.addEventListener('keydown', event => {
             if (event.key === 'Escape') { event.stopPropagation(); this.button.blur(); }
+        });
+        UIEventBus.on('cube-project:close', () => {
+            if (!this.open) return;
+            this.open = false;
+            this.application.camera.transition(CameraKey.DESK, 650, undefined, () => {
+                this.application.camera.interactionLocked = false;
+                requestAnimationFrame(() => this.button.focus({ preventScroll: true }));
+            });
         });
         document.addEventListener('pointermove', event => {
             this.hovered = this.active() && this.hit(event.clientX, event.clientY);
@@ -81,9 +124,21 @@ export default class CubeRobot {
             if ((event.target as Element).closest('button,a,[data-no-camera]')) return;
             if (this.active() && this.hit(event.clientX, event.clientY)) {
                 event.preventDefault(); event.stopImmediatePropagation();
-                this.button.focus({ preventScroll: true });
+                this.showProject();
             }
         }, true);
+    }
+
+    showProject() {
+        if (!this.active() || this.open) return;
+        this.open = true;
+        this.application.camera.interactionLocked = true;
+        // Return the hover lift to rest before framing the selected object.
+        this.group.position.y = workshopLayout.cubeRobot.position[1];
+        this.group.updateMatrixWorld(true);
+        (this.application.camera.keyframes.project as ProjectKeyframe).setBounds(new THREE.Box3().setFromObject(this.group));
+        this.application.camera.transition(CameraKey.PROJECT, 700);
+        UIEventBus.dispatch('cube-project:open', this.rect);
     }
 
     active() {
@@ -123,13 +178,22 @@ export default class CubeRobot {
         if (!active) return;
         this.group.updateMatrixWorld(true);
         const bounds = new THREE.Box3().setFromObject(this.group);
+        const corners = [-1, 1].flatMap(x => [-1, 1].flatMap(y => [-1, 1].map(z =>
+            new THREE.Vector3(x < 0 ? bounds.min.x : bounds.max.x, y < 0 ? bounds.min.y : bounds.max.y,
+                z < 0 ? bounds.min.z : bounds.max.z).project(this.application.camera.instance))));
+        const screen = this.application.sizes;
+        const left = (Math.min(...corners.map(p => p.x)) + 1) * screen.width / 2;
+        const right = (Math.max(...corners.map(p => p.x)) + 1) * screen.width / 2;
+        const top = (1 - Math.max(...corners.map(p => p.y))) * screen.height / 2;
+        const bottom = (1 - Math.min(...corners.map(p => p.y))) * screen.height / 2;
+        this.rect = { x: left, y: top, width: right - left, height: bottom - top };
         const anchor = bounds.getCenter(new THREE.Vector3());
         anchor.y = bounds.max.y;
         anchor.project(this.application.camera.instance);
         const { width, height } = this.application.sizes;
         const x = (anchor.x + 1) * width / 2;
         const y = (1 - anchor.y) * height / 2;
-        this.button.style.left = `${THREE.MathUtils.clamp(x, 100, width - 100)}px`;
+        this.button.style.left = `${THREE.MathUtils.clamp(x, Math.min(145, width / 2), Math.max(width - 145, width / 2))}px`;
         this.button.style.top = `${Math.max(40, y - 24)}px`;
         const center = bounds.getCenter(new THREE.Vector3()).project(this.application.camera.instance);
         this.button.dataset.modelX = `${(center.x + 1) * width / 2}`;

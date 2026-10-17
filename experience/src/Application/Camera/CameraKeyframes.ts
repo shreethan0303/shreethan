@@ -26,6 +26,7 @@ const keys: { [key in CameraKey]: CameraKeyframe } = {
         position: new THREE.Vector3(0, 950, 2000),
         focalPoint: new THREE.Vector3(0, 950, 0),
     },
+    project: { position: new THREE.Vector3(), focalPoint: new THREE.Vector3() },
     desk: {
         position: new THREE.Vector3(0, 1800, 5500),
         focalPoint: new THREE.Vector3(0, 500, 0),
@@ -151,4 +152,19 @@ export class OrbitControlsStart extends CameraKeyframeInstance {
     }
 
     update() {}
+}
+
+/** Fit only the selected project; this never changes the authored desk/overview. */
+export class ProjectKeyframe extends CameraKeyframeInstance {
+    sizes = new Application().sizes;
+    bounds?: THREE.Box3;
+    constructor() { super(keys.project); }
+    setBounds(bounds: THREE.Box3) { this.bounds = bounds.clone(); this.update(); }
+    update() {
+        if (!this.bounds) return;
+        const frame = frameBounds(this.bounds,
+            new THREE.Vector3().fromArray(workshopLayout.deskView.direction), this.sizes, .48);
+        this.position.copy(frame.position);
+        this.focalPoint.copy(frame.center);
+    }
 }

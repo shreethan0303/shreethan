@@ -1,6 +1,6 @@
 # Shreethan Palla — portfolio
 
-A personal portfolio adapted from Henry Heffernan’s licensed Three.js room. The current checkpoint has a visible asset loader, plain introduction and scroll-controlled garage entrance, a four-legged desk, an interactive résumé sheet and your actual cube-solving robot with hover feedback. A new computer and final personal content come next.
+A personal portfolio adapted from Henry Heffernan’s licensed Three.js room. The current checkpoint has a visible asset loader, plain introduction and scroll-controlled garage entrance, a four-legged desk, an interactive résumé sheet and your actual cube-solving robot with hover feedback and a rounded project reader. A new computer and final personal content come next.
 
 ![Desk with your cube-solving robot and résumé paper](docs/images/cube-robot-desk.png)
 

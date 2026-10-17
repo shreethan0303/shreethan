@@ -17,6 +17,7 @@ import {
     LoadingKeyframe,
     DeskKeyframe,
     OrbitControlsStart,
+    ProjectKeyframe,
 } from './CameraKeyframes';
 
 export enum CameraKey {
@@ -24,6 +25,7 @@ export enum CameraKey {
     MONITOR = 'monitor',
     LOADING = 'loading',
     DESK = 'desk',
+    PROJECT = 'project',
     ORBIT_CONTROLS_START = 'orbitControlsStart',
 }
 export default class Camera extends EventEmitter {
@@ -65,6 +67,7 @@ export default class Camera extends EventEmitter {
             monitor: new MonitorKeyframe(),
             loading: new LoadingKeyframe(),
             desk: new DeskKeyframe(),
+            project: new ProjectKeyframe(),
             orbitControlsStart: new OrbitControlsStart(),
         };
 

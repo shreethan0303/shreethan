@@ -143,3 +143,13 @@ Production `npm run build` passed, including the isolated renderer and Next type
 ![Actual cube solver on the desk](images/cube-robot-desk.png)
 
 The earlier baseline and placeholder explosion sections describe historical checkpoints. This real model currently has hover/focus/select feedback only; its video/detail reader and authored exploded animation are not implemented. GitHub push and Vercel readiness are separate from local validation.
+
+## Cube project reader and resting pose
+
+The robot is now scaled to 85% of its original display size and tilted onto a measured support plane touching three motor assemblies. The runtime grounds the actual rotated mesh vertices. The support calculation can be repeated with `experience/tools/find-robot-support.py`; editable placement remains in `WorkshopLayout.ts`.
+
+The production build of the renderer and Next passed, followed by a renderer rebuild for the final date and video-control styles. Chromium at 1100×800 verified the new title/date on hover, actual mesh click, rounded project reader, missing-video/link placeholders, focus trap, Escape and focus return, keyboard activation, close button and résumé regression. At 390×844, tapping opened the card; its width and scroll width both measured 358 px, with no overflow. Backdrop close passed. These checks used reduced motion; no page errors or 400+ asset responses were recorded. A separate normal-motion Chromium run verified project zoom, return to desk, closing during the zoom and restored focus, with no page errors. Real video playback is pending the supplied video. The date is provisional, based on the stated grade and current school year.
+
+![Rounded project reader](images/cube-project-panel.png)
+
+![Project reader on a narrow viewport](images/cube-project-mobile.png)
