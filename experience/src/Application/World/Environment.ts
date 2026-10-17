@@ -68,6 +68,10 @@ export default class Environment {
             Math.min(image.height - 1, Math.floor(uv.y * image.height)), 1, 1, 0, 0, 1, 1);
         const pixel = context.getImageData(0, 0, 1, 1).data;
         const color = new THREE.Color(pixel[0] / 255, pixel[1] / 255, pixel[2] / 255).convertSRGBToLinear();
+        // Free orbit can see above the floor's horizon. Render those rays in
+        // the same color as its outer edge instead of exposing the white page.
+        // Three r137 clears a Color background directly in output color space.
+        this.scene.background = color.clone().convertLinearToSRGB();
         const material = this.bakedModel.material.clone();
         material.onBeforeCompile = shader => {
             shader.uniforms.backdropColor = { value: color };
