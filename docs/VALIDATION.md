@@ -153,3 +153,9 @@ The production build of the renderer and Next passed, followed by a renderer reb
 ![Rounded project reader](images/cube-project-panel.png)
 
 ![Project reader on a narrow viewport](images/cube-project-mobile.png)
+
+## Build-story reader
+
+The rounded project card now contains six editable testing/prototype chapters and final reflections, with a single vertical scroll and a sticky header/close button. Project facts and chapter media remain placeholders pending the user's uploads and explanations.
+
+The full production build passed after the final gallery changes. Chromium verified the six chapters, no empty video requests, chapter jumps below the sticky header, reflections navigation, modal focus wrapping, Escape/focus return and the same reader at 390×844 without horizontal overflow. A separate fixture used the real gallery component with a reference clip and test image: no MP4 request before play, native playback, previous/next boundaries, photo/video switching and immediate pausing on navigation passed. Fixture media and its bundle are outside the repository and are not project content. No video auto-plays, and only the selected item is mounted in each stage. This validates the gallery behavior, not the user's yet-to-arrive robot videos or their eventual encoding/size.

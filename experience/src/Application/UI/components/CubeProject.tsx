@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { cubeProject } from '../../../cube-project';
 import UIEventBus from '../EventBus';
+import ProjectStory from './ProjectStory';
 
 type SourceRect = { x: number; y: number; width: number; height: number };
 
@@ -30,7 +31,8 @@ export default function CubeProject() {
             if (event.key === 'Escape') { event.preventDefault(); close(); }
             if (event.key !== 'Tab') return;
             const elements = controls(); const first = elements[0], last = elements[elements.length - 1];
-            if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+            if (!elements.includes(document.activeElement as HTMLElement)) { event.preventDefault(); (event.shiftKey ? last : first)?.focus(); }
+            else if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
             else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
         };
         document.addEventListener('keydown', keyboard);
@@ -67,6 +69,7 @@ export default function CubeProject() {
                     </nav>
                 </div>
             </div>
+            <ProjectStory stages={cubeProject.story} reflections={cubeProject.reflections} />
         </section>
     </div>;
 }

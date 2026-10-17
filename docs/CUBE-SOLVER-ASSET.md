@@ -66,3 +66,19 @@ For placement, edit only these values under `cubeRobot` in `WorkshopLayout.ts`:
 - Resize: change `width`. Keep the second position number at `-451.9`, the tabletop height, so the grounding calculation continues to rest the model there.
 
 Save, rebuild with `npm run build`, then refresh your local preview. A GitHub commit/push triggers the connected Vercel build. Check the newest deployment rather than an older fixed preview URL.
+
+## Build-story timeline and media handoff
+
+The reader now has one vertical scroll with chapter links: one-axis testing, five-axis testing, alignment issues, six-axis testing, first solves and final prototype. The proposed order comes from the user's description and can be rearranged after reviewing the files. Reflections cover personal contribution, lessons, inspiration and future work. Missing notes and media remain explicit placeholders; no engineering results, fixes, skills or authorship claims are inferred from filenames.
+
+`experience/src/project-story.ts` defines the reusable data format. `ProjectStory.tsx` renders it, so another project can use the same layout. Under `story` in `cube-project.ts`, each chapter accepts a `summary`, optional `challenge`, `change`, `learning`, and a `media` array. Each media item has `type` (`image` or `video`), `src`, `caption`, and optional `poster`. Reorder entries to change chronology. The `reflections` array holds the final narrative.
+
+A chapter gallery displays one media item at a time, with previous/next controls and a caption. Video preload is `none`, autoplay is off, and switching items or closing the reader pauses its player. Images use lazy loading. The intro's optional final demonstration is separate from chapter clips. The header/close button remains visible while the story scrolls. There are no nested vertical scrolling galleries.
+
+### Send source files
+
+This cloud workspace cannot read a Windows Downloads folder from an Explorer screenshot. It can process uploaded attachments or accessible download links. The current attachment download tool has a 32 MiB per-file limit. Keep ZIP batches below 25 MB, or upload the individual smaller clips/images. Combining compressed phone videos into a ZIP generally saves little space. A view/download link to a OneDrive folder accessible without signing in is another option; the link must be checked for actual download access from the workspace.
+
+Keep original filenames and originals. Send files first; a short note about a clip's stage is helpful, but not required for transfer. After review, identify chronology, the observed problem, the actual fix, what was learned, which work was original and any sources used. Screenshots' Download/Date modified timestamps do not establish the original project dates.
+
+Before publishing, make smaller display copies: browser-compatible MP4 video, appropriately sized images and poster thumbnails. Put only selected web assets in `public/projects/cube-solver/`, using descriptive filenames and captions. Do not put the raw archive into the runtime loading list. Visitors should download a clip when they choose to play it, not during the garage intro.

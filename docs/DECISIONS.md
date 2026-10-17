@@ -56,3 +56,7 @@ The supplied STEP assembly is converted to a separate optimized GLB with its act
 ## Cube project reader
 
 The robot is displayed at 85% of its initial scale and tilted onto a measured three-motor support plane. Its hover label reads “Rubik’s Cube Solving Robot”, with an approximate March 2025 date underneath. A click, tap or keyboard activation opens a rounded card with the room faintly behind it and a smooth model-focused camera move. The card contains a video placeholder, short verified brief, lorem ipsum body and pending CAD/GitHub links. Content is edited in `experience/src/cube-project.ts`; no external URLs or project achievements are invented. Close/Escape/backdrop returns to the desk. The entrance, original room bars, desk and lighting are preserved.
+
+## Project stories
+
+Use a scrollable build timeline inside the existing rounded reader, with small chapter links, multiple photos/clips per stage, then contribution, lessons, inspiration and future work. One vertical scroll, one visible media item per gallery, no autoplay. The cube's initial chapter order follows the user's proposed testing progression and remains editable until the actual media is reviewed. New copy must distinguish observed behavior, the user's explanations, original work and reused sources. Keep placeholder notes instead of inventing technical results. The entrance, desk and model placement remain unchanged in this phase.
