@@ -2,14 +2,14 @@ import { ProjectContent } from './project-story';
 
 /** User-supplied dates and notes; the intake season is inferred from “last season”. */
 export const frcProject: ProjectContent = {
-    title: 'FRC Robot', date: '2026 season',
+    title: 'FRC Robot', date: '2026 · REBUILT',
     brief: 'A robot from my FRC season.',
     details: 'Build photos, testing footage and my contribution to the team’s robot will be added here.',
     videoUrl: null, previewImage: '/projects/frc-robot/cad-preview.jpg',
     cadUrl: null, githubUrl: null, story: [], reflections: [],
 };
 export const rcProject: ProjectContent = {
-    title: 'RC Car', date: '2023 · 3-month build',
+    title: 'RC Car', date: 'August 2023',
     brief: 'An RC car project with custom drivetrain assemblies.',
     details: 'I spent three months learning CAD, building and refining the car, then improving its gearing and strength. The drivetrain includes custom differentials, gearbox gearing and driveshafts.',
     videoUrl: null, previewImage: '/projects/rc-car/assembled-car-workbench.webp',
