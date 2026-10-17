@@ -3,8 +3,8 @@ import { StoryStage, StoryReflection } from './project-story';
 /** Project facts and file mapping supplied by Shreethan. Keep missing links null. */
 export const cubeProject = {
     title: 'Rubik’s Cube Solving Robot',
-    date: 'March 2025',
-    brief: 'A six-axis Rubik’s Cube-solving robot I built in ninth grade.',
+    date: 'March 2023',
+    brief: 'A six-axis Rubik’s Cube-solving robot I built in seventh grade.',
     details: 'I salvaged the stepper motors from my old 3D printer and built around the hardware I had. Five frame iterations and repeated code and motion tuning took the project from individual motor tests to a first solve.',
     videoUrl: '/projects/cube-solver/first-solve.mp4',
     videoPoster: '/projects/cube-solver/first-solve.jpg',

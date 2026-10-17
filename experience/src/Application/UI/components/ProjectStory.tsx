@@ -34,7 +34,7 @@ export default function ProjectStory({ stages, reflections }: { stages: StorySta
         <h3 className="story-heading">Build story</h3>
         <nav className="story-jumps" aria-label="Build story chapters">
             {stages.map((stage, index) => <a key={stage.id} href={`#story-${stage.id}`}>{String(index + 1).padStart(2, '0')} {stage.title}</a>)}
-            <a href="#story-reflections">Reflections</a>
+            {reflections.length > 0 && <a href="#story-reflections">Reflections</a>}
         </nav>
         <ol className="story-timeline">
             {stages.map((stage, index) => <li key={stage.id} id={`story-${stage.id}`} className="story-stage">
@@ -51,12 +51,12 @@ export default function ProjectStory({ stages, reflections }: { stages: StorySta
                 </div>
             </li>)}
         </ol>
-        <section className="story-reflections" id="story-reflections" aria-labelledby="story-reflections-title">
+        {reflections.length > 0 && <section className="story-reflections" id="story-reflections" aria-labelledby="story-reflections-title">
             <h3 id="story-reflections-title" className="story-heading">Looking back and ahead</h3>
             <div>{reflections.map(reflection => <section key={reflection.title}>
                 <h4>{reflection.title}</h4>
                 <p className={reflection.text ? '' : 'story-pending'}>{reflection.text || 'Notes coming soon.'}</p>
             </section>)}</div>
-        </section>
+        </section>}
     </div>;
 }

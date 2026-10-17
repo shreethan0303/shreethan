@@ -37,4 +37,4 @@ python3 experience/tools/prepare-cube-media.py /path/to/extracted-files public/p
 
 The frame-assembly picture was visible as an inline chat image, but no downloadable original file was supplied for it in this session. Its exact bytes are not available in the workspace, so the frame stage keeps its media placeholder until the JPG arrives. The two new clips are imported; the earlier oversized ZIP is no longer needed for them.
 
-The displayed date is now simply “March 2025”. A start/end month range is pending the user's confirmation; no start month was invented. The existing inferred school-year/date context remains provisional.
+The user subsequently corrected the project to seventh grade. The displayed date is now March 2023, retaining the previously recalled science-fair month. A start/end month range is unconfirmed.

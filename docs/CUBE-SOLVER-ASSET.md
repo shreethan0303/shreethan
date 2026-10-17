@@ -56,7 +56,7 @@ Click/tap or keyboard Enter now opens a rounded project card while the camera sm
 
 For the content, edit `experience/src/cube-project.ts` in GitHub or your editor. It contains the name, displayed date, brief, placeholder paragraph, video source and CAD/GitHub links. Replace the lorem ipsum with your project story. Give `videoUrl` a direct MP4/WebM URL or a path such as `/videos/cube-solver.mp4`, with the file in `public/videos/`. It is not a YouTube embed field. Set `cadUrl` to your public Onshape document and `githubUrl` to your project repository. Until those arrive, the card shows honest, non-clickable placeholders.
 
-The date is provisionally “Around March 2025”: the user recalled March in ninth grade, and a junior in the current 2026–27 school year would have been a freshman in 2024–25. No regional science-fair calendar was verified. Adjust this field if the school-year assumption is different.
+The user corrected the build to seventh grade, giving the 2022–2023 school year for a current junior in 2026–2027. The displayed date is March 2023, retaining the earlier recalled March science-fair timing. No exact event calendar or start month is claimed.
 
 For placement, edit only these values under `cubeRobot` in `WorkshopLayout.ts`:
 

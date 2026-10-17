@@ -24,21 +24,33 @@ export const workshopLayout = {
         position: [4800, -2984.18927, 150] as [number, number, number],
         rotation: -.25,
         length: 4000,
+        lift: 35,
+        motions: [{ node: 'Intake', axis: 'x' as const, angle: -.38 }],
         // Export contains a lower protrusion: align the drive tires, not the overall bounding box.
-        groundOffset: .0257634,
+        groundOffset: .02540000046,
         contacts: [
-            [-.24954632, .025763415, .130912155],
-            [-.24954630, .025763385, -.427887827],
-            [.257758915, .025763415, .131621748],
-            [.309253752, .025763385, -.427887857],
+            [-0.27475069590, 0.02540000046, -0.42743995998],
+            [0.28427569509, 0.02540000046, 0.13127653667],
+            [-0.27475069590, 0.02540000046, 0.13136004002],
+            [0.28404930410, 0.02540000046, -0.42743995998],
         ] as [number, number, number][],
     },
-    // Reserved placement only: no placeholder model is rendered here.
-    nextFrcRobot: { position: [8200, -2984.18927, -900] as [number, number, number] },
+    elevatorRobot: {
+        position: [9200, -2984.18927, -900] as [number, number, number],
+        rotation: -.4,
+        length: 3900,
+        lift: 35,
+        // The preserved CAD groups use Z-up locally; the assembly maps Z to world Y.
+        motions: [
+            { node: 'ElevatorMiddle', axis: 'z' as const, distance: .18 },
+            { node: 'ElevatorCarriage', axis: 'z' as const, distance: .36 },
+        ],
+    },
     rcCar: {
         position: [1450, -451.9, 450] as [number, number, number],
         rotation: -.1,
         length: 1900,
+        lift: 25,
     },
     resume: {
         position: [-2400, -440, 450] as [number, number, number],

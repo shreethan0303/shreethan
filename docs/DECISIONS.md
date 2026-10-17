@@ -64,3 +64,7 @@ Use a scrollable build timeline inside the existing rounded reader, with small c
 ## FRC and RC assemblies
 
 Display the supplied FRC robot on the floor beside the desk, and the RC car on the table beside the cube solver. Reserve a second floor location without inventing a model. Preserve source colors with material adjustments, optimize CAD copies offline, and reuse a single project reader. Keep unknown season, dates, links, team role and performance claims pending. Preserve the car's actual three tires until the user confirms a fourth; align its measured support plane with the table. See [the CAD guide](WORKSHOP-CAD.md) for asset and placement limitations.
+
+## Hover mechanisms
+
+The latest user instruction supersedes static grounded hover: all project models lift slightly, while the FRC intake folds inward and the REEFSCAPE elevator stages rise. Keep these single reversible previews; do not add continuous motion, controls or interface decoration. Preserve the original entrance and room styling. Cube date is corrected to March 2023/seventh grade. The RC story follows the user’s three months of CAD, assembly/tolerances and gearing/strength refinements in 2023. See the CAD guide for the inferred intake season and authored mechanism travel.

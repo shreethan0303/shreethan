@@ -1,0 +1,5018 @@
+{
+  "sourceParts": [
+    {
+      "name": "rough bumper",
+      "group": "Chassis",
+      "sourceTriangles": 12
+    },
+    {
+      "name": "Part 1",
+      "group": "Chassis",
+      "sourceTriangles": 3312
+    },
+    {
+      "name": "Battery",
+      "group": "Chassis",
+      "sourceTriangles": 2812
+    },
+    {
+      "name": "Part 1",
+      "group": "Chassis",
+      "sourceTriangles": 700
+    },
+    {
+      "name": "Part 1",
+      "group": "Chassis",
+      "sourceTriangles": 724
+    },
+    {
+      "name": "Part 1",
+      "group": "Chassis",
+      "sourceTriangles": 36
+    },
+    {
+      "name": "PRT-0022 1x1 27.5in 80/20",
+      "group": "Chassis",
+      "sourceTriangles": 4096
+    },
+    {
+      "name": "Part 1",
+      "group": "Chassis",
+      "sourceTriangles": 3272
+    },
+    {
+      "name": "Part 1",
+      "group": "Chassis",
+      "sourceTriangles": 3272
+    },
+    {
+      "name": "PRT-0022 1x1 27.5in 80/20",
+      "group": "Chassis",
+      "sourceTriangles": 4096
+    },
+    {
+      "name": "Part 1",
+      "group": "Chassis",
+      "sourceTriangles": 3312
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Simplified MK4",
+      "group": "Chassis",
+      "sourceTriangles": 13495
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Simplified MK4",
+      "group": "Chassis",
+      "sourceTriangles": 13463
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "PRT-0013 2x1 27.5 80/20",
+      "group": "Chassis",
+      "sourceTriangles": 14220
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Simplified MK4",
+      "group": "Chassis",
+      "sourceTriangles": 13463
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "PRT-0021 Belly Pan",
+      "group": "Chassis",
+      "sourceTriangles": 5404
+    },
+    {
+      "name": "Simplified MK4",
+      "group": "Chassis",
+      "sourceTriangles": 13463
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "PRT-0014 2x1 29.5 80/20",
+      "group": "Chassis",
+      "sourceTriangles": 14220
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "PRT-0014 2x1 29.5 80/20",
+      "group": "Chassis",
+      "sourceTriangles": 14220
+    },
+    {
+      "name": "PRT-0013 2x1 27.5 80/20",
+      "group": "Chassis",
+      "sourceTriangles": 14220
+    },
+    {
+      "name": "18t 9mm Wide 1_2_ Hex Bore Double Flange 5mm HTD Aluminum Pulley (217-3225)",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 6378
+    },
+    {
+      "name": ".5_ Hex ID 1.125_ OD Flanged Bearing (217-2734)-1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 698
+    },
+    {
+      "name": "longer belt",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 352
+    },
+    {
+      "name": "18t 9mm Wide 1_2_ Hex Bore Double Flange 5mm HTD Aluminum Pulley (217-3225)",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 6378
+    },
+    {
+      "name": "2- OD 30A Thrifty Squish Wheel (TTB-0032) (8)",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1464
+    },
+    {
+      "name": "-REV- Part 8 by",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 3116
+    },
+    {
+      "name": ".5_ Hex ID 1.125_ OD Flanged Bearing (217-2734)-1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 698
+    },
+    {
+      "name": "2- OD 30A Thrifty Squish Wheel (TTB-0032) (8)",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1464
+    },
+    {
+      "name": "2- OD 30A Thrifty Squish Wheel (TTB-0032) (8)",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1464
+    },
+    {
+      "name": "-REV- Part 5 by",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 4968
+    },
+    {
+      "name": "belt longer",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 352
+    },
+    {
+      "name": "2- OD 30A Thrifty Squish Wheel (TTB-0032) (8)",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1464
+    },
+    {
+      "name": "2- OD 30A Thrifty Squish Wheel (TTB-0032) (8)",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1464
+    },
+    {
+      "name": "-REV- Part 5 by",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 4968
+    },
+    {
+      "name": "18t 9mm Wide 1_2_ Hex Bore Double Flange 5mm HTD Aluminum Pulley (217-3225)",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 6378
+    },
+    {
+      "name": "Shaft (1)",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1392
+    },
+    {
+      "name": "2- OD 30A Thrifty Squish Wheel (TTB-0032) (8)",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1464
+    },
+    {
+      "name": "2- OD 30A Thrifty Squish Wheel (TTB-0032) (8)",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1464
+    },
+    {
+      "name": "Shaft (1)",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1392
+    },
+    {
+      "name": ".5_ Hex ID 1.125_ OD Flanged Bearing (217-2734)-1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 698
+    },
+    {
+      "name": "bottem",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 3108
+    },
+    {
+      "name": ".5_ Hex ID 1.125_ OD Flanged Bearing (217-2734)-1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 698
+    },
+    {
+      "name": ".5_ Hex ID 1.125_ OD Flanged Bearing (217-2734)-1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 698
+    },
+    {
+      "name": ".5_ Hex ID 1.125_ OD Flanged Bearing (217-2734)-1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 698
+    },
+    {
+      "name": "2- OD 30A Thrifty Squish Wheel (TTB-0032) (8)",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1464
+    },
+    {
+      "name": "lnger hex",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 20
+    },
+    {
+      "name": "2- OD 30A Thrifty Squish Wheel (TTB-0032) (8)",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1464
+    },
+    {
+      "name": "spacera",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 164
+    },
+    {
+      "name": "-REV- Part 8 by",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 3116
+    },
+    {
+      "name": "bearing",
+      "group": "Chassis",
+      "sourceTriangles": 698
+    },
+    {
+      "name": "02_Deep_Climb_Post top catcher",
+      "group": "Chassis",
+      "sourceTriangles": 23424
+    },
+    {
+      "name": "Socket button head cap screw #10-32 x 0.75",
+      "group": "Chassis",
+      "sourceTriangles": 1741
+    },
+    {
+      "name": "arm bracket 3",
+      "group": "Chassis",
+      "sourceTriangles": 2432
+    },
+    {
+      "name": "Socket button head cap screw #10-32 x 0.75-1",
+      "group": "Chassis",
+      "sourceTriangles": 1741
+    },
+    {
+      "name": "02_Deep_Climb_Post",
+      "group": "Chassis",
+      "sourceTriangles": 28608
+    },
+    {
+      "name": "Hex machine screw nut #10-32",
+      "group": "Chassis",
+      "sourceTriangles": 624
+    },
+    {
+      "name": "Socket button head cap screw #10-32 x 0.75-1",
+      "group": "Chassis",
+      "sourceTriangles": 1741
+    },
+    {
+      "name": "angles bracket",
+      "group": "Chassis",
+      "sourceTriangles": 3504
+    },
+    {
+      "name": "angled",
+      "group": "Chassis",
+      "sourceTriangles": 29640
+    },
+    {
+      "name": "inbetween",
+      "group": "Chassis",
+      "sourceTriangles": 3176
+    },
+    {
+      "name": "Socket button head cap screw #10-32 x 0.75",
+      "group": "Chassis",
+      "sourceTriangles": 1741
+    },
+    {
+      "name": "angles bracket",
+      "group": "Chassis",
+      "sourceTriangles": 3504
+    },
+    {
+      "name": "Socket button head cap screw #10-32 x 0.75",
+      "group": "Chassis",
+      "sourceTriangles": 1741
+    },
+    {
+      "name": "02_Deep_Climb_Post",
+      "group": "Chassis",
+      "sourceTriangles": 28608
+    },
+    {
+      "name": "side mout",
+      "group": "Chassis",
+      "sourceTriangles": 976
+    },
+    {
+      "name": "Hex machine screw nut #10-32",
+      "group": "Chassis",
+      "sourceTriangles": 624
+    },
+    {
+      "name": "arm bracket 3",
+      "group": "Chassis",
+      "sourceTriangles": 2432
+    },
+    {
+      "name": "side mout",
+      "group": "Chassis",
+      "sourceTriangles": 976
+    },
+    {
+      "name": "Hex machine screw nut #10-32",
+      "group": "Chassis",
+      "sourceTriangles": 624
+    },
+    {
+      "name": "Socket button head cap screw #10-32 x 0.75-1",
+      "group": "Chassis",
+      "sourceTriangles": 1741
+    },
+    {
+      "name": "Hex machine screw nut #10-32",
+      "group": "Chassis",
+      "sourceTriangles": 624
+    },
+    {
+      "name": "Barb Finger",
+      "group": "Chassis",
+      "sourceTriangles": 1060
+    },
+    {
+      "name": "Nylon Spacer",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Nylon Spacer-1",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": ".5_ Hex ID 1.125_ OD Flanged Bearing (217-2734)",
+      "group": "Chassis",
+      "sourceTriangles": 698
+    },
+    {
+      "name": "1_2_ Hex High Strength Clamping Shaft Collar (217-4106)",
+      "group": "Chassis",
+      "sourceTriangles": 944
+    },
+    {
+      "name": "Barb Body",
+      "group": "Chassis",
+      "sourceTriangles": 2064
+    },
+    {
+      "name": "1_2_ Hex High Strength Clamping Shaft Collar (217-4106)",
+      "group": "Chassis",
+      "sourceTriangles": 806
+    },
+    {
+      "name": "Barb Finger",
+      "group": "Chassis",
+      "sourceTriangles": 1060
+    },
+    {
+      "name": "1_2_ Hex High Strength Clamping Shaft Collar (217-4106)",
+      "group": "Chassis",
+      "sourceTriangles": 1296
+    },
+    {
+      "name": "Barb Finger",
+      "group": "Chassis",
+      "sourceTriangles": 1060
+    },
+    {
+      "name": "Nylon Spacer",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Barb Body",
+      "group": "Chassis",
+      "sourceTriangles": 2064
+    },
+    {
+      "name": ".5_ Hex ID 1.125_ OD Flanged Bearing (217-2734)",
+      "group": "Chassis",
+      "sourceTriangles": 698
+    },
+    {
+      "name": "1_2_ Hex High Strength Clamping Shaft Collar (217-4106)",
+      "group": "Chassis",
+      "sourceTriangles": 1296
+    },
+    {
+      "name": "Socket button head cap screw #10-32 x 2.25",
+      "group": "Chassis",
+      "sourceTriangles": 1741
+    },
+    {
+      "name": "Barb Finger",
+      "group": "Chassis",
+      "sourceTriangles": 1060
+    },
+    {
+      "name": ".5_ Hex ID 1.125_ OD Flanged Bearing (217-2734)",
+      "group": "Chassis",
+      "sourceTriangles": 698
+    },
+    {
+      "name": "1_2_ Hex High Strength Clamping Shaft Collar (217-4106)",
+      "group": "Chassis",
+      "sourceTriangles": 806
+    },
+    {
+      "name": "Nylon Spacer-1",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "1_2_ Hex High Strength Clamping Shaft Collar (217-4106)",
+      "group": "Chassis",
+      "sourceTriangles": 806
+    },
+    {
+      "name": "Shaft",
+      "group": "Chassis",
+      "sourceTriangles": 264
+    },
+    {
+      "name": "1_2_ Hex High Strength Clamping Shaft Collar (217-4106)",
+      "group": "Chassis",
+      "sourceTriangles": 944
+    },
+    {
+      "name": "1_2_ Hex High Strength Clamping Shaft Collar (217-4106)",
+      "group": "Chassis",
+      "sourceTriangles": 806
+    },
+    {
+      "name": ".5_ Hex ID 1.125_ OD Flanged Bearing (217-2734)",
+      "group": "Chassis",
+      "sourceTriangles": 698
+    },
+    {
+      "name": "bearing",
+      "group": "Chassis",
+      "sourceTriangles": 698
+    },
+    {
+      "name": "6-32 Hex Coupler_1",
+      "group": "Chassis",
+      "sourceTriangles": 1114
+    },
+    {
+      "name": "am-4124 500 Hex Hub",
+      "group": "Chassis",
+      "sourceTriangles": 3260
+    },
+    {
+      "name": "Versaframe 2_ Wide Versaplanetary Parallel Mount (217-4179)",
+      "group": "Chassis",
+      "sourceTriangles": 5024
+    },
+    {
+      "name": "02_Deep_Climb_Winch",
+      "group": "Chassis",
+      "sourceTriangles": 53696
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 1.75",
+      "group": "Chassis",
+      "sourceTriangles": 1115
+    },
+    {
+      "name": "Hex machine screw nut #10-32",
+      "group": "Chassis",
+      "sourceTriangles": 624
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 1.75",
+      "group": "Chassis",
+      "sourceTriangles": 1115
+    },
+    {
+      "name": "Hex machine screw nut #10-32",
+      "group": "Chassis",
+      "sourceTriangles": 624
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 2.5",
+      "group": "Chassis",
+      "sourceTriangles": 1115
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 1.75",
+      "group": "Chassis",
+      "sourceTriangles": 1115
+    },
+    {
+      "name": "Hex machine screw nut #10-32",
+      "group": "Chassis",
+      "sourceTriangles": 624
+    },
+    {
+      "name": ".25_ LG .196_ ID .375_ OD Aluminum Spacer",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 2.5",
+      "group": "Chassis",
+      "sourceTriangles": 1115
+    },
+    {
+      "name": "6-32 Hex Coupler",
+      "group": "Chassis",
+      "sourceTriangles": 1114
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 1.75",
+      "group": "Chassis",
+      "sourceTriangles": 1115
+    },
+    {
+      "name": ".25_ LG .196_ ID .375_ OD Aluminum Spacer",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Hex machine screw nut #10-32",
+      "group": "Chassis",
+      "sourceTriangles": 624
+    },
+    {
+      "name": ".5_ LG .196_ ID .375_ OD Aluminum Spacer",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "1_4_ 1_2_ Hex Acetal Spacer (217-3259)",
+      "group": "Chassis",
+      "sourceTriangles": 192
+    },
+    {
+      "name": "91251A146_Black-Oxide Alloy Steel Socket Head Screw",
+      "group": "Chassis",
+      "sourceTriangles": 5410
+    },
+    {
+      "name": "Thunderhex ID 1.125 OD Flanged Bearing (217-4006)",
+      "group": "Chassis",
+      "sourceTriangles": 5852
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 1.75",
+      "group": "Chassis",
+      "sourceTriangles": 1115
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 1.75",
+      "group": "Chassis",
+      "sourceTriangles": 1115
+    },
+    {
+      "name": "91251A146_Black-Oxide Alloy Steel Socket Head Screw_2",
+      "group": "Chassis",
+      "sourceTriangles": 5410
+    },
+    {
+      "name": "Hex machine screw nut #10-32",
+      "group": "Chassis",
+      "sourceTriangles": 624
+    },
+    {
+      "name": "1_2_ Hex Clamping Shaft Collar (217-2737)",
+      "group": "Chassis",
+      "sourceTriangles": 6988
+    },
+    {
+      "name": "1_2_ Hex Clamping Shaft Collar (217-2737)",
+      "group": "Chassis",
+      "sourceTriangles": 1386
+    },
+    {
+      "name": ".5_ LG .196_ ID .375_ OD Aluminum Spacer",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": ".5_ LG .196_ ID .375_ OD Aluminum Spacer",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "91251A146_Black-Oxide Alloy Steel Socket Head Screw_1",
+      "group": "Chassis",
+      "sourceTriangles": 5410
+    },
+    {
+      "name": ".25_ LG .196_ ID .375_ OD Aluminum Spacer",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "1_8_ 1_2_ Hex Acetal Spacer (217-2758)",
+      "group": "Chassis",
+      "sourceTriangles": 192
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 1.75",
+      "group": "Chassis",
+      "sourceTriangles": 1115
+    },
+    {
+      "name": "Shaft-1",
+      "group": "Chassis",
+      "sourceTriangles": 264
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 1.75",
+      "group": "Chassis",
+      "sourceTriangles": 1115
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 1.75",
+      "group": "Chassis",
+      "sourceTriangles": 1115
+    },
+    {
+      "name": "91251A146_Black-Oxide Alloy Steel Socket Head Screw_3",
+      "group": "Chassis",
+      "sourceTriangles": 5410
+    },
+    {
+      "name": ".5_ LG .196_ ID .375_ OD Aluminum Spacer",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Spacer (Configurable)",
+      "group": "Chassis",
+      "sourceTriangles": 192
+    },
+    {
+      "name": "Hex machine screw nut #10-32",
+      "group": "Chassis",
+      "sourceTriangles": 624
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 1.75",
+      "group": "Chassis",
+      "sourceTriangles": 1115
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 3",
+      "group": "Chassis",
+      "sourceTriangles": 1115
+    },
+    {
+      "name": ".25_ LG .196_ ID .375_ OD Aluminum Spacer",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "am-4124 500 Hex Hub",
+      "group": "Chassis",
+      "sourceTriangles": 3260
+    },
+    {
+      "name": "Hex machine screw nut #10-32",
+      "group": "Chassis",
+      "sourceTriangles": 624
+    },
+    {
+      "name": "1_4_ 1_2_ Hex Acetal Spacer (217-3259)",
+      "group": "Chassis",
+      "sourceTriangles": 192
+    },
+    {
+      "name": "16T Planet Gear",
+      "group": "Chassis",
+      "sourceTriangles": 1320
+    },
+    {
+      "name": "16T Planet Gear_3",
+      "group": "Chassis",
+      "sourceTriangles": 1320
+    },
+    {
+      "name": "am-XXXX - 57 Sport 500 Hex Shaft",
+      "group": "Chassis",
+      "sourceTriangles": 999
+    },
+    {
+      "name": "retaining Ring 0500 - Mcm 98410A122_98410A122",
+      "group": "Chassis",
+      "sourceTriangles": 780
+    },
+    {
+      "name": "5_1 HD Output Stage Carrier Plate",
+      "group": "Chassis",
+      "sourceTriangles": 6361
+    },
+    {
+      "name": "5_1 Stage Carrier Plate",
+      "group": "Chassis",
+      "sourceTriangles": 5572
+    },
+    {
+      "name": "16T Planet Gear_2",
+      "group": "Chassis",
+      "sourceTriangles": 1320
+    },
+    {
+      "name": "FR8ZZ Bearing",
+      "group": "Chassis",
+      "sourceTriangles": 926
+    },
+    {
+      "name": "18T Long Planet Gear_3",
+      "group": "Chassis",
+      "sourceTriangles": 1320
+    },
+    {
+      "name": "Cim Sport Motor Block",
+      "group": "Chassis",
+      "sourceTriangles": 1366
+    },
+    {
+      "name": "18T Short Planet Gear",
+      "group": "Chassis",
+      "sourceTriangles": 1320
+    },
+    {
+      "name": "10-32 X 375 SHCS_90128A940",
+      "group": "Chassis",
+      "sourceTriangles": 5088
+    },
+    {
+      "name": "Output Block",
+      "group": "Chassis",
+      "sourceTriangles": 2490
+    },
+    {
+      "name": "am-XXXX - 57 Sport 3 Stage Ring Gear Housing",
+      "group": "Chassis",
+      "sourceTriangles": 8457
+    },
+    {
+      "name": "18T Long Planet Gear",
+      "group": "Chassis",
+      "sourceTriangles": 1320
+    },
+    {
+      "name": "10-32 x 3.000 SHCS_90128A969",
+      "group": "Chassis",
+      "sourceTriangles": 12694
+    },
+    {
+      "name": "18T Short Planet Gear_1",
+      "group": "Chassis",
+      "sourceTriangles": 1320
+    },
+    {
+      "name": "18T Long Planet Gear_2",
+      "group": "Chassis",
+      "sourceTriangles": 1320
+    },
+    {
+      "name": "Thrust washer - 775 Sport",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "18T Short Planet Gear_2",
+      "group": "Chassis",
+      "sourceTriangles": 1320
+    },
+    {
+      "name": "10-32 X 375 SHCS_90128A940_1",
+      "group": "Chassis",
+      "sourceTriangles": 5088
+    },
+    {
+      "name": "18T Long Planet Gear_1",
+      "group": "Chassis",
+      "sourceTriangles": 1320
+    },
+    {
+      "name": "12T Sun Gear_1",
+      "group": "Chassis",
+      "sourceTriangles": 1572
+    },
+    {
+      "name": "16T Planet Gear_1",
+      "group": "Chassis",
+      "sourceTriangles": 1320
+    },
+    {
+      "name": "5_1 Sun Gear 57 Sport Stage Carrier Plate",
+      "group": "Chassis",
+      "sourceTriangles": 5572
+    },
+    {
+      "name": "12T Sun Gear",
+      "group": "Chassis",
+      "sourceTriangles": 1572
+    },
+    {
+      "name": "10-32 x 3.000 SHCS_90128A969_1",
+      "group": "Chassis",
+      "sourceTriangles": 12694
+    },
+    {
+      "name": "NEO Brushless Motor (REV-21-1650)",
+      "group": "Chassis",
+      "sourceTriangles": 25527
+    },
+    {
+      "name": "FR8ZZ Bearing_1",
+      "group": "Chassis",
+      "sourceTriangles": 926
+    },
+    {
+      "name": "18T Short Planet Gear_3",
+      "group": "Chassis",
+      "sourceTriangles": 1320
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "Chassis",
+      "sourceTriangles": 1788
+    },
+    {
+      "name": "Socket button head cap screw #8-32 x 1.25",
+      "group": "Chassis",
+      "sourceTriangles": 1745
+    },
+    {
+      "name": "1.375in Long Aluminum Spacer for Crossbar ELEV-DRIVE-008",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Socket button head cap screw #8-32 x 1.25",
+      "group": "Chassis",
+      "sourceTriangles": 1745
+    },
+    {
+      "name": "25 Chain 22t .500 Hex Sprocket - ELEV-DRIVE-003",
+      "group": "Chassis",
+      "sourceTriangles": 5076
+    },
+    {
+      "name": "Socket button head cap screw #8-32 x 1.25",
+      "group": "Chassis",
+      "sourceTriangles": 1745
+    },
+    {
+      "name": "Socket button head cap screw #8-32 x 1.25",
+      "group": "Chassis",
+      "sourceTriangles": 1745
+    },
+    {
+      "name": "Thrifty Planetary Mount Plate - ELEV-DRIVE-004",
+      "group": "Chassis",
+      "sourceTriangles": 7680
+    },
+    {
+      "name": "Socket button head cap screw #8-32 x 0.3125",
+      "group": "Chassis",
+      "sourceTriangles": 1745
+    },
+    {
+      "name": "1/2\" ThunderHex - 18.375\"",
+      "group": "Chassis",
+      "sourceTriangles": 264
+    },
+    {
+      "name": "Socket button head cap screw #8-32 x 1.25",
+      "group": "Chassis",
+      "sourceTriangles": 1745
+    },
+    {
+      "name": "1.375in Long Aluminum Spacer for Crossbar ELEV-DRIVE-008",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "Chassis",
+      "sourceTriangles": 1788
+    },
+    {
+      "name": "25 Chain 22t .500 Hex Sprocket - ELEV-DRIVE-003",
+      "group": "Chassis",
+      "sourceTriangles": 5076
+    },
+    {
+      "name": "1.375in Long Aluminum Spacer for Crossbar ELEV-DRIVE-008",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "25 Chain 22t .500 Hex Sprocket - ELEV-DRIVE-003",
+      "group": "Chassis",
+      "sourceTriangles": 5076
+    },
+    {
+      "name": "Socket button head cap screw #8-32 x 1.25",
+      "group": "Chassis",
+      "sourceTriangles": 1745
+    },
+    {
+      "name": "Socket button head cap screw #8-32 x 0.3125",
+      "group": "Chassis",
+      "sourceTriangles": 1745
+    },
+    {
+      "name": "25 Chain 22t .500 Hex Sprocket - ELEV-DRIVE-003",
+      "group": "Chassis",
+      "sourceTriangles": 5076
+    },
+    {
+      "name": "Socket button head cap screw #8-32 x 1.25",
+      "group": "Chassis",
+      "sourceTriangles": 1745
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "Chassis",
+      "sourceTriangles": 1788
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "Chassis",
+      "sourceTriangles": 1788
+    },
+    {
+      "name": "1/2\" ThunderHex (16.5 in)",
+      "group": "Chassis",
+      "sourceTriangles": 264
+    },
+    {
+      "name": "Socket button head cap screw #8-32 x 0.3125",
+      "group": "Chassis",
+      "sourceTriangles": 1745
+    },
+    {
+      "name": "Top Elevator Bearing Plate ELEV-DRIVE-002",
+      "group": "Chassis",
+      "sourceTriangles": 2252
+    },
+    {
+      "name": ".5\" Hex ID 1.125\" OD Flanged Bearing (217-2734)",
+      "group": "Chassis",
+      "sourceTriangles": 696
+    },
+    {
+      "name": "Socket button head cap screw #8-32 x 0.3125",
+      "group": "Chassis",
+      "sourceTriangles": 1745
+    },
+    {
+      "name": "Socket button head cap screw #8-32 x 1.25",
+      "group": "Chassis",
+      "sourceTriangles": 1745
+    },
+    {
+      "name": "Cable Clamp Base Plate ELEV-PULLEY-004",
+      "group": "Chassis",
+      "sourceTriangles": 1908
+    },
+    {
+      "name": "91255A263_Button Head Hex Drive Screw (1)",
+      "group": "Chassis",
+      "sourceTriangles": 6334
+    },
+    {
+      "name": "91255A263_Button Head Hex Drive Screw (1)",
+      "group": "Chassis",
+      "sourceTriangles": 6334
+    },
+    {
+      "name": "91255A263_Button Head Hex Drive Screw (1)",
+      "group": "Chassis",
+      "sourceTriangles": 6334
+    },
+    {
+      "name": "Cable Clamp Top Plate ELEV-PULLEY-005",
+      "group": "Chassis",
+      "sourceTriangles": 1908
+    },
+    {
+      "name": "91255A263_Button Head Hex Drive Screw (1)",
+      "group": "Chassis",
+      "sourceTriangles": 6334
+    },
+    {
+      "name": "91255A263_Button Head Hex Drive Screw (1)",
+      "group": "Chassis",
+      "sourceTriangles": 6334
+    },
+    {
+      "name": "91255A263_Button Head Hex Drive Screw (1)",
+      "group": "Chassis",
+      "sourceTriangles": 6334
+    },
+    {
+      "name": "Top Elevator Bearing Plate ELEV-DRIVE-002",
+      "group": "Chassis",
+      "sourceTriangles": 2252
+    },
+    {
+      "name": "Thrifty Planetary Mount Plate - ELEV-DRIVE-004",
+      "group": "Chassis",
+      "sourceTriangles": 7680
+    },
+    {
+      "name": ".5\" Hex ID 1.125\" OD Flanged Bearing (217-2734)",
+      "group": "Chassis",
+      "sourceTriangles": 696
+    },
+    {
+      "name": "1.375in Long Aluminum Spacer for Crossbar ELEV-DRIVE-008",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "M3 BHTS, Grade 8 Steel Rev1_SBTM3-50MMZB_2",
+      "group": "Chassis",
+      "sourceTriangles": 1268
+    },
+    {
+      "name": "M3 BHTS, Grade 8 Steel Rev1_SBTM3-50MMZB_1",
+      "group": "Chassis",
+      "sourceTriangles": 1268
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "M3 BHTS-SECURE, Grade 8 Steel Rev1_SBTM3-24MMZB-SECURE_1",
+      "group": "Chassis",
+      "sourceTriangles": 1436
+    },
+    {
+      "name": "217-6515-001 Rev6",
+      "group": "Chassis",
+      "sourceTriangles": 42450
+    },
+    {
+      "name": "M3 BHTS, Grade 8 Steel Rev1_SBTM3-50MMZB",
+      "group": "Chassis",
+      "sourceTriangles": 1268
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "M3 BHTS-SECURE, Grade 8 Steel Rev1_SBTM3-24MMZB-SECURE",
+      "group": "Chassis",
+      "sourceTriangles": 1436
+    },
+    {
+      "name": "217-6515-010 Rev1_9262K442",
+      "group": "Chassis",
+      "sourceTriangles": 3528
+    },
+    {
+      "name": "217-6515-308 Rev5",
+      "group": "Chassis",
+      "sourceTriangles": 14274
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "M3 BHTS-SECURE, Grade 8 Steel Rev1_SBTM3-24MMZB-SECURE_2",
+      "group": "Chassis",
+      "sourceTriangles": 1436
+    },
+    {
+      "name": "M2.5 SHCS, Grade 8 Steel Rev1_SSAM2.5-06MMZB",
+      "group": "Chassis",
+      "sourceTriangles": 806
+    },
+    {
+      "name": "217-6515-Back 20190920",
+      "group": "Chassis",
+      "sourceTriangles": 129853
+    },
+    {
+      "name": "#4-40 SHCS, Grade 8 Steel Rev2_SSA0440-0125ZB_1",
+      "group": "Chassis",
+      "sourceTriangles": 764
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "M2.5 SHCS, Grade 8 Steel Rev1_SSAM2.5-06MMZB_1",
+      "group": "Chassis",
+      "sourceTriangles": 806
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 1848
+    },
+    {
+      "name": "#4-40 SHCS, Grade 8 Steel Rev2_SSA0440-0125ZB",
+      "group": "Chassis",
+      "sourceTriangles": 764
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "M2.5 SHCS, Grade 8 Steel Rev1_SSAM2.5-06MMZB_2",
+      "group": "Chassis",
+      "sourceTriangles": 806
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "M2.5 SHCS, Grade 8 Steel Rev1_SSAM2.5-06MMZB_3",
+      "group": "Chassis",
+      "sourceTriangles": 806
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 1848
+    },
+    {
+      "name": "M2.5 SHCS, Grade 8 Steel Rev1_SSAM2.5-06MMZB_4",
+      "group": "Chassis",
+      "sourceTriangles": 806
+    },
+    {
+      "name": "217-4649-007 Rev1_94105A824_5",
+      "group": "Chassis",
+      "sourceTriangles": 769
+    },
+    {
+      "name": "217-6515-002 Rev6",
+      "group": "Chassis",
+      "sourceTriangles": 3278
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-202 Rev7",
+      "group": "Chassis",
+      "sourceTriangles": 2456
+    },
+    {
+      "name": "217-6515-201 Rev6",
+      "group": "Chassis",
+      "sourceTriangles": 17419
+    },
+    {
+      "name": "MAXPlanetary 14T Spline Input Coupler (REV-21-2124)",
+      "group": "Chassis",
+      "sourceTriangles": 3272
+    },
+    {
+      "name": "Socket Head Screw #10-32 x 3/8in (REV-29-2912)",
+      "group": "Chassis",
+      "sourceTriangles": 1205
+    },
+    {
+      "name": "Socket Head Screw #10-32 x 3/8in (REV-29-2912)",
+      "group": "Chassis",
+      "sourceTriangles": 1205
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2602
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14784
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14480
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14726
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 54904
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14744
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14454
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2728
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2152
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 8282
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2152
+    },
+    {
+      "name": "REV-21-2106",
+      "group": "Chassis",
+      "sourceTriangles": 4916
+    },
+    {
+      "name": "Socket Head Screw #10-32 x 1-1/2in (REV-29-2926)",
+      "group": "Chassis",
+      "sourceTriangles": 1205
+    },
+    {
+      "name": "Button Head Hex Drive Screw #10-32 x 1/2in (REV-29-2943)",
+      "group": "Chassis",
+      "sourceTriangles": 1331
+    },
+    {
+      "name": "Socket Head Screw #10-32 x 1-1/2in (REV-29-2926)",
+      "group": "Chassis",
+      "sourceTriangles": 1205
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 1682
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 1682
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 1682
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 5626
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 1682
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 784
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 5840
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14784
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14454
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2152
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 8282
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14744
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2152
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2728
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 54904
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14480
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14726
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2602
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003_1",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116",
+      "group": "Chassis",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "Chassis",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Sliding Bearing Block Plate - SLIDE-001",
+      "group": "Chassis",
+      "sourceTriangles": 2880
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_3",
+      "group": "Chassis",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "Chassis",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "Chassis",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": ".25diameter_1.75inSteelDowel_SLIDE-002",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "Chassis",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "Chassis",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "Chassis",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "Chassis",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "Chassis",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "Chassis",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "Chassis",
+      "sourceTriangles": 850
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "Chassis",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "Chassis",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "Chassis",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_2",
+      "group": "Chassis",
+      "sourceTriangles": 10619
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_1",
+      "group": "Chassis",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "Chassis",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_2",
+      "group": "Chassis",
+      "sourceTriangles": 10619
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "Chassis",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003_1",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "Chassis",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "Chassis",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "Chassis",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "Chassis",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "Chassis",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_1",
+      "group": "Chassis",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "Chassis",
+      "sourceTriangles": 850
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "Chassis",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "Chassis",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "Sliding Bearing Block Plate - SLIDE-001",
+      "group": "Chassis",
+      "sourceTriangles": 2880
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "Chassis",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "Chassis",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_3",
+      "group": "Chassis",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "Chassis",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116",
+      "group": "Chassis",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "Chassis",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": ".25diameter_1.75inSteelDowel_SLIDE-002",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "Tube 2\"x1\"x18.622\"",
+      "group": "Chassis",
+      "sourceTriangles": 49568
+    },
+    {
+      "name": "Tube 2\"x1\"x35.3\"",
+      "group": "Chassis",
+      "sourceTriangles": 94976
+    },
+    {
+      "name": "Tube 2\"x1\"x29.5\"",
+      "group": "Chassis",
+      "sourceTriangles": 81216
+    },
+    {
+      "name": "Tube 2\"x1\"x35.3\"",
+      "group": "Chassis",
+      "sourceTriangles": 94976
+    },
+    {
+      "name": "MAXPlanetary 14T Spline Input Coupler (REV-21-2124)",
+      "group": "Chassis",
+      "sourceTriangles": 3272
+    },
+    {
+      "name": "Socket Head Screw #10-32 x 3/8in (REV-29-2912)",
+      "group": "Chassis",
+      "sourceTriangles": 1205
+    },
+    {
+      "name": "Socket Head Screw #10-32 x 3/8in (REV-29-2912)",
+      "group": "Chassis",
+      "sourceTriangles": 1205
+    },
+    {
+      "name": "217-6515-202 Rev7",
+      "group": "Chassis",
+      "sourceTriangles": 2456
+    },
+    {
+      "name": "217-6515-201 Rev6",
+      "group": "Chassis",
+      "sourceTriangles": 17419
+    },
+    {
+      "name": "M3 BHTS, Grade 8 Steel Rev1_SBTM3-50MMZB_2",
+      "group": "Chassis",
+      "sourceTriangles": 1268
+    },
+    {
+      "name": "M3 BHTS, Grade 8 Steel Rev1_SBTM3-50MMZB_1",
+      "group": "Chassis",
+      "sourceTriangles": 1268
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "M3 BHTS-SECURE, Grade 8 Steel Rev1_SBTM3-24MMZB-SECURE_1",
+      "group": "Chassis",
+      "sourceTriangles": 1436
+    },
+    {
+      "name": "217-6515-001 Rev6",
+      "group": "Chassis",
+      "sourceTriangles": 42450
+    },
+    {
+      "name": "M3 BHTS, Grade 8 Steel Rev1_SBTM3-50MMZB",
+      "group": "Chassis",
+      "sourceTriangles": 1268
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "M3 BHTS-SECURE, Grade 8 Steel Rev1_SBTM3-24MMZB-SECURE",
+      "group": "Chassis",
+      "sourceTriangles": 1436
+    },
+    {
+      "name": "217-6515-010 Rev1_9262K442",
+      "group": "Chassis",
+      "sourceTriangles": 3528
+    },
+    {
+      "name": "217-6515-308 Rev5",
+      "group": "Chassis",
+      "sourceTriangles": 14274
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "M3 BHTS-SECURE, Grade 8 Steel Rev1_SBTM3-24MMZB-SECURE_2",
+      "group": "Chassis",
+      "sourceTriangles": 1436
+    },
+    {
+      "name": "M2.5 SHCS, Grade 8 Steel Rev1_SSAM2.5-06MMZB",
+      "group": "Chassis",
+      "sourceTriangles": 806
+    },
+    {
+      "name": "217-6515-Back 20190920",
+      "group": "Chassis",
+      "sourceTriangles": 129853
+    },
+    {
+      "name": "#4-40 SHCS, Grade 8 Steel Rev2_SSA0440-0125ZB_1",
+      "group": "Chassis",
+      "sourceTriangles": 764
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "M2.5 SHCS, Grade 8 Steel Rev1_SSAM2.5-06MMZB_1",
+      "group": "Chassis",
+      "sourceTriangles": 806
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 1848
+    },
+    {
+      "name": "#4-40 SHCS, Grade 8 Steel Rev2_SSA0440-0125ZB",
+      "group": "Chassis",
+      "sourceTriangles": 764
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "M2.5 SHCS, Grade 8 Steel Rev1_SSAM2.5-06MMZB_2",
+      "group": "Chassis",
+      "sourceTriangles": 806
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "M2.5 SHCS, Grade 8 Steel Rev1_SSAM2.5-06MMZB_3",
+      "group": "Chassis",
+      "sourceTriangles": 806
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 1848
+    },
+    {
+      "name": "M2.5 SHCS, Grade 8 Steel Rev1_SSAM2.5-06MMZB_4",
+      "group": "Chassis",
+      "sourceTriangles": 806
+    },
+    {
+      "name": "217-4649-007 Rev1_94105A824_5",
+      "group": "Chassis",
+      "sourceTriangles": 769
+    },
+    {
+      "name": "217-6515-002 Rev6",
+      "group": "Chassis",
+      "sourceTriangles": 3278
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "217-6515-005 Rev4_7804K116",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14784
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14454
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 54904
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14480
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2602
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14726
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2728
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 8282
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2152
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14744
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2152
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2602
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14784
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2152
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2728
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14744
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14454
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 8282
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 2152
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 54904
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14480
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 14726
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2102",
+      "group": "Chassis",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "REV-21-2106",
+      "group": "Chassis",
+      "sourceTriangles": 4916
+    },
+    {
+      "name": "Socket Head Screw #10-32 x 1-1/2in (REV-29-2926)",
+      "group": "Chassis",
+      "sourceTriangles": 1205
+    },
+    {
+      "name": "Socket Head Screw #10-32 x 1-1/2in (REV-29-2926)",
+      "group": "Chassis",
+      "sourceTriangles": 1205
+    },
+    {
+      "name": "Button Head Hex Drive Screw #10-32 x 1/2in (REV-29-2943)",
+      "group": "Chassis",
+      "sourceTriangles": 1331
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 5626
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 1682
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 5840
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 1682
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 784
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 1682
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 1682
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "REV-21-2104",
+      "group": "Chassis",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "91255A263_Button Head Hex Drive Screw (1)",
+      "group": "Chassis",
+      "sourceTriangles": 6334
+    },
+    {
+      "name": "91255A263_Button Head Hex Drive Screw (1)",
+      "group": "Chassis",
+      "sourceTriangles": 6334
+    },
+    {
+      "name": "91255A263_Button Head Hex Drive Screw (1)",
+      "group": "Chassis",
+      "sourceTriangles": 6334
+    },
+    {
+      "name": "91255A263_Button Head Hex Drive Screw (1)",
+      "group": "Chassis",
+      "sourceTriangles": 6334
+    },
+    {
+      "name": "Cable Clamp Top Plate ELEV-PULLEY-005",
+      "group": "Chassis",
+      "sourceTriangles": 1908
+    },
+    {
+      "name": "91255A263_Button Head Hex Drive Screw (1)",
+      "group": "Chassis",
+      "sourceTriangles": 6334
+    },
+    {
+      "name": "91255A263_Button Head Hex Drive Screw (1)",
+      "group": "Chassis",
+      "sourceTriangles": 6334
+    },
+    {
+      "name": "Cable Clamp Base Plate ELEV-PULLEY-004",
+      "group": "Chassis",
+      "sourceTriangles": 1908
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 2.5 x 1.12",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1199
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1788
+    },
+    {
+      "name": "Dyneema Tensioning CAM ELEV-PULLEY-003",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2492
+    },
+    {
+      "name": "Dyneema Tensioning CAM ELEV-PULLEY-003",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2492
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1788
+    },
+    {
+      "name": "Type B wide flat washer #10",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Type B wide flat washer #10",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1788
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 3 x 1.12",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1199
+    },
+    {
+      "name": "Type B wide flat washer #10",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1788
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 3 x 1.12",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1199
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1788
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 2.5 x 1.12",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1199
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 2.5 x 1.12",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1199
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1788
+    },
+    {
+      "name": "Dyneema Tensioning CAM ELEV-PULLEY-003",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2492
+    },
+    {
+      "name": "Type B wide flat washer #10",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 2.5 x 1.12",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1199
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 3 x 1.12",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1199
+    },
+    {
+      "name": "Dyneema Tensioning CAM ELEV-PULLEY-003",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2492
+    },
+    {
+      "name": "Socket head cap screw #10-32 x 3 x 1.12",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1199
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_2",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_3",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 850
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Sliding Bearing Block Plate - SLIDE-001",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2880
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": ".25diameter_1.75inSteelDowel_SLIDE-002",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Tube 2\"x1\"x10.5\"",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 27552
+    },
+    {
+      "name": "Tube 2\"x1\"x8\"",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 20672
+    },
+    {
+      "name": "Tube 2\"x1\"x8\"",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 20672
+    },
+    {
+      "name": "Tube 2\"x1\"x10.5\"",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 27552
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": ".25diameter_1.75inSteelDowel_SLIDE-002",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 850
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_2",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_3",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "Sliding Bearing Block Plate - SLIDE-001",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2880
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": ".25diameter_1.75inSteelDowel_SLIDE-002",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Sliding Bearing Block Plate - SLIDE-001",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2880
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_3",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 850
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_2",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1788
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1788
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_2",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_3",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Sliding Bearing Block Plate - SLIDE-001",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2880
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": ".25diameter_1.75inSteelDowel_SLIDE-002",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 850
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorCarriage",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Constant Force Spring Retainer ELEV-SPRING-004",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 248
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1325
+    },
+    {
+      "name": "4mm Dyneema Cable Pulley ELEV-PULLEY002",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 2354
+    },
+    {
+      "name": "Constant Force Spring Retainer ELEV-SPRING-004",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 248
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1832
+    },
+    {
+      "name": "Constant Force Spring Bracket ELEV-SPRING-001",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 756
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1832
+    },
+    {
+      "name": "4mm Dyneema Cable Pulley Bracket ELEV-PULLEY-001",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1084
+    },
+    {
+      "name": "4mm Dyneema Cable Pulley ELEV-PULLEY002",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 2354
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1325
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1325
+    },
+    {
+      "name": "4mm Dyneema Cable Pulley Bracket ELEV-PULLEY-001",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1084
+    },
+    {
+      "name": "4mm Dyneema Cable Pulley Bracket ELEV-PULLEY-001",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1084
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "4mm Dyneema Cable Pulley Bracket ELEV-PULLEY-001",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1084
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1325
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1832
+    },
+    {
+      "name": "4mm Dyneema Cable Pulley ELEV-PULLEY002",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 2354
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1832
+    },
+    {
+      "name": "25 Chain Attachment Part ELEV-DRIVE-001",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1632
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1832
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1832
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1325
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1325
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1832
+    },
+    {
+      "name": "Tube 2\"x1\"x36\"",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 97728
+    },
+    {
+      "name": "Tube 2\"x1\"x36\"",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 97728
+    },
+    {
+      "name": "Tube 2\"x1\"x13.5\"",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 35808
+    },
+    {
+      "name": "Tube 2\"x1\"x13.5\"",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 35808
+    },
+    {
+      "name": "4mm Dyneema Cable Pulley ELEV-PULLEY002",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 2354
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1325
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Constant Force Spring Bracket ELEV-SPRING-001",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 756
+    },
+    {
+      "name": "90Deg Bracket",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1832
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1325
+    },
+    {
+      "name": "25 Chain Attachment Part ELEV-DRIVE-001",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1632
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1325
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Sliding Bearing Block Plate - SLIDE-001",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 2880
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 850
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 336
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_2",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 10619
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": ".25diameter_1.75inSteelDowel_SLIDE-002",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 332
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_3",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "Constant Force Spring Spool ELEV-SPRING-003",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 332
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1325
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1241
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1325
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1325
+    },
+    {
+      "name": "Socket head cap screw 1/4-20 x 2.25 x 1.25",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1325
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 850
+    },
+    {
+      "name": ".25diameter_1.75inSteelDowel_SLIDE-002",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 332
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Socket button head cap screw 1/4-20 x 1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1871
+    },
+    {
+      "name": "Hex nut 1/4-20",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 708
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "Sliding Bearing Block Plate - SLIDE-001",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 2880
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "10-32 Locknut 2623",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 2102
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "Bearing Block Shoulder Bolt Spacer - SLIDE-003",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 336
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_3",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 10629
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0038_75OD_25ID_28WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 4876
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_2",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 1178
+    },
+    {
+      "name": ".625 Long 10-32 Button Head Screw 13116_2",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 10619
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "10-32 Locknut 2623_3",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 5838
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 336
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD_1",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    },
+    {
+      "name": "TTB-0027_.50OD_.25ID_.188WD",
+      "group": "ElevatorMiddle",
+      "sourceTriangles": 868
+    }
+  ],
+  "sourceTriangles": 3735127,
+  "displayTriangles": 302788,
+  "sizeBytes": 2676712,
+  "dimensionsMeters": [
+    1.044912982363607,
+    1.04682860952827,
+    0.7493000045776333
+  ],
+  "compression": "Meshopt medium; 16-bit positions",
+  "mechanism": "elevator",
+  "groups": [
+    "Chassis",
+    "ElevatorCarriage",
+    "ElevatorMiddle"
+  ],
+  "pivot": null,
+  "sourceFile": "Top Level Assembly.step",
+  "sourceSha256": "f7ccabd18fd87bde9365c94e459ab338edf34b00f7be0ac1ee417df4085ce07a",
+  "meshTransformsBaked": true
+}
