@@ -68,3 +68,7 @@ Display the supplied FRC robot on the floor beside the desk, and the RC car on t
 ## Hover mechanisms
 
 The latest user instruction supersedes static grounded hover: all project models lift slightly, while the FRC intake folds inward and the REEFSCAPE elevator stages rise. Keep these single reversible previews; do not add continuous motion, controls or interface decoration. Preserve the original entrance and room styling. Cube date is corrected to March 2023/seventh grade. The RC story follows the user’s three months of CAD, assembly/tolerances and gearing/strength refinements in 2023. See the CAD guide for the inferred intake season and authored mechanism travel.
+
+## Monitor workspace and reader expansion
+
+Center a lightweight modern monitor on the desk, with the résumé left and the cube solver/car right. Use an Onshape-inspired project tree, central preview and bottom Projects/About/Résumé tabs. Each action is functional; share the existing project data and reader. Expand/Restore keeps media mounted and makes the reader nearly fill the viewport. The source floor extension is now a ring without central overlap, and animated grain is replaced with subtle static grain. Robot media and the user’s dictated voice come next; avoid editorial rewrites before that input. See [the monitor plan](MONITOR-WORKSPACE.md).

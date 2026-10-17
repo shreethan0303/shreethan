@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import LoadingScreen from './components/LoadingScreen';
 import ResumePaper from './components/ResumePaper';
 import ProjectReader from './components/ProjectReader';
+import PortfolioWorkspace from './components/PortfolioWorkspace';
 import HelpPrompt from './components/HelpPrompt';
 import InterfaceUI from './components/InterfaceUI';
 import eventBus from './EventBus';
@@ -22,6 +23,7 @@ const App = () => {
             {!loading && <HelpPrompt />}
             <LoadingScreen />
             <ResumePaper />
+            <PortfolioWorkspace />
             <ProjectReader />
         </div>
     );

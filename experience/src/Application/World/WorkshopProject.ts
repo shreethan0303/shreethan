@@ -81,7 +81,7 @@ export default class WorkshopProject {
         const gradient = context.createRadialGradient(64, 64, 2, 64, 64, 64);
         gradient.addColorStop(0, 'rgba(0,0,0,.23)'); gradient.addColorStop(1, 'rgba(0,0,0,0)');
         context.fillStyle = gradient; context.fillRect(0, 0, 128, 128);
-        const shadowMaterial = new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(shade), transparent: true, depthWrite: false });
+        const shadowMaterial = new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(shade), transparent: true, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -1 });
         const shadow = new THREE.Mesh(new THREE.PlaneGeometry(footprint.x * 1.1, footprint.z * 1.1), shadowMaterial);
         shadow.rotation.x = -Math.PI / 2;
         shadow.position.set(placement.position[0], placement.position[1] + 1, placement.position[2]);

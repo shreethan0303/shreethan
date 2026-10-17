@@ -9,8 +9,16 @@ type SourceRect = { x: number; y: number; width: number; height: number };
 export default function ProjectReader() {
     const [project, setProject] = useState<ProjectContent>(cubeProject);
     const [source, setSource] = useState<SourceRect | null>(null);
+    const [expanded, setExpanded] = useState(false);
     const panel = useRef<HTMLElement>(null);
+    const resizeFrom = useRef<DOMRect | null>(null);
+    const resizeAnimation = useRef<Animation | null>(null);
     const closing = useRef(false);
+    const toggleExpanded = () => {
+        resizeFrom.current = panel.current?.getBoundingClientRect() || null;
+        resizeAnimation.current?.cancel();
+        setExpanded(value => !value);
+    };
     const close = () => {
         if (closing.current) return;
         closing.current = true;
@@ -29,6 +37,7 @@ export default function ProjectReader() {
         const open = (event: Event) => {
             const detail = (event as CustomEvent).detail;
             closing.current = false;
+            setExpanded(false);
             setProject(detail.project || cubeProject);
             setSource(detail.rect || detail);
         };
@@ -75,13 +84,28 @@ export default function ProjectReader() {
         };
     }, [source]);
 
+    useLayoutEffect(() => {
+        const before = resizeFrom.current; resizeFrom.current = null;
+        if (!before || !panel.current || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        const after = panel.current.getBoundingClientRect();
+        const animation = panel.current.animate([
+            { width: `${before.width}px`, height: `${before.height}px`, maxHeight: `${before.height}px` },
+            { width: `${after.width}px`, height: `${after.height}px`, maxHeight: `${after.height}px` },
+        ], { duration: 300, easing: 'cubic-bezier(.16,1,.3,1)' });
+        resizeAnimation.current = animation;
+        return () => animation.cancel();
+    }, [expanded, source]);
+
     if (!source) return null;
-    return <div className="project-overlay" data-no-camera="true"
+    return <div className={`project-overlay${expanded ? ' is-expanded' : ''}`} data-no-camera="true"
         onClick={event => { if (event.currentTarget === event.target) close(); }}>
-        <section className="project-card" ref={panel} role="dialog" aria-modal="true" aria-labelledby="project-reader-title">
+        <section className={`project-card${expanded ? ' is-expanded' : ''}`} ref={panel} role="dialog" aria-modal="true" aria-labelledby="project-reader-title">
             <header className="project-card-header">
                 <div><h2 id="project-reader-title">{project.title}</h2>{project.date && <p>{project.date}</p>}</div>
-                <button className="project-close" type="button" onClick={close} aria-label="Close project">×</button>
+                <div className="project-header-actions">
+                    <button className="project-expand" type="button" aria-pressed={expanded} onClick={toggleExpanded}>{expanded ? 'Restore' : 'Expand'}</button>
+                    <button className="project-close" type="button" onClick={close} aria-label="Close project">×</button>
+                </div>
             </header>
             <div className="project-card-body">
                 <div className="project-video">

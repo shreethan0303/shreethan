@@ -75,7 +75,7 @@ export default class CubeRobot {
         gradient.addColorStop(1, 'rgba(0,0,0,0)');
         context.fillStyle = gradient; context.fillRect(0, 0, 128, 128);
         this.shadow = new THREE.Mesh(new THREE.PlaneGeometry(layout.width * 1.2, layout.width * 1.2),
-            new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(shade), transparent: true, depthWrite: false }));
+            new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(shade), transparent: true, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -1 }));
         this.shadow.rotation.x = -Math.PI / 2;
         this.shadow.position.set(layout.position[0], -449, layout.position[2]);
         application.scene.add(this.shadow);
@@ -86,7 +86,7 @@ export default class CubeRobot {
             const contact = new THREE.Vector3().fromArray(point).applyMatrix4(this.model.matrixWorld);
             const patch = new THREE.Mesh(new THREE.PlaneGeometry(layout.width * .13, layout.width * .13),
                 new THREE.MeshBasicMaterial({ map: (this.shadow.material as THREE.MeshBasicMaterial).map,
-                    transparent: true, opacity: .8, depthWrite: false }));
+                    transparent: true, opacity: .8, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -1 }));
             patch.rotation.x = -Math.PI / 2;
             patch.position.set(contact.x, -451.5, contact.z);
             application.scene.add(patch);

@@ -46,6 +46,7 @@ export class MonitorKeyframe extends CameraKeyframeInstance {
     sizes: Sizes;
     targetPos: THREE.Vector3;
     origin: THREE.Vector3;
+    bounds?: THREE.Box3;
 
     constructor() {
         const keyframe = keys.monitor;
@@ -56,7 +57,13 @@ export class MonitorKeyframe extends CameraKeyframeInstance {
         this.targetPos = new THREE.Vector3().copy(keyframe.position);
     }
 
+    setBounds(bounds: THREE.Box3) { this.bounds = bounds.clone(); this.update(); }
+
     update() {
+        if (this.bounds) {
+            const frame = frameBounds(this.bounds, new THREE.Vector3(0, .08, 1), this.sizes, .7);
+            this.position.copy(frame.position); this.focalPoint.copy(frame.center); return;
+        }
         const aspect = this.sizes.height / this.sizes.width;
         const additionalZoom = this.sizes.width < 768 ? 0 : 600;
         this.targetPos.z = this.origin.z + aspect * 1200 - additionalZoom;

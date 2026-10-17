@@ -12,6 +12,7 @@ import Hitboxes from './Hitboxes';
 import AudioManager from '../Audio/AudioManager';
 import ResumePaper from './ResumePaper';
 import CubeRobot from './CubeRobot';
+import PortfolioMonitor from './PortfolioMonitor';
 import WorkshopProject from './WorkshopProject';
 import { workshopLayout } from './WorkshopLayout';
 import { frcProject, rcProject, elevatorProject } from '../../workshop-projects';
@@ -31,6 +32,7 @@ export default class World {
     audioManager: AudioManager;
     resumePaper: ResumePaper;
     cubeRobot: CubeRobot;
+    portfolioMonitor: PortfolioMonitor;
     projects: WorkshopProject[] = [];
 
     constructor() {
@@ -50,6 +52,7 @@ export default class World {
             // Prepare the rotating desk view while the loading screen/door still covers it.
             this.resumePaper = new ResumePaper();
             this.cubeRobot = new CubeRobot();
+            this.portfolioMonitor = new PortfolioMonitor();
             this.projects = [
                 new WorkshopProject('frcRobotModel', frcProject, workshopLayout.frcRobot, 'frc-robot-access'),
                 new WorkshopProject('rcCarModel', rcProject, workshopLayout.rcCar, 'rc-car-access'),
@@ -57,6 +60,7 @@ export default class World {
             ];
             // Frame the complete workshop so floor projects remain discoverable on phones.
             bounds.union(new THREE.Box3().setFromObject(this.cubeRobot.group));
+            bounds.union(new THREE.Box3().setFromObject(this.portfolioMonitor.group));
             this.projects.forEach(project => bounds.union(new THREE.Box3().setFromObject(project.group)));
             (this.application.camera.keyframes.desk as DeskKeyframe).setBounds(bounds);
             (this.application.camera.keyframes.idle as IdleKeyframe).setBounds(bounds);
@@ -71,6 +75,7 @@ export default class World {
         if (this.resumePaper) this.resumePaper.update();
         if (this.cubeRobot) this.cubeRobot.update();
         this.projects.forEach(project => project.update());
+        if (this.portfolioMonitor) this.portfolioMonitor.update();
         if (this.monitorScreen) this.monitorScreen.update();
         if (this.environment) this.environment.update();
         if (this.coffeeSteam) this.coffeeSteam.update();

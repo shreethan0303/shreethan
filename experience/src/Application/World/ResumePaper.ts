@@ -67,7 +67,7 @@ export default class ResumePaper {
         shadeContext.shadowColor = '#000'; shadeContext.shadowBlur = 16;
         shadeContext.fillStyle = '#000'; shadeContext.fillRect(24, 24, 208, 288);
         this.shadow = new THREE.Mesh(new THREE.PlaneGeometry(layout.width * 1.18, layout.height * 1.18),
-            new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(shade), transparent: true, opacity: .14, depthWrite: false }));
+            new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(shade), transparent: true, opacity: .14, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -1 }));
         this.shadow.rotation.x = -Math.PI / 2;
         this.shadow.rotation.z = -layout.rotation;
         this.shadow.position.set(layout.position[0], -449, layout.position[2]);

@@ -79,10 +79,21 @@ export default class Environment {
                 '#include <map_fragment>\nfloat edge = smoothstep(15.0, 19.5, max(abs(backdropPosition.x), abs(backdropPosition.y)));\ndiffuseColor.rgb = mix(diffuseColor.rgb, backdropColor, edge);');
         };
         background.material = material;
-        const extension = new THREE.Mesh(new THREE.PlaneGeometry(2000000, 2000000), new THREE.MeshBasicMaterial({ color }));
+        // A ring, not an overlapping plane: distant depth precision otherwise
+        // makes the two nearly coplanar floors alternate visibly during orbit.
+        const outer = new THREE.Shape();
+        outer.moveTo(-1000000, -1000000); outer.lineTo(1000000, -1000000);
+        outer.lineTo(1000000, 1000000); outer.lineTo(-1000000, 1000000); outer.closePath();
+        const xs = floor.map(index => position.getX(index) * background.scale.x);
+        const zs = floor.map(index => position.getZ(index) * background.scale.z);
+        const hole = new THREE.Path();
+        hole.moveTo(Math.min(...xs), -Math.max(...zs)); hole.lineTo(Math.min(...xs), -Math.min(...zs));
+        hole.lineTo(Math.max(...xs), -Math.min(...zs)); hole.lineTo(Math.max(...xs), -Math.max(...zs)); hole.closePath();
+        outer.holes.push(hole);
+        const extension = new THREE.Mesh(new THREE.ShapeGeometry(outer), new THREE.MeshBasicMaterial({ color }));
         extension.name = 'BackdropExtension';
         extension.rotation.x = -Math.PI / 2;
-        extension.position.y = probe.y - 1;
+        extension.position.y = probe.y;
         this.scene.add(extension);
     }
 

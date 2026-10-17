@@ -7,8 +7,14 @@ export const workshopLayout = {
         fill: .74, // Smaller values leave more space around the desk.
         duration: 1000, // Milliseconds to travel from overview to desk.
     },
+    monitor: {
+        position: [-550, -451.9, -450] as [number, number, number],
+        width: 2100,
+        height: 1312.5,
+        screenHeight: 950,
+    },
     cubeRobot: {
-        position: [-400, -451.9, 550] as [number, number, number],
+        position: [450, -451.9, 1050] as [number, number, number],
         rotation: -.3,
         width: 1147.5, // 85% of the original size; scaling uses the unrotated model.
         // A measured support plane through three motor tips, mapped onto the tabletop.
@@ -47,13 +53,13 @@ export const workshopLayout = {
         ],
     },
     rcCar: {
-        position: [1450, -451.9, 450] as [number, number, number],
+        position: [1750, -451.9, 0] as [number, number, number],
         rotation: -.1,
         length: 1900,
         lift: 25,
     },
     resume: {
-        position: [-2400, -440, 450] as [number, number, number],
+        position: [-2600, -440, 650] as [number, number, number],
         rotation: .12, // Radians around the vertical axis.
         width: 900,
         height: 1164,
