@@ -3,7 +3,6 @@
 // This file changes the entrance text, not the room, camera, or animation.
 export const portfolioCopy = {
     intro: "Hey, I'm Shreethan Palla.\nI build robots and software and enjoy learning new things.",
-    scrollHint: "Scroll to open",
     loading: {
         projects: "Loading cool projects",
         cad: "Loading CAD",

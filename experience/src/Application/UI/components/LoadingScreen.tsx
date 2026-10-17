@@ -15,7 +15,6 @@ const LoadingScreen: React.FC = () => {
     loadState.current = { progress, rendered, failed };
     const panels = useRef<(HTMLDivElement | null)[]>([]);
     const copy = useRef<HTMLElement>(null);
-    const hint = useRef<HTMLParagraphElement>(null);
     const motion = useRef({ current: 0, target: 0, finished: false });
 
     useEffect(() => {
@@ -104,11 +103,6 @@ const LoadingScreen: React.FC = () => {
                 copy.current.style.visibility = textProgress >= .999 ? 'hidden' : 'visible';
             }
             const doorProgress = Math.max(0, (value - boundary) / (1 - boundary));
-            if (hint.current) {
-                const opacity = Math.min(1, Math.max(0, (textProgress - .7) / .3)) * Math.max(0, 1 - doorProgress / .2);
-                hint.current.style.opacity = `${opacity}`;
-                hint.current.style.visibility = opacity > .01 ? 'visible' : 'hidden';
-            }
             const nextStep = value >= boundary - .001 ? 'door' : 'intro';
             if (nextStep !== currentStep) { currentStep = nextStep; setStep(nextStep); }
             const height = innerHeight;
@@ -204,9 +198,11 @@ const LoadingScreen: React.FC = () => {
             </div>
             {loader !== 'loading' && <section className="garage-copy" ref={copy} aria-label="About Shreethan">
                 <h1 className="garage-intro">{portfolioCopy.intro}</h1>
+                <span className="intro-scroll-arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="m6 9 6 6 6-6" /></svg>
+                </span>
                 <p className="garage-sr-only">Scroll or swipe up to continue to the garage door. Press End to continue directly.</p>
             </section>}
-            <p className="garage-hint" ref={hint}>{portfolioCopy.scrollHint}</p>
             {loader !== 'done' && <div className={`workspace-loading${loader === 'leaving' ? ' workspace-loading--leaving' : ''}`}>
                 {failed ? <>
                     <p className="workspace-load-error" role="alert">The workspace couldn’t load.</p>

@@ -76,6 +76,8 @@ export default class Camera extends EventEmitter {
                 this.targetKeyframe === CameraKey.IDLE
             ) {
                 this.transition(CameraKey.DESK, workshopLayout.deskView.duration);
+            } else if (this.currentKeyframe === CameraKey.DESK) {
+                this.transition(CameraKey.IDLE);
             }
         });
 

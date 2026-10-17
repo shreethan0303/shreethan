@@ -43,7 +43,7 @@ Rotation is around the vertical axis and uses radians. A small angle keeps the s
 
 The text in the reading view is real HTML, so it remains selectable, responsive and readable rather than becoming an enlarged bitmap. Its component is `experience/src/Application/UI/components/ResumePaper.tsx`. The overlay contains the only résumé download control and a Back to desk button.
 
-The camera approaches once when the overview is clicked, ignores repeated clicks during travel, and uses Back to room to return. It ignores UI controls; a captured paper click is consumed before reaching the generic camera handler. While the résumé is open, camera interactions are locked. Back to desk or Escape closes the sheet without changing the desk view.
+The camera approaches when the overview is clicked, ignores repeated clicks during travel, and returns when the settled desk background is clicked or Escape is pressed. It ignores UI controls; a captured paper click is consumed before reaching the generic camera handler. While the résumé is open, camera interactions are locked. Back to desk or Escape closes the sheet without changing the desk view.
 
 Keyboard users can Tab to Open résumé after entering the desk view, press Enter, move among the reader controls, and press Escape. Focus stays inside the reader while open and returns to the desk object on close. On touch devices a tap opens the paper without requiring hover. Reduced-motion removes the lifting/expansion animation while preserving the actions.
 

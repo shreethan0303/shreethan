@@ -8,7 +8,7 @@ Use small branches/PRs for the reference baseline, entrance, workbench/PC, proje
 
 ## Communication preference
 
-Explain each change in plain language, including what caused a problem, how the implementation fixes it, and the underlying browser/3D concept. Teach the fundamentals alongside the work. Keep the website itself minimal; educational explanations belong in the conversation and documentation.
+Explain each change in plain language, including what caused a problem, how the implementation fixes it, and the underlying browser/3D concept. Teach the fundamentals alongside the work. Keep the website itself minimal; educational explanations belong in the conversation and documentation. Preserve Henry's in-room black bars, typography and typing animations unless the user specifically asks to change them. Entrance changes do not authorize a redesign of the room interface.
 
 ## ChatGPT / Codex organization
 

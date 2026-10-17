@@ -113,3 +113,11 @@ The animation-clock reset and independent prompt/header typing timers were remov
 ![Desk interface shown together after approach](images/desk-interface.png)
 
 ![Phone desk interface](images/desk-interface-mobile.png)
+
+## Restore Henry's room interface and move the scroll cue
+
+Production build, formatting and whitespace checks passed. Chromium verified the intro's subtle pulsing down chevron, zero Scroll to open text, and an empty closed-door stage. The original black-bar room prompt visibly typed from a partial “Clic” to the complete message after the door event; no typing characters were emitted before the door finished. Its black background and monospace text, and the restored black name/clock bars with white text and original controls, were checked directly and visually.
+
+The approach starts the identity typing once, repeated clicks during travel do not reverse it, the résumé still opens/closes, and later scroll/overview returns do not replay the room prompt. Native phone swipes/taps at 390×844 passed. Reduced-motion keeps the intro chevron static and shows full room text without typing delays. Immediate keyboard approach before the prompt finishes does not leave a delayed prompt behind. Final regular runs reported zero page errors or HTTP failures.
+
+Updated screenshots above show the restored appearance. The table, résumé geometry, lighting and grain were not modified in this correction. The continuous animation clock remains in place to avoid a camera jump after the door.
