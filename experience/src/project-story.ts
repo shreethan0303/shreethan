@@ -16,3 +16,18 @@ export type StoryStage = {
     learning?: string;
 };
 export type StoryReflection = { title: string; text: string | null };
+
+export type ProjectContent = {
+    title: string;
+    date: string;
+    brief: string;
+    details: string;
+    videoUrl: string | null;
+    videoPoster?: string;
+    previewImage?: string;
+    cadUrl: string | null;
+    githubUrl: string | null;
+    story: StoryStage[];
+    reflections: StoryReflection[];
+    models?: { title: string; href: string }[];
+};

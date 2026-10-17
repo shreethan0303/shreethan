@@ -1,0 +1,31 @@
+{
+  "sourceMeshes": 3,
+  "sourceTriangles": 12620,
+  "displayTriangles": 4964,
+  "materialBatches": 2,
+  "dimensionsMeters": [
+    0.02539999783039093,
+    0.04928605258464813,
+    0.09268449991941452
+  ],
+  "sizeBytes": 138180,
+  "sourceParts": [
+    {
+      "name": "C02",
+      "sourceTriangles": 7394,
+      "budget": 2400
+    },
+    {
+      "name": "Part 1",
+      "sourceTriangles": 164,
+      "budget": 2400
+    },
+    {
+      "name": "Part 2",
+      "sourceTriangles": 5062,
+      "budget": 2400
+    }
+  ],
+  "sourceFile": "custom driveshafts wtih 3d pritned and also screws that could withsatnad 50mph.step",
+  "sourceSha256": "ec3c0bba5e89c7b6f74c5deae0f09159e577b75cb6ef6555047a8c7bb50483d9"
+}

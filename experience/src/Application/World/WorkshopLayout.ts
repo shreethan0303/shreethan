@@ -20,6 +20,26 @@ export const workshopLayout = {
         ] as [number, number, number][],
         lift: 25,
     },
+    frcRobot: {
+        position: [4800, -2984.18927, 150] as [number, number, number],
+        rotation: -.25,
+        length: 4000,
+        // Export contains a lower protrusion: align the drive tires, not the overall bounding box.
+        groundOffset: .0257634,
+        contacts: [
+            [-.24954632, .025763415, .130912155],
+            [-.24954630, .025763385, -.427887827],
+            [.257758915, .025763415, .131621748],
+            [.309253752, .025763385, -.427887857],
+        ] as [number, number, number][],
+    },
+    // Reserved placement only: no placeholder model is rendered here.
+    nextFrcRobot: { position: [8200, -2984.18927, -900] as [number, number, number] },
+    rcCar: {
+        position: [1450, -451.9, 450] as [number, number, number],
+        rotation: -.1,
+        length: 1900,
+    },
     resume: {
         position: [-2400, -440, 450] as [number, number, number],
         rotation: .12, // Radians around the vertical axis.

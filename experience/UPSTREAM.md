@@ -18,3 +18,5 @@ Build: npm run build:experience from repository root.
 Output: public/experience (generated and ignored).
 
 Keep this directory's own package-lock.json and Three.js version isolated during the baseline phase. A wholesale library upgrade would change the rendering APIs and complicate visual comparison. Modernize separately after the baseline is accepted. Preserve LICENSE.md when copying or distributing this code.
+
+The owner-supplied FRC and RC STEP assemblies are separate optimized Meshopt GLBs, with source hashes and part manifests beside the display files. Their selection and camera focus reuse the cube interaction through WorkshopProject and a shared ProjectReader. The room camera now frames the desk and floor robot together. The original entrance, bars and environment lighting remain. See ../docs/WORKSHOP-CAD.md for conversion and placement limitations.

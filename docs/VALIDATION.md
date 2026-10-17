@@ -173,3 +173,13 @@ The narrative was updated from the user's descriptions and follow-up: five frame
 The final full production build passed after the reader and hover updates. Chromium at 1200×900 measured adjacent gallery/notes columns of 464.5 px each with matching top positions. Both new single-axis clips decoded and played in portrait orientation; switching clips paused the previous one. Project MP4 requests remained absent until play. The paper showed “Résumé” on actual pointer hover and opened the existing reader with one click. Keyboard handling is installed before first paint for both readers, avoiding a timing gap before Escape/focus controls become available.
 
 At 390×844 the media and notes stacked in order, gallery targets measured 44 px, and card width/scroll width both measured 358 px. Normal-motion entry settled to `transform: none` and `opacity: 1`; animated close returned focus to the desk object. Reduced-motion entry/close also passed. No browser page errors or 400+ resource responses were recorded. Formatting and whitespace checks passed. The date currently reads “March 2025”; the requested start/end month range and original frame JPG remain pending user input.
+
+## FRC and RC assembly checkpoint — 2026-10-17
+
+- Production `npm run build`, root TypeScript, formatting and diff whitespace checks passed. The original renderer build still reports its inherited bundle-size warnings.
+- Chromium loaded the actual Meshopt FRC/car assets with the existing Three.js decoder. No page errors or failed asset responses occurred in the project-reader check.
+- Mouse selection and phone-sized touch selection opened both new model cards. Keyboard opened all three projects, Escape closed them, focus returned to the selected object, and the résumé still opened/closed.
+- At 390 × 844, the project dialog's client width and scroll width were both 358 px. This is emulated portrait testing, not physical-phone performance testing.
+- The RC support calculation found three tire contacts at equal height, with all geometry above the plane. The FRC drive-tire plane is aligned to the existing floor; a lower source protrusion remains occluded by that floor. See the CAD guide for this limitation.
+- Screenshot: [the complete workshop](images/workshop-frc-rc.png). Original engineering sources remain outside the public download; adjacent JSON manifests record source hashes, parts and optimized counts.
+- The production URL could not be fetched from this cloud environment because the outbound proxy rejected the connection. A successful local build and Git push do not confirm Vercel Ready or public access.

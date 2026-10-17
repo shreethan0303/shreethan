@@ -12,6 +12,9 @@ import Hitboxes from './Hitboxes';
 import AudioManager from '../Audio/AudioManager';
 import ResumePaper from './ResumePaper';
 import CubeRobot from './CubeRobot';
+import WorkshopProject from './WorkshopProject';
+import { workshopLayout } from './WorkshopLayout';
+import { frcProject, rcProject } from '../../workshop-projects';
 import { CameraKey } from '../Camera/Camera';
 export default class World {
     application: Application;
@@ -28,6 +31,7 @@ export default class World {
     audioManager: AudioManager;
     resumePaper: ResumePaper;
     cubeRobot: CubeRobot;
+    projects: WorkshopProject[] = [];
 
     constructor() {
         this.application = new Application();
@@ -44,9 +48,18 @@ export default class World {
             (this.application.camera.keyframes.desk as DeskKeyframe).setBounds(bounds);
             (this.application.camera.keyframes.idle as IdleKeyframe).setBounds(bounds);
             // Prepare the rotating desk view while the loading screen/door still covers it.
-            this.application.camera.transition(CameraKey.IDLE, 0);
             this.resumePaper = new ResumePaper();
             this.cubeRobot = new CubeRobot();
+            this.projects = [
+                new WorkshopProject('frcRobotModel', frcProject, workshopLayout.frcRobot, 'frc-robot-access'),
+                new WorkshopProject('rcCarModel', rcProject, workshopLayout.rcCar, 'rc-car-access'),
+            ];
+            // Frame the complete workshop so floor projects remain discoverable on phones.
+            bounds.union(new THREE.Box3().setFromObject(this.cubeRobot.group));
+            this.projects.forEach(project => bounds.union(new THREE.Box3().setFromObject(project.group)));
+            (this.application.camera.keyframes.desk as DeskKeyframe).setBounds(bounds);
+            (this.application.camera.keyframes.idle as IdleKeyframe).setBounds(bounds);
+            this.application.camera.transition(CameraKey.IDLE, 0);
             this.audioManager = new AudioManager();
             // const hb = new Hitboxes();
             // this.cursor = new Cursor();
@@ -56,6 +69,7 @@ export default class World {
     update() {
         if (this.resumePaper) this.resumePaper.update();
         if (this.cubeRobot) this.cubeRobot.update();
+        this.projects.forEach(project => project.update());
         if (this.monitorScreen) this.monitorScreen.update();
         if (this.environment) this.environment.update();
         if (this.coffeeSteam) this.coffeeSteam.update();

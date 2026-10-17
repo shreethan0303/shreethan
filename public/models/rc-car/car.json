@@ -1,0 +1,476 @@
+{
+  "sourceMeshes": 86,
+  "sourceTriangles": 408410,
+  "displayTriangles": 68610,
+  "materialBatches": 11,
+  "dimensionsMeters": [
+    0.28076252341270447,
+    0.4805713891983032,
+    0.15785250067710876
+  ],
+  "sizeBytes": 741456,
+  "sourceParts": [
+    {
+      "name": "A01",
+      "sourceTriangles": 2456,
+      "budget": 1800
+    },
+    {
+      "name": "A02",
+      "sourceTriangles": 2872,
+      "budget": 700
+    },
+    {
+      "name": "A02 MIRROR",
+      "sourceTriangles": 2872,
+      "budget": 700
+    },
+    {
+      "name": "A02.001",
+      "sourceTriangles": 2248,
+      "budget": 700
+    },
+    {
+      "name": "A02.002",
+      "sourceTriangles": 2032,
+      "budget": 700
+    },
+    {
+      "name": "A02.003",
+      "sourceTriangles": 2248,
+      "budget": 700
+    },
+    {
+      "name": "A02.004",
+      "sourceTriangles": 2032,
+      "budget": 700
+    },
+    {
+      "name": "A02.005",
+      "sourceTriangles": 2248,
+      "budget": 700
+    },
+    {
+      "name": "A02.006",
+      "sourceTriangles": 2248,
+      "budget": 700
+    },
+    {
+      "name": "A03",
+      "sourceTriangles": 2978,
+      "budget": 700
+    },
+    {
+      "name": "A03.001",
+      "sourceTriangles": 2978,
+      "budget": 700
+    },
+    {
+      "name": "A04",
+      "sourceTriangles": 1812,
+      "budget": 700
+    },
+    {
+      "name": "A04.001",
+      "sourceTriangles": 1812,
+      "budget": 700
+    },
+    {
+      "name": "A05",
+      "sourceTriangles": 2488,
+      "budget": 700
+    },
+    {
+      "name": "A06",
+      "sourceTriangles": 2488,
+      "budget": 700
+    },
+    {
+      "name": "A07",
+      "sourceTriangles": 3150,
+      "budget": 700
+    },
+    {
+      "name": "A08",
+      "sourceTriangles": 3150,
+      "budget": 700
+    },
+    {
+      "name": "A09",
+      "sourceTriangles": 982,
+      "budget": 1800
+    },
+    {
+      "name": "A10A",
+      "sourceTriangles": 4064,
+      "budget": 700
+    },
+    {
+      "name": "A10A.001",
+      "sourceTriangles": 4064,
+      "budget": 700
+    },
+    {
+      "name": "A10B",
+      "sourceTriangles": 776,
+      "budget": 240
+    },
+    {
+      "name": "A10B.001",
+      "sourceTriangles": 776,
+      "budget": 240
+    },
+    {
+      "name": "A10C",
+      "sourceTriangles": 776,
+      "budget": 240
+    },
+    {
+      "name": "A10C.001",
+      "sourceTriangles": 776,
+      "budget": 240
+    },
+    {
+      "name": "B01",
+      "sourceTriangles": 6014,
+      "budget": 700
+    },
+    {
+      "name": "B02",
+      "sourceTriangles": 3772,
+      "budget": 1800
+    },
+    {
+      "name": "B03",
+      "sourceTriangles": 4308,
+      "budget": 1800
+    },
+    {
+      "name": "B04",
+      "sourceTriangles": 15882,
+      "budget": 1800
+    },
+    {
+      "name": "B05",
+      "sourceTriangles": 3558,
+      "budget": 700
+    },
+    {
+      "name": "B06",
+      "sourceTriangles": 3209,
+      "budget": 700
+    },
+    {
+      "name": "B09",
+      "sourceTriangles": 5654,
+      "budget": 700
+    },
+    {
+      "name": "B10-T",
+      "sourceTriangles": 3266,
+      "budget": 1800
+    },
+    {
+      "name": "B11-T",
+      "sourceTriangles": 2728,
+      "budget": 1800
+    },
+    {
+      "name": "B12-T",
+      "sourceTriangles": 2832,
+      "budget": 1800
+    },
+    {
+      "name": "B13-T",
+      "sourceTriangles": 2114,
+      "budget": 1800
+    },
+    {
+      "name": "Bottom",
+      "sourceTriangles": 1040,
+      "budget": 700
+    },
+    {
+      "name": "C01",
+      "sourceTriangles": 8130,
+      "budget": 700
+    },
+    {
+      "name": "C01.001",
+      "sourceTriangles": 8130,
+      "budget": 700
+    },
+    {
+      "name": "C02",
+      "sourceTriangles": 7790,
+      "budget": 700
+    },
+    {
+      "name": "C02.001",
+      "sourceTriangles": 7790,
+      "budget": 700
+    },
+    {
+      "name": "C03",
+      "sourceTriangles": 8886,
+      "budget": 240
+    },
+    {
+      "name": "C03.001",
+      "sourceTriangles": 8886,
+      "budget": 240
+    },
+    {
+      "name": "C03.002",
+      "sourceTriangles": 8886,
+      "budget": 240
+    },
+    {
+      "name": "C03.003",
+      "sourceTriangles": 8886,
+      "budget": 240
+    },
+    {
+      "name": "C04",
+      "sourceTriangles": 9346,
+      "budget": 700
+    },
+    {
+      "name": "C04.001",
+      "sourceTriangles": 9346,
+      "budget": 700
+    },
+    {
+      "name": "C04.002",
+      "sourceTriangles": 9346,
+      "budget": 700
+    },
+    {
+      "name": "C04.003",
+      "sourceTriangles": 9346,
+      "budget": 700
+    },
+    {
+      "name": "C05-T",
+      "sourceTriangles": 2044,
+      "budget": 700
+    },
+    {
+      "name": "C05-T.001",
+      "sourceTriangles": 2044,
+      "budget": 700
+    },
+    {
+      "name": "C06",
+      "sourceTriangles": 1112,
+      "budget": 700
+    },
+    {
+      "name": "C08",
+      "sourceTriangles": 8716,
+      "budget": 700
+    },
+    {
+      "name": "C09",
+      "sourceTriangles": 2066,
+      "budget": 240
+    },
+    {
+      "name": "C09.001",
+      "sourceTriangles": 2066,
+      "budget": 240
+    },
+    {
+      "name": "C10",
+      "sourceTriangles": 360,
+      "budget": 240
+    },
+    {
+      "name": "D3542 OUTRUNNER",
+      "sourceTriangles": 3139,
+      "budget": 700
+    },
+    {
+      "name": "Part 1",
+      "sourceTriangles": 4368,
+      "budget": 240
+    },
+    {
+      "name": "Part 1.001",
+      "sourceTriangles": 4368,
+      "budget": 240
+    },
+    {
+      "name": "Part 1.002",
+      "sourceTriangles": 4368,
+      "budget": 240
+    },
+    {
+      "name": "Part 1.003",
+      "sourceTriangles": 4368,
+      "budget": 240
+    },
+    {
+      "name": "Part 1.004",
+      "sourceTriangles": 4250,
+      "budget": 1800
+    },
+    {
+      "name": "Part 1.005",
+      "sourceTriangles": 4368,
+      "budget": 240
+    },
+    {
+      "name": "Part 1.006",
+      "sourceTriangles": 648,
+      "budget": 700
+    },
+    {
+      "name": "Part 1.007",
+      "sourceTriangles": 894,
+      "budget": 700
+    },
+    {
+      "name": "Part 1.008",
+      "sourceTriangles": 4368,
+      "budget": 700
+    },
+    {
+      "name": "Part 1.009",
+      "sourceTriangles": 894,
+      "budget": 700
+    },
+    {
+      "name": "Part 1.010",
+      "sourceTriangles": 648,
+      "budget": 700
+    },
+    {
+      "name": "Part 1.011",
+      "sourceTriangles": 432,
+      "budget": 240
+    },
+    {
+      "name": "Part 1.012",
+      "sourceTriangles": 926,
+      "budget": 240
+    },
+    {
+      "name": "Part 1.013",
+      "sourceTriangles": 4368,
+      "budget": 240
+    },
+    {
+      "name": "Part 1.014",
+      "sourceTriangles": 4368,
+      "budget": 700
+    },
+    {
+      "name": "Part 1.015",
+      "sourceTriangles": 4250,
+      "budget": 1800
+    },
+    {
+      "name": "Part 1.016",
+      "sourceTriangles": 3404,
+      "budget": 1800
+    },
+    {
+      "name": "Part 1.017",
+      "sourceTriangles": 4250,
+      "budget": 1800
+    },
+    {
+      "name": "Part 1.018",
+      "sourceTriangles": 894,
+      "budget": 700
+    },
+    {
+      "name": "Part 1.019",
+      "sourceTriangles": 648,
+      "budget": 700
+    },
+    {
+      "name": "Part 1.020",
+      "sourceTriangles": 4368,
+      "budget": 240
+    },
+    {
+      "name": "Part 1.021",
+      "sourceTriangles": 894,
+      "budget": 700
+    },
+    {
+      "name": "Part 1.022",
+      "sourceTriangles": 648,
+      "budget": 700
+    },
+    {
+      "name": "Part 1.023",
+      "sourceTriangles": 4368,
+      "budget": 700
+    },
+    {
+      "name": "Part 1.024",
+      "sourceTriangles": 648,
+      "budget": 700
+    },
+    {
+      "name": "Part 1.025",
+      "sourceTriangles": 894,
+      "budget": 700
+    },
+    {
+      "name": "Part 2",
+      "sourceTriangles": 30056,
+      "budget": 1800
+    },
+    {
+      "name": "Part 2.001",
+      "sourceTriangles": 30056,
+      "budget": 1800
+    },
+    {
+      "name": "Part 2.002",
+      "sourceTriangles": 30056,
+      "budget": 1800
+    },
+    {
+      "name": "Spur gear (50 teeth)",
+      "sourceTriangles": 14322,
+      "budget": 1800
+    }
+  ],
+  "restingPose": {
+    "quaternion": [
+      -0.008277416170612355,
+      0.0,
+      -0.005207153904293299,
+      0.9999521838216843
+    ],
+    "contactPoints": [
+      [
+        0.11748430132865906,
+        0.005263067781925201,
+        -0.129878431558609
+      ],
+      [
+        0.11236144602298737,
+        1.4901161193847656e-08,
+        0.18476969003677368
+      ],
+      [
+        -0.11964480578899384,
+        0.0027931779623031616,
+        -0.129878431558609
+      ]
+    ],
+    "contactHeightSpread": 4.336808689942018e-19,
+    "allGeometryAboveSupport": true,
+    "score": 0.999808739859511
+  },
+  "uncompressedSizeBytes": 2397588,
+  "compression": "EXT_meshopt_compression + KHR_mesh_quantization, 16-bit positions",
+  "sourceFile": "Assembly V2.step",
+  "sourceSha256": "a418984637ef170b44deee4134592f391a2530ed05d41ce820c40d708122e6ca"
+}

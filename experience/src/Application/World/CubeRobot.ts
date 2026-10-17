@@ -108,7 +108,7 @@ export default class CubeRobot {
         this.button.addEventListener('keydown', event => {
             if (event.key === 'Escape') { event.stopPropagation(); this.button.blur(); }
         });
-        UIEventBus.on('cube-project:close', () => {
+        UIEventBus.on('project:close', () => {
             if (!this.open) return;
             this.open = false;
             this.application.camera.transition(CameraKey.DESK, 650, undefined, () => {
@@ -138,7 +138,7 @@ export default class CubeRobot {
         this.group.updateMatrixWorld(true);
         (this.application.camera.keyframes.project as ProjectKeyframe).setBounds(new THREE.Box3().setFromObject(this.group));
         this.application.camera.transition(CameraKey.PROJECT, 700);
-        UIEventBus.dispatch('cube-project:open', this.rect);
+        UIEventBus.dispatch('project:open', { rect: this.rect, project: cubeProject });
     }
 
     active() {

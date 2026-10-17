@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import LoadingScreen from './components/LoadingScreen';
 import ResumePaper from './components/ResumePaper';
-import CubeProject from './components/CubeProject';
+import ProjectReader from './components/ProjectReader';
 import HelpPrompt from './components/HelpPrompt';
 import InterfaceUI from './components/InterfaceUI';
 import eventBus from './EventBus';
@@ -22,7 +22,7 @@ const App = () => {
             {!loading && <HelpPrompt />}
             <LoadingScreen />
             <ResumePaper />
-            <CubeProject />
+            <ProjectReader />
         </div>
     );
 };

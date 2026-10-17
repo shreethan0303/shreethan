@@ -2,10 +2,12 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { cubeProject } from '../../../cube-project';
 import UIEventBus from '../EventBus';
 import ProjectStory from './ProjectStory';
+import { ProjectContent } from '../../../project-story';
 
 type SourceRect = { x: number; y: number; width: number; height: number };
 
-export default function CubeProject() {
+export default function ProjectReader() {
+    const [project, setProject] = useState<ProjectContent>(cubeProject);
     const [source, setSource] = useState<SourceRect | null>(null);
     const panel = useRef<HTMLElement>(null);
     const closing = useRef(false);
@@ -24,9 +26,16 @@ export default function CubeProject() {
     };
 
     useEffect(() => {
-        const open = (event: Event) => { closing.current = false; setSource((event as CustomEvent<SourceRect>).detail); };
-        document.addEventListener('cube-project:open', open);
-        return () => document.removeEventListener('cube-project:open', open);
+        const open = (event: Event) => {
+            const detail = (event as CustomEvent).detail;
+            closing.current = false;
+            setProject(detail.project || cubeProject);
+            setSource(detail.rect || detail);
+        };
+        document.addEventListener('project:open', open);
+        return () => {
+            document.removeEventListener('project:open', open);
+        };
     }, []);
 
     // Attach focus and keyboard handling before the reader is painted.
@@ -62,37 +71,39 @@ export default function CubeProject() {
             sheet.removeEventListener('play', play, true);
             sheet.querySelectorAll('video').forEach(video => video.pause());
             document.removeEventListener('keydown', keyboard);
-            UIEventBus.dispatch('cube-project:close', {});
+            UIEventBus.dispatch('project:close', {});
         };
     }, [source]);
 
     if (!source) return null;
     return <div className="project-overlay" data-no-camera="true"
         onClick={event => { if (event.currentTarget === event.target) close(); }}>
-        <section className="project-card" ref={panel} role="dialog" aria-modal="true" aria-labelledby="cube-project-title">
+        <section className="project-card" ref={panel} role="dialog" aria-modal="true" aria-labelledby="project-reader-title">
             <header className="project-card-header">
-                <div><h2 id="cube-project-title">{cubeProject.title}</h2><p>{cubeProject.date}</p></div>
+                <div><h2 id="project-reader-title">{project.title}</h2>{project.date && <p>{project.date}</p>}</div>
                 <button className="project-close" type="button" onClick={close} aria-label="Close project">×</button>
             </header>
             <div className="project-card-body">
                 <div className="project-video">
-                    {cubeProject.videoUrl
-                        ? <video controls playsInline preload="none" poster={cubeProject.videoPoster} src={cubeProject.videoUrl} aria-label="Rubik’s cube robot demonstration" />
+                    {project.videoUrl
+                        ? <video controls playsInline preload="none" poster={project.videoPoster} src={project.videoUrl} aria-label={`${project.title} demonstration`} />
+                        : project.previewImage ? <img src={project.previewImage} alt={`${project.title} CAD assembly`} />
                         : <div className="project-video-placeholder"><span>Video coming soon</span></div>}
                 </div>
                 <div className="project-brief">
                     <h3>Project brief</h3>
-                    <p>{cubeProject.brief}</p>
-                    <p className="project-details">{cubeProject.details}</p>
+                    <p>{project.brief}</p>
+                    <p className="project-details">{project.details}</p>
                     <nav className="project-links" aria-label="Project links">
-                        {cubeProject.cadUrl ? <a href={cubeProject.cadUrl} target="_blank" rel="noopener noreferrer">View CAD ↗</a>
+                        {project.cadUrl ? <a href={project.cadUrl} target="_blank" rel="noopener noreferrer">View CAD ↗</a>
                             : <span aria-disabled="true">CAD link coming soon</span>}
-                        {cubeProject.githubUrl ? <a href={cubeProject.githubUrl} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        {project.githubUrl ? <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
                             : <span aria-disabled="true">GitHub link coming soon</span>}
+                        {project.models?.map(model => <a key={model.href} href={model.href} download>{model.title} ↓</a>)}
                     </nav>
                 </div>
             </div>
-            <ProjectStory stages={cubeProject.story} reflections={cubeProject.reflections} />
+            {(project.story.length > 0 || project.reflections.length > 0) && <ProjectStory stages={project.story} reflections={project.reflections} />}
         </section>
     </div>;
 }

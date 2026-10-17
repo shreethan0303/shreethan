@@ -60,3 +60,7 @@ The robot is displayed at 85% of its initial scale and tilted onto a measured th
 ## Project stories
 
 Use a scrollable build timeline inside the existing rounded reader, with small chapter links, multiple photos/clips per stage, then contribution, lessons, inspiration and future work. One vertical scroll, one visible media item per gallery, no autoplay. The cube's initial chapter order follows the user's proposed testing progression and remains editable until the actual media is reviewed. New copy must distinguish observed behavior, the user's explanations, original work and reused sources. Keep placeholder notes instead of inventing technical results. The entrance, desk and model placement remain unchanged in this phase.
+
+## FRC and RC assemblies
+
+Display the supplied FRC robot on the floor beside the desk, and the RC car on the table beside the cube solver. Reserve a second floor location without inventing a model. Preserve source colors with material adjustments, optimize CAD copies offline, and reuse a single project reader. Keep unknown season, dates, links, team role and performance claims pending. Preserve the car's actual three tires until the user confirms a fourth; align its measured support plane with the table. See [the CAD guide](WORKSHOP-CAD.md) for asset and placement limitations.

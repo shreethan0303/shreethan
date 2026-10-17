@@ -1,4 +1,6 @@
 const sources: Resource[] = [
+    { name: 'frcRobotModel', type: 'gltfModel', path: '/models/frc-robot/robot.glb' },
+    { name: 'rcCarModel', type: 'gltfModel', path: '/models/rc-car/car.glb' },
     {
         name: 'cubeRobotModel',
         type: 'gltfModel',

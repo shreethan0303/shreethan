@@ -1,8 +1,8 @@
 # Shreethan Palla — portfolio
 
-A personal portfolio adapted from Henry Heffernan’s licensed Three.js room. The current checkpoint has a visible asset loader, plain introduction and scroll-controlled garage entrance, a four-legged desk, an interactive résumé sheet and your actual cube-solving robot with hover feedback and a rounded project reader with a build-story timeline and real testing clips. A new computer and final personal content come next.
+A personal portfolio adapted from Henry Heffernan’s licensed Three.js room. The current checkpoint has a visible asset loader, plain introduction and scroll-controlled garage entrance, a four-legged desk, an interactive résumé sheet and your actual cube-solving robot with hover feedback and a rounded project reader with a build-story timeline and real testing clips. The supplied FRC robot now stands beside the desk, and the RC car sits beside the cube solver. Both open the same project reader. A new computer and final personal content come next.
 
-![Desk with your cube-solving robot and résumé paper](docs/images/cube-robot-desk.png)
+![Workshop with the cube solver, RC car, FRC robot and résumé paper](docs/images/workshop-frc-rc.png)
 
 See the [plain introduction](docs/images/intro-text.png), [garage-door entrance](docs/images/garage-door.png) and [validation evidence and limits](docs/VALIDATION.md).
 
@@ -74,7 +74,7 @@ CI runs formatting and the production build. Browser validation is described in 
 
 ## Status
 
-The garage-door entrance, desk and interactive lined résumé paper work. The computer, chair, plant and desk props are disabled; their original source assets remain in the repository. `/desktop` is available directly. `/projects/robotics` includes an illustrative scroll-controlled assembly, not real project CAD. A material-preserving model loader exists but still needs to be connected to a real asset/viewer. The paper lifts/brightens on hover and opens a readable lorem ipsum placeholder with a PDF download. Modern PC, physical project interactions, verified project content and final résumé remain outstanding. Public deployment status must be verified in Vercel. Original branded assets require replacement before reintroducing them.
+The garage-door entrance, desk and interactive lined résumé paper work. The computer, chair, plant and desk props are disabled; their original source assets remain in the repository. `/desktop` is available directly. `/projects/robotics` includes an illustrative scroll-controlled assembly, not real project CAD. The supplied cube robot, FRC robot and RC car are connected to the room and shared project reader. The paper lifts/brightens on hover and opens a readable lorem ipsum placeholder with a PDF download. A modern PC, the second FRC assembly, remaining verified project content and final résumé remain outstanding. Public deployment status must be verified in Vercel. Original branded assets require replacement before reintroducing them.
 
 The [fundamentals guide](docs/FUNDAMENTALS.md) explains browser basics, the actual build/deployment pipeline, storage, the room and entrance code, Onshape exports, model integration, and hands-on exercises.
 
@@ -85,3 +85,5 @@ The previous procedural prototype is preserved in `/workspace/portfolio-backups/
 Adapted from [Henry Heffernan’s portfolio-website](https://github.com/henryjeff/portfolio-website), commit `c53c5a50183655eb83d70048403a5084f5d1214c`. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The separate inner OS repository was not copied.
 
 The [cube media guide](docs/CUBE-MEDIA.md) records the imported recordings, their captions, conversion settings and remaining files.
+
+See [adding FRC and RC models](docs/WORKSHOP-CAD.md) for exports, materials, placement, phone access and the remaining three-tire car decision.
