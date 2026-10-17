@@ -239,3 +239,24 @@ br {
 .resume-writing .resume-note{font:12px/24px Arial,sans-serif;color:var(--studio-muted)}
 .resume-writing .resume-footer{margin-top:48px}
 @media(max-width:600px){.resume-overlay{padding:12px}.resume-sheet{width:calc(100vw - 24px);height:calc(100dvh - 24px)}.resume-actions{padding:12px 16px}.resume-writing{padding:28px 24px 32px 42px;background-image:linear-gradient(90deg,transparent 24px,#d9d0c7 24px,#d9d0c7 25px,transparent 25px),repeating-linear-gradient(transparent 0,transparent 31px,#e3e4df 31px,#e3e4df 32px)}.resume-writing h2{font-size:28px}}
+
+/* Only identify the CAD when it is pointed at or reached with the keyboard. */
+.cube-robot-access {
+    position: fixed;
+    transform: translate(-50%, -100%);
+    border: 0;
+    padding: 7px 10px;
+    background: #171717;
+    color: #fff;
+    font: 12px monospace;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 150ms ease;
+}
+.cube-robot-access.is-highlighted,
+.cube-robot-access:focus-visible { opacity: 1; }
+.cube-robot-access:focus-visible { outline: 2px solid #777; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+    .cube-robot-access { transition: none; }
+}

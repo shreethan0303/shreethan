@@ -133,3 +133,13 @@ Native phone taps and reduced-motion clicks passed. The door-opening click did n
 Production build, final renderer compile, formatting and whitespace checks passed. The three loading messages use independent 600ms timer slots, with complete cycles before leaving and no extra final-message dwell during the circle fade. The ring still follows real readiness. A busy frame cannot skip a statement by jumping a wall-clock index.
 
 Software Chromium at 800×600 measured about 597–609ms per statement across three cycles with a held asset, 600–603ms on a fast reload, and 600–601ms with reduced motion. Every cycle contained all three statements in order; entry still waited for real assets and the rendered room. The restored room prompt's first typed character appeared about 45ms after the door event, with its old 500ms pause removed. Reduced-motion showed the complete prompt immediately. Final runs reported zero page errors or HTTP failures. No visual styles, text wording or other room typing rates changed.
+
+## Actual cube-solver CAD on the desk
+
+Converted the user-supplied STEP assembly, rather than substituting placeholder geometry. The offline preparation validates 33 cube components, a 56 mm cube and six equal outer face areas before assigning colors. The resulting GLB retains 111 mesh parts, 137,526 triangles and named assembly groups. The original STEP is outside the repository.
+
+Production `npm run build` passed, including the isolated renderer and Next type checks. Formatting and diff whitespace checks passed. Chromium at 1000×750 verified click-through introduction/door, approach, model visibility, actual-mesh hover, click selection without camera return, keyboard highlight and résumé modal interaction lock. At 390×844, the robot remained on the tabletop, could be selected and the document width matched the viewport. Reduced-motion interaction passed. With normal motion, measured hover lift eased to 0.999 and returned to 0.001 on leaving (normalized 0–1). No page errors or 400+ resource responses were recorded. These are software-rendered cloud browser checks, not real-phone performance measurements.
+
+![Actual cube solver on the desk](images/cube-robot-desk.png)
+
+The earlier baseline and placeholder explosion sections describe historical checkpoints. This real model currently has hover/focus/select feedback only; its video/detail reader and authored exploded animation are not implemented. GitHub push and Vercel readiness are separate from local validation.

@@ -43,8 +43,12 @@ The empty desk uses a generated GLB and baked atlas. Its backdrop samples the or
 
 ## Résumé interaction
 
-Paper rests at front-left and lifts/brightens on hover or keyboard focus in the desk view. Click/tap opens a readable HTML sheet with a faint room behind it, a placeholder PDF download, and Back/Escape. The rest of the desktop stays empty. Camera and object placement settings live in `World/WorkshopLayout.ts`; see [the interaction guide](WORKSHOP-INTERACTIONS.md).
+Paper rests at front-left and lifts/brightens on hover or keyboard focus in the desk view. Click/tap opens a readable HTML sheet with a faint room behind it, a placeholder PDF download, and Back/Escape. The cube-solving robot is the first real project added beside it. Camera and object placement settings live in `World/WorkshopLayout.ts`; see [the interaction guide](WORKSHOP-INTERACTIONS.md).
 
 ## Next PC asset
 
 Use a suitable Corsair 5000T model with an exact Gigabyte GPU to be chosen later, dark shell/interior and red/white RGB. No temporary PC has been inserted. See [the asset/modeling brief](PC-ASSET-BRIEF.md) for references, search leads, named-part workflow and two-day scope. Résumé placeholder content is lorem ipsum only.
+
+## First real project
+
+The supplied STEP assembly is converted to a separate optimized GLB with its actual part geometry. Six cube face colors are assigned during preparation, without requiring CAD edits. It rests near the center/front of the desk and lifts/brightens subtly on hover or keyboard focus. Tap selects it without triggering the background camera. Video, GitHub URL, description, project reader and explosion presentation are deferred until model placement/hover is accepted. See [the asset workflow](CUBE-SOLVER-ASSET.md). Preserve entrance, black bars, typing, desk and baked lighting.

@@ -11,6 +11,7 @@ import Cursor from './Cursor';
 import Hitboxes from './Hitboxes';
 import AudioManager from '../Audio/AudioManager';
 import ResumePaper from './ResumePaper';
+import CubeRobot from './CubeRobot';
 import { CameraKey } from '../Camera/Camera';
 export default class World {
     application: Application;
@@ -26,6 +27,7 @@ export default class World {
     cursor: Cursor;
     audioManager: AudioManager;
     resumePaper: ResumePaper;
+    cubeRobot: CubeRobot;
 
     constructor() {
         this.application = new Application();
@@ -44,6 +46,7 @@ export default class World {
             // Prepare the rotating desk view while the loading screen/door still covers it.
             this.application.camera.transition(CameraKey.IDLE, 0);
             this.resumePaper = new ResumePaper();
+            this.cubeRobot = new CubeRobot();
             this.audioManager = new AudioManager();
             // const hb = new Hitboxes();
             // this.cursor = new Cursor();
@@ -52,6 +55,7 @@ export default class World {
 
     update() {
         if (this.resumePaper) this.resumePaper.update();
+        if (this.cubeRobot) this.cubeRobot.update();
         if (this.monitorScreen) this.monitorScreen.update();
         if (this.environment) this.environment.update();
         if (this.coffeeSteam) this.coffeeSteam.update();

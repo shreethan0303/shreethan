@@ -7,6 +7,12 @@ export const workshopLayout = {
         fill: .74, // Smaller values leave more space around the desk.
         duration: 1000, // Milliseconds to travel from overview to desk.
     },
+    cubeRobot: {
+        position: [-400, -448, 550] as [number, number, number],
+        rotation: -.3,
+        width: 1350,
+        lift: 25,
+    },
     resume: {
         position: [-2400, -440, 450] as [number, number, number],
         rotation: .12, // Radians around the vertical axis.

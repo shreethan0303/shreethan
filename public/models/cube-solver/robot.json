@@ -1,0 +1,37 @@
+{
+  "sourceMeshCount": 111,
+  "sourceTriangles": 763636,
+  "displayTriangles": 137526,
+  "sizeBytes": 3840852,
+  "dimensionsMeters": [
+    0.20806193351745605,
+    0.20806197822093964,
+    0.20806199312210083
+  ],
+  "cubeFaceAreasSquareMeters": [
+    0.0024363083298426513,
+    0.002436308300505896,
+    0.002436308299958778,
+    0.0024363082963021476,
+    0.00243630659627625,
+    0.0024363133953055893
+  ],
+  "groups": {
+    "Cube": 33,
+    "Motor -Z": 12,
+    "Motor -Y": 14,
+    "Motor -X": 13,
+    "Motor +Z": 12,
+    "Motor +X": 13,
+    "Motor +Y": 12,
+    "Frame": 2
+  },
+  "cubeColors": {
+    "orange": "f58b25",
+    "red": "da3b35",
+    "green": "2aaf66",
+    "blue": "2865d0",
+    "yellow": "f3d341",
+    "white": "f1f3ee"
+  }
+}

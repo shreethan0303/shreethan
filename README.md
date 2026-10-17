@@ -1,8 +1,8 @@
 # Shreethan Palla — portfolio
 
-A personal portfolio adapted from Henry Heffernan’s licensed Three.js room. The current checkpoint has a visible asset loader, plain introduction and scroll-controlled garage entrance, a four-legged desk and an interactive résumé sheet. Real project CAD, a new computer and final personal content come next.
+A personal portfolio adapted from Henry Heffernan’s licensed Three.js room. The current checkpoint has a visible asset loader, plain introduction and scroll-controlled garage entrance, a four-legged desk, an interactive résumé sheet and your actual cube-solving robot with hover feedback. A new computer and final personal content come next.
 
-![Current desk with résumé paper](docs/images/paper-resting.png)
+![Desk with your cube-solving robot and résumé paper](docs/images/cube-robot-desk.png)
 
 See the [plain introduction](docs/images/intro-text.png), [garage-door entrance](docs/images/garage-door.png) and [validation evidence and limits](docs/VALIDATION.md).
 
@@ -51,6 +51,8 @@ To change your intro sentence or loading messages yourself, edit [portfolio-copy
 See the [workshop interaction guide](docs/WORKSHOP-INTERACTIONS.md) to change the authored zoom view or paper placement.
 
 See the [PC asset brief](docs/PC-ASSET-BRIEF.md) for the Corsair 5000T/Gigabyte direction and a two-day CAD workflow. No PC placeholder has been added.
+
+See [your cube robot’s CAD-to-web workflow](docs/CUBE-SOLVER-ASSET.md) for its colors, placement and reproducible conversion.
 
 ## Iterate
 

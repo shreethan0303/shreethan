@@ -1,5 +1,10 @@
 const sources: Resource[] = [
     {
+        name: 'cubeRobotModel',
+        type: 'gltfModel',
+        path: '/models/cube-solver/robot.glb',
+    },
+    {
         name: 'computerSetupModel',
         type: 'gltfModel',
         path: 'models/Computer/computer_setup.glb',
