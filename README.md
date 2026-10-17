@@ -1,6 +1,6 @@
 # Shreethan Palla — portfolio
 
-A personal portfolio adapted from Henry Heffernan’s licensed Three.js room. The current checkpoint has a visible asset loader, plain introduction and scroll-controlled garage entrance, a four-legged desk, an interactive résumé sheet and your actual cube-solving robot with hover feedback and a rounded project reader with a build-story timeline. A new computer and final personal content come next.
+A personal portfolio adapted from Henry Heffernan’s licensed Three.js room. The current checkpoint has a visible asset loader, plain introduction and scroll-controlled garage entrance, a four-legged desk, an interactive résumé sheet and your actual cube-solving robot with hover feedback and a rounded project reader with a build-story timeline and real testing clips. A new computer and final personal content come next.
 
 ![Desk with your cube-solving robot and résumé paper](docs/images/cube-robot-desk.png)
 
@@ -83,3 +83,5 @@ The previous procedural prototype is preserved in `/workspace/portfolio-backups/
 ## Credits
 
 Adapted from [Henry Heffernan’s portfolio-website](https://github.com/henryjeff/portfolio-website), commit `c53c5a50183655eb83d70048403a5084f5d1214c`. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The separate inner OS repository was not copied.
+
+The [cube media guide](docs/CUBE-MEDIA.md) records the imported recordings, their captions, conversion settings and remaining files.

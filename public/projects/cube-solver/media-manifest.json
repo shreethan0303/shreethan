@@ -1,0 +1,84 @@
+[
+  {
+    "source": "IMG_1504.MOV",
+    "sourceSha256": "0ffdf79016ae147719d9218d02abe44cc6de85b14a5c40d90198380ad6312ec1",
+    "sourceBytes": 5377834,
+    "webFile": "stepper-motor-test.mp4",
+    "webBytes": 619573,
+    "poster": "stepper-motor-test.jpg",
+    "duration": 2.785011,
+    "video": {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 720,
+      "pix_fmt": "yuv420p"
+    }
+  },
+  {
+    "source": "IMG_1662.MOV",
+    "sourceSha256": "34eb5d050ec198c038f3435c4e9033b0c465519bc5f4f946592037afff271108",
+    "sourceBytes": 6521679,
+    "webFile": "two-axis-test.mp4",
+    "webBytes": 1397495,
+    "poster": "two-axis-test.jpg",
+    "duration": 3.436767,
+    "video": {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 720,
+      "pix_fmt": "yuv420p"
+    }
+  },
+  {
+    "source": "IMG_1663.MOV",
+    "sourceSha256": "32aa8db91ab57707d4fcfdc929a8e28237ca79d3255c4bd09a68d38812b4c8c4",
+    "sourceBytes": 9576371,
+    "webFile": "six-axis-test.mp4",
+    "webBytes": 1435962,
+    "poster": "six-axis-test.jpg",
+    "duration": 4.920998,
+    "video": {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 720,
+      "pix_fmt": "yuv420p"
+    }
+  },
+  {
+    "source": "IMG_1632.MOV",
+    "sourceSha256": "b3336e7d7fc292cf5d606370e42ed2fc869f17a29e628a48976e1484ffe87739",
+    "sourceBytes": 13706987,
+    "webFile": "alignment-debugging.mp4",
+    "webBytes": 1510962,
+    "poster": "alignment-debugging.jpg",
+    "duration": 7.242993,
+    "video": {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 720,
+      "pix_fmt": "yuv420p"
+    }
+  },
+  {
+    "source": "IMG_1658.mov",
+    "sourceSha256": "1a88a8fcf52cc522ba38c445cab974737ab630dfdd8f2b9a587cb600dc959a05",
+    "sourceBytes": 10264635,
+    "webFile": "first-solve.mp4",
+    "webBytes": 1510783,
+    "poster": "first-solve.jpg",
+    "duration": 5.548005,
+    "video": {
+      "codec_name": "h264",
+      "width": 822,
+      "height": 1280,
+      "pix_fmt": "yuv420p"
+    }
+  },
+  {
+    "source": "IMG_1637.jpeg",
+    "sourceSha256": "ef6357ad1a4ad22072c865049f1b2c1dbb1b10d98f69f8d87f04cc0637befe6b",
+    "sourceBytes": 1952395,
+    "webFile": "connector-issues.jpg",
+    "webBytes": 173988
+  }
+]

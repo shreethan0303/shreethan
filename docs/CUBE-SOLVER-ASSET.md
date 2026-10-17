@@ -82,3 +82,7 @@ This cloud workspace cannot read a Windows Downloads folder from an Explorer scr
 Keep original filenames and originals. Send files first; a short note about a clip's stage is helpful, but not required for transfer. After review, identify chronology, the observed problem, the actual fix, what was learned, which work was original and any sources used. Screenshots' Download/Date modified timestamps do not establish the original project dates.
 
 Before publishing, make smaller display copies: browser-compatible MP4 video, appropriately sized images and poster thumbnails. Put only selected web assets in `public/projects/cube-solver/`, using descriptive filenames and captions. Do not put the raw archive into the runtime loading list. Visitors should download a clip when they choose to play it, not during the garage intro.
+
+## Received recordings
+
+Five actual clips and the connector photo are now imported, with captions and a story drafted from the user’s explanations. The original five-axis placeholder has been replaced by the confirmed two-axis test with all six axes connected. The first-solve clip appears in the overview as well as its timeline stage. See [media provenance, conversion and remaining files](CUBE-MEDIA.md). The remaining single-axis and frame-assembly assets could not be transferred in the oversized ZIP.

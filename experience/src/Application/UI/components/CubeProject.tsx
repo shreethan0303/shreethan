@@ -8,7 +8,10 @@ type SourceRect = { x: number; y: number; width: number; height: number };
 export default function CubeProject() {
     const [source, setSource] = useState<SourceRect | null>(null);
     const panel = useRef<HTMLElement>(null);
-    const close = () => setSource(null);
+    const close = () => {
+        panel.current?.querySelectorAll('video').forEach(video => video.pause());
+        setSource(null);
+    };
 
     useEffect(() => {
         const open = (event: Event) => setSource((event as CustomEvent<SourceRect>).detail);
@@ -27,6 +30,10 @@ export default function CubeProject() {
         ], { duration: 650, easing: 'cubic-bezier(.2,.8,.2,1)' });
         const controls = () => Array.from(sheet.querySelectorAll<HTMLElement>('button:not(:disabled),a[href],video[controls]'));
         controls()[0]?.focus({ preventScroll: true });
+        const play = (event: Event) => {
+            sheet.querySelectorAll('video').forEach(video => { if (video !== event.target) video.pause(); });
+        };
+        sheet.addEventListener('play', play, true);
         const keyboard = (event: KeyboardEvent) => {
             if (event.key === 'Escape') { event.preventDefault(); close(); }
             if (event.key !== 'Tab') return;
@@ -38,6 +45,8 @@ export default function CubeProject() {
         document.addEventListener('keydown', keyboard);
         return () => {
             animation?.cancel();
+            sheet.removeEventListener('play', play, true);
+            sheet.querySelectorAll('video').forEach(video => video.pause());
             document.removeEventListener('keydown', keyboard);
             UIEventBus.dispatch('cube-project:close', {});
         };
@@ -54,7 +63,7 @@ export default function CubeProject() {
             <div className="project-card-body">
                 <div className="project-video">
                     {cubeProject.videoUrl
-                        ? <video controls playsInline preload="metadata" src={cubeProject.videoUrl} aria-label="Rubik’s cube robot demonstration" />
+                        ? <video controls playsInline preload="none" poster={cubeProject.videoPoster} src={cubeProject.videoUrl} aria-label="Rubik’s cube robot demonstration" />
                         : <div className="project-video-placeholder"><span>Video coming soon</span></div>}
                 </div>
                 <div className="project-brief">
