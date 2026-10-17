@@ -127,3 +127,9 @@ Updated screenshots above show the restored appearance. The table, résumé geom
 Production build, formatting and whitespace checks passed. Chromium verified that clicking during loading cannot bypass readiness, a click animates the introduction to the closed door, and another click opens it. Mixing these clicks with reverse/forward scrolling still works. A separate room click approaches the desk normally.
 
 Native phone taps and reduced-motion clicks passed. The door-opening click did not also approach the desk, including when reduced-motion completed the animation synchronously. Regular requests reported zero page errors or HTTP failures. This change adds no visible controls and does not alter Henry's restored room UI.
+
+## Equal loading-message timing and earlier room prompt
+
+Production build, final renderer compile, formatting and whitespace checks passed. The three loading messages use independent 600ms timer slots, with complete cycles before leaving and no extra final-message dwell during the circle fade. The ring still follows real readiness. A busy frame cannot skip a statement by jumping a wall-clock index.
+
+Software Chromium at 800×600 measured about 597–609ms per statement across three cycles with a held asset, 600–603ms on a fast reload, and 600–601ms with reduced motion. Every cycle contained all three statements in order; entry still waited for real assets and the rendered room. The restored room prompt's first typed character appeared about 45ms after the door event, with its old 500ms pause removed. Reduced-motion showed the complete prompt immediately. Final runs reported zero page errors or HTTP failures. No visual styles, text wording or other room typing rates changed.

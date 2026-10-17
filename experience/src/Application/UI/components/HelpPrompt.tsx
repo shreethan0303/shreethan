@@ -34,7 +34,7 @@ const HelpPrompt: React.FC = () => {
                 window.postMessage({ type: 'keydown', key: `_AUTO_${HELP_TEXT[index]}` }, '*');
                 if (index + 1 < HELP_TEXT.length) timer = window.setTimeout(() => type(index + 1), Math.random() * 120 + 50);
             };
-            timer = window.setTimeout(() => type(0), 500);
+            type(0);
         }
         return () => {
             active.current = false;

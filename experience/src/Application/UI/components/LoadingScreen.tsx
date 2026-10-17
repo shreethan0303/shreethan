@@ -3,12 +3,16 @@ import Application from '../../Application';
 import eventBus from '../EventBus';
 import { portfolioCopy } from '../../../portfolio-copy';
 
+const loadingMessages = [portfolioCopy.loading.projects, portfolioCopy.loading.cad, portfolioCopy.loading.graphics];
+const messageDuration = 600;
+
 /** One sequence: real loading, plain introduction, closed door, then room. */
 const LoadingScreen: React.FC = () => {
     const [progress, setProgress] = useState(0);
     const [failed, setFailed] = useState(false);
     const [rendered, setRendered] = useState(false);
     const [visualProgress, setVisualProgress] = useState(0);
+    const [message, setMessage] = useState(0);
     const [loader, setLoader] = useState<'loading' | 'leaving' | 'done'>('loading');
     const [step, setStep] = useState<'intro' | 'door' | 'done'>('intro');
     const loadState = useRef({ progress: 0, rendered: false, failed: false });
@@ -43,23 +47,38 @@ const LoadingScreen: React.FC = () => {
         let previous = start;
         let shown = 0;
         let frame = 0;
-        // The presentation lasts at least 1.1 seconds; it never leads real progress.
-        const animate = (now: number) => {
+        let messageIndex = 0;
+        let timer = 0;
+        // Each message gets a complete equal slot, even when assets need another cycle.
+        const animate = () => {
+            const now = performance.now();
             const state = loadState.current;
             if (state.failed) return;
             const target = Math.min(state.progress, (now - start) / 900, 1);
             shown = reduced ? state.progress : shown + (target - shown) * (1 - Math.exp(-Math.min(64, now - previous) / 70));
             previous = now;
             setVisualProgress(shown);
-            if (state.progress >= 1 && state.rendered && now - start >= 1100 && shown > .999) {
+            frame = requestAnimationFrame(animate);
+        };
+        const nextMessage = () => {
+            const state = loadState.current;
+            if (state.failed) return;
+            if (messageIndex === loadingMessages.length - 1 && state.progress >= 1 && state.rendered && shown > .999) {
+                cancelAnimationFrame(frame);
                 setVisualProgress(1);
                 setLoader('leaving');
                 return;
             }
-            frame = requestAnimationFrame(animate);
+            messageIndex = (messageIndex + 1) % loadingMessages.length;
+            setMessage(messageIndex);
+            timer = window.setTimeout(nextMessage, messageDuration);
         };
         frame = requestAnimationFrame(animate);
-        return () => cancelAnimationFrame(frame);
+        timer = window.setTimeout(nextMessage, messageDuration);
+        return () => {
+            cancelAnimationFrame(frame);
+            clearTimeout(timer);
+        };
     }, []);
 
     useEffect(() => {
@@ -196,7 +215,6 @@ const LoadingScreen: React.FC = () => {
     }, [loader]);
 
     if (step === 'done') return null;
-    const loadingText = progress < .35 ? portfolioCopy.loading.projects : progress < .8 ? portfolioCopy.loading.cad : portfolioCopy.loading.graphics;
     return (
         <div className="garage-entry" data-stage={loader === 'done' ? step : 'loading'} aria-label="Workshop entrance">
             <div className="garage-door" aria-hidden="true">
@@ -222,7 +240,7 @@ const LoadingScreen: React.FC = () => {
                         <circle className="workspace-track" cx="20" cy="20" r="17" />
                         <circle className="workspace-progress" cx="20" cy="20" r="17" pathLength="100" strokeDasharray="100" strokeDashoffset={100 - visualProgress * 100} transform="rotate(-90 20 20)" />
                     </svg>
-                    <p className="workspace-load-message" role="status">{loadingText}</p>
+                    <p className="workspace-load-message" role="status" style={{ visibility: loader === 'leaving' ? 'hidden' : undefined }}>{loadingMessages[message]}</p>
                 </>}
             </div>}
         </div>
