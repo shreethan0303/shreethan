@@ -199,3 +199,9 @@ The user corrected the cube to seventh grade (March 2023), named the second robo
 The larger workshop exposed the finite curved backdrop when the overview fit the scene into 30% of the view. Overview framing now uses 55%. The rendered backdrop keeps its original flat floor and baked shading under the projects; curved wall triangles are removed, and its outer floor edges blend into a matching large plane. Floor color is sampled from one unoccupied baked texel using a 1×1 canvas. Desk/project framing, model placement, lights, entrance and hover behavior are unchanged.
 
 Production build passed. Chromium checks covered 1440×900 desktop, 390×844 portrait and 2560×1080 ultrawide overviews, the desk approach and an elevator project open/close. The views had no curved room cutouts or visible floor seams, and no page, shader or asset errors were recorded. Live Vercel deployment status remains a separate check.
+
+## RC car photos — 2026-10-17
+
+Imported all five JPEGs from `IMG_9005.zip`. Their orientation-corrected sRGB WebP copies total 1,701,050 bytes (originals: 15,643,104 bytes). The project opens with a real assembled-car photo; the assembly chapter has three close-ups and the refinement chapter has two assembled-car views. Source hashes, dimensions and output sizes are recorded in the photo manifest. The room, camera, model placement and story copy are unchanged.
+
+The production build and formatting checks passed. Chromium verified that none of the photos was requested before opening the project, all five gallery images decoded at their manifest dimensions, previous/next boundary states worked, and full images used `object-fit: contain`. At 390×844, a real touch tap advanced the gallery and dialog width/scroll width both measured 358 px. Closing returned focus to the RC model. No page errors or failed asset responses occurred. Live Vercel Ready status remains unverified here.

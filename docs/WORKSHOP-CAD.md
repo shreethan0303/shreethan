@@ -2,7 +2,7 @@
 
 Your two supplied FRC assemblies are displayed beside the desk, and the RC car is on it. The cube robot and résumé remain in place. The camera frames the whole workshop so the floor robot is discoverable. Hover highlights and gently lifts a model; click or tap opens its project reader and frames the selected model. Keyboard users can Tab to each project and press Enter. Close or Escape returns to the workshop.
 
-The new cards show actual CAD previews and provisional copy. Photos, testing videos, season, dates, your contribution and external links are pending. No speed claim is inferred from the driveshaft filename. The custom driveshaft is downloadable as a GLB in the RC card.
+The FRC cards show actual CAD previews and provisional copy. Their testing media, contribution details and external links are pending. The RC card now opens with a real assembled-car photo and includes five supplied photos across its assembly and refinement chapters. No speed claim is inferred from the driveshaft filename. The custom driveshaft is downloadable as a GLB in the RC card.
 
 ## Exporting the next model
 
@@ -79,3 +79,11 @@ Cube date: March 2023, corrected by the user to seventh grade in 2022–2023, re
 The articulated FRC conversion uses `experience/tools/prepare-articulated-frc.mjs` after native STEP conversion. Its offline dependencies are glTF Transform 4.5.1 and meshoptimizer; set `CAD_TOOL_MODULES` to their installed node_modules directory. It preserves the named motion parents, batches their children and applies Meshopt compression. For the intake's final detail budget, `reduce-articulated-frc.py` applies a 0.43 Blender decimation ratio to the batched uncompressed copy while retaining its hierarchy, followed by Meshopt medium compression and 16-bit positions. Update the manifest after that optional reduction. The old static conversion is retained for the car and driveshaft.
 
 Picking uses both the current and resting pose so that a hover animation cannot move a part away from its original click/tap target. For the isolated Three.js r137 renderer, normalized compressed positions are expanded to float positions once after loading: its older CPU raycaster otherwise reads raw integer values even though WebGL displays normalized coordinates. This leaves the rendered surface unchanged and keeps network transfer compressed. Normals remain in their original GPU-friendly representation.
+
+## Adding car photos
+
+The five photos from `IMG_9005.zip` are published as orientation-corrected, sRGB WebP copies under `public/projects/rc-car/`. Their total size is 1,701,050 bytes, compared with 15,643,104 bytes for the original JPEGs. The maximum edge is 1600 pixels at WebP quality 84. Originals remain outside Git; `photo-manifest.json` records source hashes, filenames, output sizes and dimensions. Reproduce the conversion with `python3 experience/tools/prepare-rc-photos.py source-folder public/projects/rc-car`.
+
+`IMG_8911`, `IMG_8912` and `IMG_8913` illustrate the assembly chapter. `IMG_9005` and `IMG_9038` show the assembled car in the final chapter; `IMG_9038` is also the opening image. Captions describe what is visible without claiming a measured speed or identifying a particular gearbox revision. Exact photo dates were not provided. Month 1 remains available for future CAD screenshots.
+
+To change the ordering or captions, edit the RC project’s `story[].media` arrays in `experience/src/workshop-projects.ts`. Images use the existing gallery arrows, full-photo containment and a consistent 4:3 frame so changing photos does not jump the layout. Only the current image in each gallery mounts, and gallery images load lazily. The opening photo mounts when the project reader opens. No room or camera changes were made for this photo update.

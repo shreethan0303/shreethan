@@ -87,7 +87,7 @@ export default function ProjectReader() {
                 <div className="project-video">
                     {project.videoUrl
                         ? <video controls playsInline preload="none" poster={project.videoPoster} src={project.videoUrl} aria-label={`${project.title} demonstration`} />
-                        : project.previewImage ? <img src={project.previewImage} alt={`${project.title} CAD assembly`} />
+                        : project.previewImage ? <img src={project.previewImage} alt={project.previewAlt || `${project.title} CAD assembly`} />
                         : <div className="project-video-placeholder"><span>Video coming soon</span></div>}
                 </div>
                 <div className="project-brief">

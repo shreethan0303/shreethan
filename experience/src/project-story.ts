@@ -25,6 +25,7 @@ export type ProjectContent = {
     videoUrl: string | null;
     videoPoster?: string;
     previewImage?: string;
+    previewAlt?: string;
     cadUrl: string | null;
     githubUrl: string | null;
     story: StoryStage[];

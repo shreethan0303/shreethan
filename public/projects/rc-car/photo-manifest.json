@@ -1,0 +1,56 @@
+{
+  "settings": {
+    "maxEdge": 1600,
+    "webpQuality": 84,
+    "colorSpace": "sRGB",
+    "orientation": "EXIF applied",
+    "metadata": "omitted"
+  },
+  "photos": [
+    {
+      "source": "IMG_8911.jpeg",
+      "sourceSha256": "d60c43db13774d4f87e2c05aabc824910fa954a5f959299df5c3aa30127c5bab",
+      "sourceBytes": 3031533,
+      "webFile": "drivetrain-gears.webp",
+      "webBytes": 366218,
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "source": "IMG_8912.jpeg",
+      "sourceSha256": "f862324c1c6a621059c408c82c449ae595b4c54694d0fedb1eb6def6c5c06c85",
+      "sourceBytes": 2770074,
+      "webFile": "assembly-overhead.webp",
+      "webBytes": 301964,
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "source": "IMG_8913.jpeg",
+      "sourceSha256": "89c61d7f32f8b19272a20a0b960db3dd59edeeb98eee9193037183d192de6474",
+      "sourceBytes": 2437086,
+      "webFile": "assembly-side.webp",
+      "webBytes": 179202,
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "source": "IMG_9005.jpeg",
+      "sourceSha256": "06cc4fbff0327e0a9bea76b031074aa70d3025ec100d98a6e6e123ad4561cf83",
+      "sourceBytes": 5223882,
+      "webFile": "assembled-car-outdoors.webp",
+      "webBytes": 702936,
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "source": "IMG_9038.jpeg",
+      "sourceSha256": "bb05323c18e371dca3a62aebbfdeda0bc5324934d5541e2eb12859f6fc267673",
+      "sourceBytes": 2180529,
+      "webFile": "assembled-car-workbench.webp",
+      "webBytes": 150730,
+      "width": 1600,
+      "height": 1200
+    }
+  ]
+}
