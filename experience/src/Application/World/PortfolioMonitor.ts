@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import Application from '../Application';
+import { afterCameraFrame, selectionMotion } from './SelectionMotion';
 import { CameraKey } from '../Camera/Camera';
 import { MonitorKeyframe } from '../Camera/CameraKeyframes';
 import UIEventBus from '../UI/EventBus';
@@ -136,7 +137,7 @@ export default class PortfolioMonitor {
             this.open = false;
             this.application.camera.transition(
                 CameraKey.DESK,
-                700,
+                selectionMotion.returnToDesk,
                 undefined,
                 () => {
                     this.application.camera.interactionLocked = false;
@@ -232,9 +233,9 @@ export default class PortfolioMonitor {
         ).setBounds(new THREE.Box3().setFromObject(this.screen));
         this.application.camera.transition(
             CameraKey.MONITOR,
-            800,
+            selectionMotion.approach,
             undefined,
-            () => UIEventBus.dispatch('workspace:open', {}),
+            () => afterCameraFrame(() => UIEventBus.dispatch('workspace:open', {})),
         );
     }
     update() {

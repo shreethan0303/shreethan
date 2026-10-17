@@ -43,3 +43,9 @@ The inherited film grain also changed its noise seed every frame. It is now a fi
 4. **Finish and share.** Check the production deployment's commit and Ready status in Vercel, test the stable URL on an actual phone, and review text, links, video playback and navigation. A custom domain can be connected after the site works at `https://shreethan.vercel.app/`.
 
 Day 1 can focus on importing the robot media and recording the facts. Day 2 can focus on your dictated copy, résumé/contact details and the final phone/public-deployment checks. CAD viewer refinements, the PC case and decorations can follow the first release without holding up a usable portfolio.
+
+## Selection motion
+
+Physical project selection now has three phases: finish the object's lift/mechanism preview, approach it with the camera, then reveal the reader. `World/SelectionMotion.ts` contains the shared 1,100 ms approach and 900 ms return durations. Preview completion uses the actual pose progress rather than a separate fixed delay, so an already-hovered robot does not repeat its preview. The reader waits until the final camera frame has rendered; it no longer covers the camera move. Selection locks prevent a second object from interrupting the sequence.
+
+The cube stays lifted while selected, matching the other projects. Project and résumé readers fade out over 260 ms; a project starts its return camera move after that exit finishes. Reduced-motion preferences skip the pose wait and camera travel. The monitor uses the same approach/return pacing; its inside menus and content are unchanged.

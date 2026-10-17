@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import Application from '../Application';
+import { afterPreviewSettles, afterCameraFrame, selectionMotion } from './SelectionMotion';
 import { CameraKey } from '../Camera/Camera';
 import { ProjectKeyframe } from '../Camera/CameraKeyframes';
 import UIEventBus from '../UI/EventBus';
@@ -120,7 +121,7 @@ export default class WorkshopProject {
         UIEventBus.on('project:close', () => {
             if (!this.open) return;
             this.open = false;
-            this.application.camera.transition(CameraKey.DESK, 650, undefined, () => {
+            this.application.camera.transition(CameraKey.DESK, selectionMotion.returnToDesk, undefined, () => {
                 this.application.camera.interactionLocked = false;
                 requestAnimationFrame(() => this.button.focus({ preventScroll: true }));
             });
@@ -147,12 +148,14 @@ export default class WorkshopProject {
         if (!this.active() || this.open) return;
         this.open = true;
         this.application.camera.interactionLocked = true;
-        // Frame the complete hovered pose while motion continues smoothly into the reader.
-        this.applyPose(1);
-        (this.application.camera.keyframes.project as ProjectKeyframe).setBounds(new THREE.Box3().setFromObject(this.group));
-        this.applyPose(this.highlight);
-        this.application.camera.transition(CameraKey.PROJECT, 700);
-        UIEventBus.dispatch('project:open', { rect: this.rect, project: this.content });
+        afterPreviewSettles(() => this.highlight, () => {
+            this.highlight = 1;
+            this.applyPose(1);
+            (this.application.camera.keyframes.project as ProjectKeyframe).setBounds(new THREE.Box3().setFromObject(this.group));
+            this.application.camera.transition(CameraKey.PROJECT, selectionMotion.approach, undefined, () => {
+                afterCameraFrame(() => UIEventBus.dispatch('project:open', { rect: this.rect, project: this.content }));
+            });
+        });
     }
     applyPose(amount: number) {
         this.group.position.y = this.placement.position[1] + this.placement.lift * amount;

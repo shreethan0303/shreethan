@@ -27,9 +27,9 @@ export default function ProjectReader() {
         if (!sheet || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
             setSource(null); return;
         }
-        sheet.parentElement?.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 180, fill: 'forwards' });
-        sheet.animate([{ transform: 'none' }, { transform: 'scale(.985)' }], {
-            duration: 180, easing: 'cubic-bezier(.4,0,1,1)', fill: 'forwards',
+        sheet.parentElement?.animate([{ opacity: getComputedStyle(sheet.parentElement).opacity }, { opacity: 0 }], { duration: 260, fill: 'forwards' });
+        sheet.animate([{ transform: getComputedStyle(sheet).transform }, { transform: 'scale(.985)' }], {
+            duration: 260, easing: 'cubic-bezier(.4,0,.2,1)', fill: 'forwards',
         }).finished.then(() => setSource(null), () => setSource(null));
     };
 

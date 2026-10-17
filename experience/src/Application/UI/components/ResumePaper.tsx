@@ -8,10 +8,25 @@ const ResumePaper: React.FC = () => {
     const [source, setSource] = useState<PaperRect | null>(null);
     const dialog = useRef<HTMLElement>(null);
     const access = useRef<HTMLButtonElement>(null);
-    const close = () => setSource(null);
+    const closing = useRef(false);
+    const close = () => {
+        if (closing.current) return;
+        closing.current = true;
+        const sheet = dialog.current;
+        if (!sheet || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            setSource(null); return;
+        }
+        sheet.parentElement?.animate([{ opacity: getComputedStyle(sheet.parentElement).opacity }, { opacity: 0 }], { duration: 260, fill: 'forwards' });
+        sheet.animate([{ transform: getComputedStyle(sheet).transform }, { transform: 'translateY(12px) scale(.985)' }], {
+            duration: 260, easing: 'cubic-bezier(.4,0,.2,1)', fill: 'forwards',
+        }).finished.then(() => setSource(null), () => setSource(null));
+    };
 
     useEffect(() => {
-        const open = (event: Event) => setSource((event as CustomEvent<PaperRect>).detail);
+        const open = (event: Event) => {
+            closing.current = false;
+            setSource((event as CustomEvent<PaperRect>).detail);
+        };
         document.addEventListener('resume:open', open);
         return () => document.removeEventListener('resume:open', open);
     }, []);

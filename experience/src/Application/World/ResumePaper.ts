@@ -98,7 +98,7 @@ export default class ResumePaper {
 
     active() {
         const camera = this.application.camera;
-        return camera.currentKeyframe === CameraKey.DESK && !camera.freeCam && !this.open;
+        return camera.currentKeyframe === CameraKey.DESK && !camera.freeCam && !this.open && !camera.interactionLocked;
     }
 
     hit(x: number, y: number) {

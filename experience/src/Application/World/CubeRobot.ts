@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import Application from '../Application';
+import { afterPreviewSettles, afterCameraFrame, selectionMotion } from './SelectionMotion';
 import { CameraKey } from '../Camera/Camera';
 import { workshopLayout } from './WorkshopLayout';
 import { cubeProject } from '../../cube-project';
@@ -111,7 +112,7 @@ export default class CubeRobot {
         UIEventBus.on('project:close', () => {
             if (!this.open) return;
             this.open = false;
-            this.application.camera.transition(CameraKey.DESK, 650, undefined, () => {
+            this.application.camera.transition(CameraKey.DESK, selectionMotion.returnToDesk, undefined, () => {
                 this.application.camera.interactionLocked = false;
                 requestAnimationFrame(() => this.button.focus({ preventScroll: true }));
             });
@@ -133,12 +134,15 @@ export default class CubeRobot {
         if (!this.active() || this.open) return;
         this.open = true;
         this.application.camera.interactionLocked = true;
-        // Return the hover lift to rest before framing the selected object.
-        this.group.position.y = workshopLayout.cubeRobot.position[1];
-        this.group.updateMatrixWorld(true);
-        (this.application.camera.keyframes.project as ProjectKeyframe).setBounds(new THREE.Box3().setFromObject(this.group));
-        this.application.camera.transition(CameraKey.PROJECT, 700);
-        UIEventBus.dispatch('project:open', { rect: this.rect, project: cubeProject });
+        afterPreviewSettles(() => this.lift, () => {
+            this.lift = 1;
+            this.group.position.y = workshopLayout.cubeRobot.position[1] + workshopLayout.cubeRobot.lift;
+            this.group.updateMatrixWorld(true);
+            (this.application.camera.keyframes.project as ProjectKeyframe).setBounds(new THREE.Box3().setFromObject(this.group));
+            this.application.camera.transition(CameraKey.PROJECT, selectionMotion.approach, undefined, () => {
+                afterCameraFrame(() => UIEventBus.dispatch('project:open', { rect: this.rect, project: cubeProject }));
+            });
+        });
     }
 
     active() {
@@ -158,7 +162,7 @@ export default class CubeRobot {
         this.button.hidden = !active;
         this.button.disabled = !active;
         if (!active) { this.hovered = false; this.focused = false; }
-        const raised = active && (this.hovered || this.focused);
+        const raised = this.open || (active && (this.hovered || this.focused));
         const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         const blend = reduced ? 1 : 1 - Math.exp(-this.application.time.delta / 100);
         this.lift += ((raised ? 1 : 0) - this.lift) * blend;
