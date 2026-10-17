@@ -79,6 +79,7 @@ const LoadingScreen: React.FC = () => {
         let currentStep = 'intro';
         const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         const removeListeners = () => {
+            document.removeEventListener('click', click, true);
             document.removeEventListener('wheel', wheel);
             document.removeEventListener('touchstart', touchStart);
             document.removeEventListener('touchmove', touchMove);
@@ -156,6 +157,14 @@ const LoadingScreen: React.FC = () => {
             }
         };
         function resize() { draw(state.current); }
+        function click(event: MouseEvent) {
+            if ((event.target as Element).closest('a,button,input,textarea,[data-no-camera]')) return;
+            // Consume the entrance click so it cannot also approach the desk.
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            const destination = state.current < boundary - .001 ? boundary : 1;
+            advance(destination - state.target, true);
+        }
         function wheel(event: WheelEvent) {
             if (event.ctrlKey || Math.abs(event.deltaY) < Math.abs(event.deltaX)) return;
             event.preventDefault();
@@ -178,6 +187,7 @@ const LoadingScreen: React.FC = () => {
         }
         draw(state.current);
         window.addEventListener('resize', resize);
+        document.addEventListener('click', click, true);
         document.addEventListener('wheel', wheel, { passive: false });
         document.addEventListener('touchstart', touchStart, { passive: true });
         document.addEventListener('touchmove', touchMove, { passive: false });
@@ -201,7 +211,7 @@ const LoadingScreen: React.FC = () => {
                 <span className="intro-scroll-arrow" aria-hidden="true">
                     <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="m6 9 6 6 6-6" /></svg>
                 </span>
-                <p className="garage-sr-only">Scroll or swipe up to continue to the garage door. Press End to continue directly.</p>
+                <p className="garage-sr-only">Click, tap, scroll or swipe up to continue to the garage door. Press End to continue directly.</p>
             </section>}
             {loader !== 'done' && <div className={`workspace-loading${loader === 'leaving' ? ' workspace-loading--leaving' : ''}`}>
                 {failed ? <>

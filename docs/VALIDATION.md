@@ -121,3 +121,9 @@ Production build, formatting and whitespace checks passed. Chromium verified the
 The approach starts the identity typing once, repeated clicks during travel do not reverse it, the résumé still opens/closes, and later scroll/overview returns do not replay the room prompt. Native phone swipes/taps at 390×844 passed. Reduced-motion keeps the intro chevron static and shows full room text without typing delays. Immediate keyboard approach before the prompt finishes does not leave a delayed prompt behind. Final regular runs reported zero page errors or HTTP failures.
 
 Updated screenshots above show the restored appearance. The table, résumé geometry, lighting and grain were not modified in this correction. The continuous animation clock remains in place to avoid a camera jump after the door.
+
+## Click/tap to play entrance stages
+
+Production build, formatting and whitespace checks passed. Chromium verified that clicking during loading cannot bypass readiness, a click animates the introduction to the closed door, and another click opens it. Mixing these clicks with reverse/forward scrolling still works. A separate room click approaches the desk normally.
+
+Native phone taps and reduced-motion clicks passed. The door-opening click did not also approach the desk, including when reduced-motion completed the animation synchronously. Regular requests reported zero page errors or HTTP failures. This change adds no visible controls and does not alter Henry's restored room UI.
