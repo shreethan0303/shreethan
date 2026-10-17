@@ -129,6 +129,7 @@ export default class ResumePaper {
         if (!button) return;
         button.hidden = !active;
         button.disabled = !active;
+        button.classList.toggle('is-highlighted', raised);
         if (!active) return;
         this.group.updateMatrixWorld(true);
         const { width, height } = workshopLayout.resume;

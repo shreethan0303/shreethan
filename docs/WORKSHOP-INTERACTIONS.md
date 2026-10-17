@@ -58,3 +58,11 @@ The download is a real, one-page PDF at `public/resume/shreethan-palla-placehold
 Run `npm run build:experience` after editing the layout or paper code, then refresh a running development server. The renderer watcher can do this during an editing session. For deployment, run the normal full build.
 
 Check: scroll/swipe or keyboard End → click desk → hover/focus paper → click/Enter → read/download → Back/Escape → open again. Repeat on a phone or narrow viewport and with reduced motion. Confirm the downloaded PDF actually contains the expected résumé text. A functioning link alone does not validate the document.
+
+## Reader layout and motion
+
+Project chapters put their media and notes in adjacent columns above 800 px. The media stays beside long notes as the card scrolls. Below that width, media appears first and the explanation follows in a single column. Portrait recordings use their own aspect ratio with a height cap and `object-fit: contain`, so a tall clip is not cropped just to fill a wide box. Gallery controls are 44 px on narrow screens.
+
+The project card now arrives with a small translation and scale change over 380 ms, using an easing curve that settles gently. Closing fades the surface over 180 ms before returning the camera to the desk. These are opacity/transform animations; they do not repeatedly resize the page layout. Videos pause at the moment closing starts. Reduced-motion uses immediate entry/exit and no gallery or tooltip animations. The garage entrance and authored room camera views are otherwise unchanged.
+
+The résumé paper uses the same pointer hit test as before. Its projected HTML access button now appears as “Résumé” on hover or keyboard focus, alongside the existing gentle lift. Its accessible action remains “Open résumé”. No extra click is needed.

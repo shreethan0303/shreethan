@@ -80,5 +80,35 @@
     "sourceBytes": 1952395,
     "webFile": "connector-issues.jpg",
     "webBytes": 173988
+  },
+  {
+    "source": "IMG_1520.mov",
+    "sourceSha256": "144640f0e9032a1c6a2d60ff7d62e0e76e44e759b991d9ae803c0ab8a40ded5e",
+    "sourceBytes": 24368821,
+    "webFile": "single-axis-testing.mp4",
+    "webBytes": 1421269,
+    "poster": "single-axis-testing.jpg",
+    "duration": 9.286009,
+    "video": {
+      "codec_name": "h264",
+      "width": 720,
+      "height": 1280,
+      "pix_fmt": "yuv420p"
+    }
+  },
+  {
+    "source": "IMG_1571.mov",
+    "sourceSha256": "3be287e831e2dec96264cb4760ed969606e72742fe74668ec92c3f7689048f62",
+    "sourceBytes": 11698973,
+    "webFile": "single-axis-early-test.mp4",
+    "webBytes": 1618488,
+    "poster": "single-axis-early-test.jpg",
+    "duration": 6.243991,
+    "video": {
+      "codec_name": "h264",
+      "width": 720,
+      "height": 1280,
+      "pix_fmt": "yuv420p"
+    }
   }
 ]

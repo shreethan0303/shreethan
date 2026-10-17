@@ -13,7 +13,7 @@ function StageGallery({ media, title }: { media: StoryMedia[]; title: string }) 
     }, [item?.src]);
     if (!item) return <div className="story-media-empty">Photos and video coming soon</div>;
     return <figure className="story-gallery" aria-label={`${title} media`}>
-        <div className="story-media-frame">
+        <div key={item.src} className="story-media-frame" style={item.aspectRatio ? { aspectRatio: item.aspectRatio } : undefined}>
             {item.type === 'video'
                 ? <video key={item.src} ref={video} controls playsInline preload="none" src={item.src} poster={item.poster} aria-label={item.caption} />
                 : <img key={item.src} src={item.src} alt={item.caption} loading="lazy" />}
@@ -40,12 +40,14 @@ export default function ProjectStory({ stages, reflections }: { stages: StorySta
             {stages.map((stage, index) => <li key={stage.id} id={`story-${stage.id}`} className="story-stage">
                 <span className="story-step" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
                 <h4>{stage.title}</h4>
+                <div className="story-stage-content">
                 <StageGallery media={stage.media} title={stage.title} />
                 <div className="story-notes">
                     {stage.summary ? <p>{stage.summary}</p> : <p className="story-pending">Build notes coming soon.</p>}
                     {stage.challenge && <p><strong>The issue</strong>{stage.challenge}</p>}
                     {stage.change && <p><strong>What changed</strong>{stage.change}</p>}
                     {stage.learning && <p><strong>What I learned</strong>{stage.learning}</p>}
+                </div>
                 </div>
             </li>)}
         </ol>

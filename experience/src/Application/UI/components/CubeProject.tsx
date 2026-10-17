@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { cubeProject } from '../../../cube-project';
 import UIEventBus from '../EventBus';
 import ProjectStory from './ProjectStory';
@@ -8,29 +8,43 @@ type SourceRect = { x: number; y: number; width: number; height: number };
 export default function CubeProject() {
     const [source, setSource] = useState<SourceRect | null>(null);
     const panel = useRef<HTMLElement>(null);
+    const closing = useRef(false);
     const close = () => {
-        panel.current?.querySelectorAll('video').forEach(video => video.pause());
-        setSource(null);
+        if (closing.current) return;
+        closing.current = true;
+        const sheet = panel.current;
+        sheet?.querySelectorAll('video').forEach(video => video.pause());
+        if (!sheet || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            setSource(null); return;
+        }
+        sheet.parentElement?.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 180, fill: 'forwards' });
+        sheet.animate([{ transform: 'none' }, { transform: 'scale(.985)' }], {
+            duration: 180, easing: 'cubic-bezier(.4,0,1,1)', fill: 'forwards',
+        }).finished.then(() => setSource(null), () => setSource(null));
     };
 
     useEffect(() => {
-        const open = (event: Event) => setSource((event as CustomEvent<SourceRect>).detail);
+        const open = (event: Event) => { closing.current = false; setSource((event as CustomEvent<SourceRect>).detail); };
         document.addEventListener('cube-project:open', open);
         return () => document.removeEventListener('cube-project:open', open);
     }, []);
 
-    useEffect(() => {
+    // Attach focus and keyboard handling before the reader is painted.
+    useLayoutEffect(() => {
         if (!source || !panel.current) return;
         const sheet = panel.current;
         const bounds = sheet.getBoundingClientRect();
         const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const offsetX = Math.max(-24, Math.min(24, source.x + source.width / 2 - bounds.x - bounds.width / 2));
+        const offsetY = Math.max(-24, Math.min(24, source.y + source.height / 2 - bounds.y - bounds.height / 2));
         const animation = reduced ? undefined : sheet.animate([
-            { transform: `translate(${source.x + source.width / 2 - bounds.x - bounds.width / 2}px, ${source.y + source.height / 2 - bounds.y - bounds.height / 2}px) scale(.35)`, opacity: 0 },
+            { transform: `translate(${offsetX}px, ${offsetY}px) scale(.96)`, opacity: 0 },
             { transform: 'none', opacity: 1 },
-        ], { duration: 650, easing: 'cubic-bezier(.2,.8,.2,1)' });
+        ], { duration: 380, easing: 'cubic-bezier(.16,1,.3,1)' });
         const controls = () => Array.from(sheet.querySelectorAll<HTMLElement>('button:not(:disabled),a[href],video[controls]'));
         controls()[0]?.focus({ preventScroll: true });
         const play = (event: Event) => {
+            if (closing.current) { (event.target as HTMLVideoElement).pause(); return; }
             sheet.querySelectorAll('video').forEach(video => { if (video !== event.target) video.pause(); });
         };
         sheet.addEventListener('play', play, true);

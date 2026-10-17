@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import UIEventBus from '../EventBus';
 
 type PaperRect = { x: number; y: number; width: number; height: number };
@@ -16,7 +16,8 @@ const ResumePaper: React.FC = () => {
         return () => document.removeEventListener('resume:open', open);
     }, []);
 
-    useEffect(() => {
+    // Attach focus and keyboard handling before the reader is painted.
+    useLayoutEffect(() => {
         if (!source || !dialog.current) return;
         UIEventBus.dispatch('resume:visibility', true);
         const panel = dialog.current;
@@ -54,7 +55,7 @@ const ResumePaper: React.FC = () => {
             onFocus={() => UIEventBus.dispatch('resume:focus', true)}
             onBlur={() => UIEventBus.dispatch('resume:focus', false)}
             onClick={() => UIEventBus.dispatch('resume:request', {})}
-        >Open résumé</button>
+        >Résumé</button>
         {source && <div className="resume-overlay" data-no-camera="true"
             onClick={event => { if (event.target === event.currentTarget) close(); }}>
             <section className="resume-sheet" role="dialog" aria-modal="true" aria-labelledby="resume-title" ref={dialog}>

@@ -4,6 +4,7 @@ export type StoryMedia = {
     src: string;
     caption: string;
     poster?: string;
+    aspectRatio?: string; // Preserve portrait footage without cropping its contents.
 };
 export type StoryStage = {
     id: string;

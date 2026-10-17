@@ -3,7 +3,7 @@ import { StoryStage, StoryReflection } from './project-story';
 /** Project facts and file mapping supplied by Shreethan. Keep missing links null. */
 export const cubeProject = {
     title: 'Rubik’s Cube Solving Robot',
-    date: 'Around March 2025',
+    date: 'March 2025',
     brief: 'A six-axis Rubik’s Cube-solving robot I built in ninth grade.',
     details: 'I salvaged the stepper motors from my old 3D printer and built around the hardware I had. Five frame iterations and repeated code and motion tuning took the project from individual motor tests to a first solve.',
     videoUrl: '/projects/cube-solver/first-solve.mp4',
@@ -18,8 +18,12 @@ export const cubeProject = {
             summary: 'I took apart my old 3D printer to salvage its stepper motors. I started by getting one motor working, using the hardware I already had rather than buying a new set.',
         },
         {
-            id: 'one-axis', title: 'Single-axis testing', media: [],
-            summary: 'I tested one axis before moving on to coordinated motion. More single-axis footage is still to come.',
+            id: 'one-axis', title: 'Single-axis testing',
+            media: [
+                { type: 'video', src: '/projects/cube-solver/single-axis-early-test.mp4', poster: '/projects/cube-solver/single-axis-early-test.jpg', aspectRatio: '9 / 16', caption: 'An early single-axis motion test.' },
+                { type: 'video', src: '/projects/cube-solver/single-axis-testing.mp4', poster: '/projects/cube-solver/single-axis-testing.jpg', aspectRatio: '9 / 16', caption: 'More single-axis testing before coordinating multiple motors.' },
+            ],
+            summary: 'I tested one axis before moving on to coordinated motion. These tests let me work on individual turns before adding the complexity of the full mechanism.',
         },
         {
             id: 'magnetic-frame', title: 'Five frame iterations', media: [],
@@ -30,7 +34,7 @@ export const cubeProject = {
         },
         {
             id: 'connections', title: 'When the wiring became the problem',
-            media: [{ type: 'image', src: '/projects/cube-solver/connector-issues.jpg', caption: 'The connector setup that sometimes lost a secure connection.' }],
+            media: [{ type: 'image', src: '/projects/cube-solver/connector-issues.jpg', aspectRatio: '3 / 4', caption: 'The connector setup that sometimes lost a secure connection.' }],
             summary: 'Intermittent connections made troubleshooting much harder than it needed to be.',
             challenge: 'Cables would randomly stop working. An unreliable connection could make the same setup behave differently from one test to the next.',
             learning: 'Reliable connections are part of the design, not just a detail to finish later. This experience inspired me to start designing my own PCBs.',
@@ -55,7 +59,7 @@ export const cubeProject = {
         },
         {
             id: 'first-solves', title: 'The first solve',
-            media: [{ type: 'video', src: '/projects/cube-solver/first-solve.mp4', poster: '/projects/cube-solver/first-solve.jpg', caption: 'A short clip from the first solve.' }],
+            media: [{ type: 'video', src: '/projects/cube-solver/first-solve.mp4', poster: '/projects/cube-solver/first-solve.jpg', aspectRatio: '822 / 1280', caption: 'A short clip from the first solve.' }],
             summary: 'Reaching a first solve was the milestone that brought the motor tests, wiring and mechanism together. It also gave me a clearer view of what still needed to become more reliable.',
         },
     ] as StoryStage[],

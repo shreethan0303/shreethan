@@ -321,3 +321,32 @@ br {
     .story-gallery figcaption { align-items: flex-start; flex-direction: column; gap: 8px; }
 }
 @media(prefers-reduced-motion:reduce) { .project-card { scroll-behavior: auto; } }
+
+/* Keep each experiment's evidence beside its explanation on larger screens. */
+.project-card { width: min(1080px, 100%); }
+.story-stage { padding-bottom: 44px; }
+.story-stage-content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; align-items: start; }
+.story-stage .story-gallery { position: sticky; top: 140px; min-width: 0; }
+.story-media-frame { width: 100%; box-sizing: border-box; max-height: 430px; animation: story-media-arrive .2s ease-out; }
+.story-notes { min-width: 0; }
+.story-notes p:first-child { margin-top: 0; }
+.project-story .story-notes p { font-size: 15px; line-height: 1.8; }
+.story-notes strong { font-weight: 600; }
+.story-gallery-controls button { min-width: 40px; min-height: 40px; transition: background-color .15s ease, transform .15s ease; }
+.story-gallery-controls button:not(:disabled):hover { background: var(--studio-surface); }
+.story-gallery-controls button:not(:disabled):active { transform: scale(.94); }
+.paper-access { border-radius: 8px; transition: opacity .15s ease, transform .15s ease; transform: translate(-50%, 4px); }
+.paper-access.is-highlighted, .paper-access:focus-visible { opacity: 1; transform: translate(-50%, 0); }
+.project-overlay { animation: project-backdrop-arrive .22s ease-out; }
+@keyframes story-media-arrive { from { opacity: .5; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@keyframes project-backdrop-arrive { from { opacity: 0; } to { opacity: 1; } }
+@media(max-width:800px) {
+    .story-stage-content { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+    .story-stage .story-gallery { position: static; }
+    .story-gallery-controls button { min-width: 44px; min-height: 44px; }
+}
+@media(prefers-reduced-motion:reduce) {
+    .paper-access, .story-gallery-controls button { transition: none; }
+    .project-overlay, .story-media-frame { animation: none; }
+}
+@media(max-width:800px) { .project-close { width: 44px; height: 44px; } }
