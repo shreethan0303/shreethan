@@ -66,7 +66,29 @@ export default class ResumePaper {
         const shadeContext = shade.getContext('2d')!;
         shadeContext.shadowColor = '#000'; shadeContext.shadowBlur = 16;
         shadeContext.fillStyle = '#000'; shadeContext.fillRect(24, 24, 208, 288);
-        this.shadow = new THREE.Mesh(new THREE.PlaneGeometry(layout.width * 1.18, layout.height * 1.18),
+        // Leave an aperture under the sheet: depth bias must never paint the shadow over paper.
+        const outerWidth = layout.width * 1.18, outerHeight = layout.height * 1.18;
+        const outline = new THREE.Shape();
+        outline.moveTo(-outerWidth / 2, -outerHeight / 2);
+        outline.lineTo(outerWidth / 2, -outerHeight / 2);
+        outline.lineTo(outerWidth / 2, outerHeight / 2);
+        outline.lineTo(-outerWidth / 2, outerHeight / 2);
+        outline.closePath();
+        const hole = new THREE.Path();
+        const halfWidth = layout.width * .505, halfHeight = layout.height * .505;
+        hole.moveTo(-halfWidth, -halfHeight);
+        hole.lineTo(-halfWidth, halfHeight);
+        hole.lineTo(halfWidth, halfHeight);
+        hole.lineTo(halfWidth, -halfHeight);
+        hole.closePath();
+        outline.holes.push(hole);
+        const shadowGeometry = new THREE.ShapeGeometry(outline);
+        const shadowPositions = shadowGeometry.attributes.position;
+        const shadowUvs = shadowGeometry.attributes.uv;
+        for (let i = 0; i < shadowPositions.count; i++) {
+            shadowUvs.setXY(i, shadowPositions.getX(i) / outerWidth + .5, shadowPositions.getY(i) / outerHeight + .5);
+        }
+        this.shadow = new THREE.Mesh(shadowGeometry,
             new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(shade), transparent: true, opacity: .14, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -1 }));
         this.shadow.rotation.x = -Math.PI / 2;
         this.shadow.rotation.z = -layout.rotation;

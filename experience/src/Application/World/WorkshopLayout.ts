@@ -14,25 +14,25 @@ export const workshopLayout = {
         screenHeight: 950,
     },
     keyboard: {
-        position: [-1850, -451.9, 700] as [number, number, number],
+        position: [-2350, -451.9, 700] as [number, number, number],
         rotation: 0,
     },
     mouse: {
-        position: [-700, -439.9, 650] as [number, number, number],
+        position: [-1200, -439.9, 650] as [number, number, number],
         rotation: -.08,
     },
     mousepad: {
-        position: [-700, -451.9, 650] as [number, number, number],
+        position: [-1200, -451.9, 650] as [number, number, number],
         width: 820, depth: 740, thickness: 12,
     },
     dirtbike: {
-        position: [-6800, -2984.18927, -1300] as [number, number, number],
-        rotation: -.95,
-        length: 4400,
+        position: [-2200, -2984.18927, -4200] as [number, number, number],
+        rotation: -1.35,
+        length: 7600,
         lift: 35,
     },
     cubeRobot: {
-        position: [450, -451.9, 1050] as [number, number, number],
+        position: [350, -451.9, -150] as [number, number, number],
         rotation: -.3,
         width: 1147.5, // 85% of the original size; scaling uses the unrotated model.
         // A measured support plane through three motor tips, mapped onto the tabletop.
