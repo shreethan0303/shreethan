@@ -4,6 +4,7 @@ import { pageMetadata, siteDescription, siteUrl } from "./lib/site";
 
 export const metadata: Metadata = {
   ...pageMetadata("Shreethan Palla", siteDescription, "/"),
+  title: "_____Shreethan Palla_____",
   ...(siteUrl() ? { metadataBase: siteUrl() } : {}),
   ...(process.env.GOOGLE_SITE_VERIFICATION
     ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } }
