@@ -8,10 +8,18 @@ export const workshopLayout = {
         duration: 1000, // Milliseconds to travel from overview to desk.
     },
     monitor: {
-        position: [-550, -451.9, -450] as [number, number, number],
+        position: [-1400, -451.9, -450] as [number, number, number],
         width: 2100,
         height: 1312.5,
         screenHeight: 950,
+    },
+    keyboard: {
+        position: [-1300, -451.9, 700] as [number, number, number],
+        rotation: 0,
+    },
+    mouse: {
+        position: [-370, -451.9, 650] as [number, number, number],
+        rotation: -.08,
     },
     cubeRobot: {
         position: [450, -451.9, 1050] as [number, number, number],

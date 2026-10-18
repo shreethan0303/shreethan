@@ -1,12 +1,12 @@
 # Monitor workspace and the next steps
 
-The monitor is centered on the desk. The paper sits left, the cube solver sits front-right, and the car sits farther right. Their horizontal bounds fit inside the tabletop without intersecting one another. The FRC robots remain on the floor.
+The monitor sits left of center on the desk, with a white-key mechanical keyboard and black gaming mouse in front. The paper sits farther left, the cube solver sits front-right, and the car sits farther right. Their horizontal bounds fit inside the tabletop without intersecting one another. The FRC robots remain on the floor.
 
 Select the monitor to zoom toward its screen and open the portfolio workspace. A project tree, a central preview and bottom section tabs borrow the organization of the supplied Onshape screenshot. The working controls are Projects, About, Résumé, Read project and Back to desk. Project cards share the existing media and build stories. Closing a card returns to the workspace; closing the workspace returns to the desk. Keyboard focus follows those actions, and Escape closes the current layer.
 
 The current workspace uses the existing approved intro and verified project data. Résumé content is still the same placeholder. Contact details, team contributions and polished personal stories remain pending. The computer case and extra decorations remain later additions.
 
-See the [current desk arrangement](images/monitor-workshop.png) and [workspace preview](images/cad-workspace.png).
+See the [earlier desk arrangement](images/monitor-workshop.png) and [workspace preview](images/cad-workspace.png).
 
 ## How it works
 
@@ -49,3 +49,11 @@ Day 1 can focus on importing the robot media and recording the facts. Day 2 can 
 Physical project selection now has three phases: finish the object's lift/mechanism preview, approach it with the camera, then reveal the reader. `World/SelectionMotion.ts` contains the shared 1,100 ms approach and 900 ms return durations. Preview completion uses the actual pose progress rather than a separate fixed delay, so an already-hovered robot does not repeat its preview. The reader waits until the final camera frame has rendered; it no longer covers the camera move. Selection locks prevent a second object from interrupting the sequence.
 
 The cube stays lifted while selected, matching the other projects. Project and résumé readers fade out over 260 ms; a project starts its return camera move after that exit finishes. Reduced-motion preferences skip the pose wait and camera travel. The monitor uses the same approach/return pacing; its inside menus and content are unchanged.
+
+## Keyboard, mouse and silent interface
+
+`experience/src/Application/World/DeskPeripherals.ts` contains the original lightweight presentation geometry: a 75% mechanical board with white keycaps, a black frame, a ridged round dial and navigation/arrow keys; and a black ergonomic gaming mouse with separate curved buttons, a metal scroll wheel, thumb controls and a white rear LED strip. The designs are inspired by the requested Glorious and G502 X styles, rather than manufacturer CAD models. Keycaps and knob grips use instancing; all legends share one canvas atlas. No external model or texture downloads are added.
+
+Move the monitor, keyboard or mouse in `WorkshopLayout.ts`. The monitor is at X=-1400; the keyboard sits at [-1300, -451.9, 700], and the mouse at [-370, -451.9, 650]. Their bases meet the tabletop at Y=-451.9. The project and paper placements, room lighting and camera framing are unchanged. These are decorative objects; project and monitor selections retain their existing behavior.
+
+The site no longer starts AudioManager or loads ambient, startup, typing or click recordings. The sound button is removed; the name, clock and free-camera control remain. Original audio source files remain archived in the repository but are excluded from the renderer's copied assets. Project videos retain their own native media controls. The browser title is the plain name, Shreethan Palla.

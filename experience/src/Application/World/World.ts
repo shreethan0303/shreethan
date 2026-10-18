@@ -9,7 +9,7 @@ import Decor from './Decor';
 import CoffeeSteam from './CoffeeSteam';
 import Cursor from './Cursor';
 import Hitboxes from './Hitboxes';
-import AudioManager from '../Audio/AudioManager';
+import DeskPeripherals from './DeskPeripherals';
 import ResumePaper from './ResumePaper';
 import CubeRobot from './CubeRobot';
 import PortfolioMonitor from './PortfolioMonitor';
@@ -29,7 +29,7 @@ export default class World {
     monitorScreen: MonitorScreen;
     coffeeSteam: CoffeeSteam;
     cursor: Cursor;
-    audioManager: AudioManager;
+    peripherals: DeskPeripherals;
     resumePaper: ResumePaper;
     cubeRobot: CubeRobot;
     portfolioMonitor: PortfolioMonitor;
@@ -53,6 +53,7 @@ export default class World {
             this.resumePaper = new ResumePaper();
             this.cubeRobot = new CubeRobot();
             this.portfolioMonitor = new PortfolioMonitor();
+            this.peripherals = new DeskPeripherals();
             this.projects = [
                 new WorkshopProject('frcRobotModel', frcProject, workshopLayout.frcRobot, 'frc-robot-access'),
                 new WorkshopProject('rcCarModel', rcProject, workshopLayout.rcCar, 'rc-car-access'),
@@ -65,7 +66,6 @@ export default class World {
             (this.application.camera.keyframes.desk as DeskKeyframe).setBounds(bounds);
             (this.application.camera.keyframes.idle as IdleKeyframe).setBounds(bounds);
             this.application.camera.transition(CameraKey.IDLE, 0);
-            this.audioManager = new AudioManager();
             // const hb = new Hitboxes();
             // this.cursor = new Cursor();
         });
@@ -79,6 +79,5 @@ export default class World {
         if (this.monitorScreen) this.monitorScreen.update();
         if (this.environment) this.environment.update();
         if (this.coffeeSteam) this.coffeeSteam.update();
-        if (this.audioManager) this.audioManager.update();
     }
 }

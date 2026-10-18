@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import FreeCamToggle from './FreeCamToggle';
-import MuteToggle from './MuteToggle';
 
 interface InfoOverlayProps {
     visible: boolean;
@@ -16,7 +15,6 @@ const InfoOverlay: React.FC<InfoOverlayProps> = ({ visible }) => {
     const timeRef = useRef(time);
     const [timeText, setTimeText] = useState('');
     const [textDone, setTextDone] = useState(false);
-    const [volumeVisible, setVolumeVisible] = useState(false);
     const [freeCamVisible, setFreeCamVisible] = useState(false);
     const reduced = useRef(window.matchMedia('(prefers-reduced-motion: reduce)').matches);
     const timers = useRef<number[]>([]);
@@ -66,7 +64,6 @@ const InfoOverlay: React.FC<InfoOverlayProps> = ({ visible }) => {
                 setNameText(NAME_TEXT);
                 setTimeText(timeRef.current);
                 setTextDone(true);
-                setVolumeVisible(true);
                 setFreeCamVisible(true);
                 visRef.current = visible;
                 return;
@@ -91,18 +88,13 @@ const InfoOverlay: React.FC<InfoOverlayProps> = ({ visible }) => {
 
     useEffect(() => {
         if (textDone && !reduced.current) {
-            later(() => {
-                setVolumeVisible(true);
-                later(() => {
-                    setFreeCamVisible(true);
-                }, 250);
-            }, 250);
+            later(() => setFreeCamVisible(true), 250);
         }
     }, [textDone]);
 
     useEffect(() => {
         window.postMessage({ type: 'keydown', key: `_AUTO_` }, '*');
-    }, [freeCamVisible, volumeVisible]);
+    }, [freeCamVisible]);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -134,11 +126,6 @@ const InfoOverlay: React.FC<InfoOverlayProps> = ({ visible }) => {
                     >
                         <p>{timeText}</p>
                     </div>
-                    {volumeVisible && (
-                        <div style={styles.lastRowChild}>
-                            <MuteToggle />
-                        </div>
-                    )}
                     {freeCamVisible && (
                         <div style={styles.lastRowChild}>
                             <FreeCamToggle />
