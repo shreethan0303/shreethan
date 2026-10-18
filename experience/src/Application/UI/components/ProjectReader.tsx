@@ -119,6 +119,7 @@ export default function ProjectReader() {
                     <p>{project.brief}</p>
                     <p className="project-details">{project.details}</p>
                     <nav className="project-links" aria-label="Project links">
+                        {project.pagePath && <a href={project.pagePath} target="_blank" rel="noopener noreferrer">Read full project ↗</a>}
                         {project.cadUrl ? <a href={project.cadUrl} target="_blank" rel="noopener noreferrer">View CAD ↗</a>
                             : <span aria-disabled="true">CAD link coming soon</span>}
                         {project.githubUrl ? <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">GitHub ↗</a>

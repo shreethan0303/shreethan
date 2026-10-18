@@ -372,3 +372,162 @@ h2 {
     display: none;
   }
 }
+
+/* Readable project stories share data with the 3D readers. */
+.build-page {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+  padding: 32px 32px 64px;
+  color: #272725;
+  font:
+    16px/1.75 Arial,
+    Helvetica,
+    sans-serif;
+}
+.build-nav,
+.build-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.build-nav {
+  margin-bottom: 64px;
+  font-size: 14px;
+}
+.build-links {
+  justify-content: flex-start;
+  margin: 24px 0 48px;
+}
+.build-page header {
+  max-width: 780px;
+  margin-bottom: 36px;
+}
+.build-page h1 {
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+  margin: 12px 0 24px;
+}
+.build-page h2 {
+  font-size: 28px;
+  line-height: 1.3;
+  margin: 24px 0;
+}
+.build-page h3 {
+  font-size: 22px;
+  line-height: 1.4;
+  margin: 0 0 20px;
+}
+.build-page p {
+  margin: 0 0 20px;
+}
+.build-eyebrow,
+.build-page figcaption {
+  color: #656560;
+  font-size: 13px;
+}
+.build-lead {
+  font-size: 21px;
+  line-height: 1.6;
+}
+.build-hero {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  border-radius: 16px;
+  background: #f5f5f3;
+}
+.build-project-list article {
+  padding: 30px 0;
+  border-top: 1px solid #e4e4e0;
+}
+.build-project-list h2 {
+  margin: 0 0 12px;
+}
+.build-project-list a {
+  text-decoration: none;
+}
+.build-project-list a:hover {
+  text-decoration: underline;
+}
+.build-chapters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+.build-chapter {
+  border-top: 1px solid #e4e4e0;
+  padding: 32px 0;
+  scroll-margin-top: 24px;
+}
+.build-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+.build-notes strong {
+  display: block;
+  margin-bottom: 5px;
+}
+.build-media:empty {
+  display: none;
+}
+.build-media figure {
+  margin: 0 0 24px;
+}
+.build-media img,
+.build-media video {
+  display: block;
+  width: 100%;
+  max-height: 560px;
+  object-fit: contain;
+  background: #f5f5f3;
+  border-radius: 12px;
+}
+.build-page figcaption {
+  margin-top: 10px;
+}
+.build-reflections {
+  max-width: 780px;
+  padding-bottom: 40px;
+}
+.build-reflections section {
+  margin: 32px 0;
+}
+.build-page footer {
+  padding-top: 24px;
+  border-top: 1px solid #e4e4e0;
+  margin-bottom: 0;
+}
+@media (max-width: 700px) {
+  .build-page {
+    padding: 24px 20px 40px;
+  }
+  .build-nav {
+    margin-bottom: 40px;
+  }
+  .build-columns {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+.workshop-reading-link {
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  z-index: 10;
+  padding: 10px 16px;
+  background: #fff;
+  color: #272725;
+  border-radius: 8px;
+  transform: translateY(-200%);
+}
+.workshop-reading-link:focus {
+  transform: translateY(0);
+}

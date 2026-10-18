@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "format": "prettier --write app docs README.md package.json tsconfig.json vercel.json .github/workflows/build.yml",
     "format:check": "prettier --check app docs README.md package.json tsconfig.json vercel.json .github/workflows/build.yml",
-    "watch:experience": "npm --prefix experience run watch"
+    "watch:experience": "npm --prefix experience run watch",
+    "test:search": "node --test tests/search.test.cjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.9",

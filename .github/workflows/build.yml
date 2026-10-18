@@ -15,4 +15,5 @@ jobs:
       - run: npm ci
       - run: npm ci --prefix experience
       - run: npm run format:check
+      - run: npm run test:search
       - run: npm run build

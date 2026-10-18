@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { pageMetadata, siteDescription, siteUrl } from "./lib/site";
 
 export const metadata: Metadata = {
-  title: "Shreethan Palla",
-  description:
-    "A personal collection of projects, experiments, and ideas. Built with curiosity. Always evolving.",
+  ...pageMetadata("Shreethan Palla", siteDescription, "/"),
+  ...(siteUrl() ? { metadataBase: siteUrl() } : {}),
+  ...(process.env.GOOGLE_SITE_VERIFICATION
+    ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } }
+    : {}),
 };
 
 export default function RootLayout({

@@ -19,6 +19,7 @@ export type StoryReflection = { title: string; text: string | null };
 
 export type ProjectContent = {
     title: string;
+    pagePath?: string;
     date: string;
     brief: string;
     details: string;

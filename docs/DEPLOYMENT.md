@@ -27,11 +27,11 @@ In the Vercel project, open Settings → Domains, add the purchased domain, and 
 - Site works in cloud localhost but not your browser: localhost refers to the machine running the server. Use the actual hosted HTTPS URL.
 - Build failure: share the error and surrounding log lines, without credentials. Avoid random retries or changing multiple settings together.
 
-## Scroll exploded-view prototype
+## Archived scroll prototype and current project pages
 
-`/projects/robotics` includes a sample rover that separates across three assemblies as you scroll down and reassembles when scrolling up. This is illustrative geometry, not the user's actual FRC robot. The slider controls the same scroll position for keyboard/touch access. Actual CAD needs named components and separation offsets before adapting this interaction.
+The former `/projects/robotics` illustrative rover route now redirects to the actual `/projects/frc-robot` page. Prototype source remains in `app/projects/[slug]/viewer.tsx` and `app/components/assembly-scene.tsx`; it is not presented as the owner's CAD. The actual project pages and workshop readers now share the supplied project data. See [domain and search launch](DOMAIN-AND-SEARCH.md) for sitemap, indexing, domain settings and publication steps.
 
-Implementation: `app/projects/[slug]/viewer.tsx` owns scroll progress; `app/components/assembly-scene.tsx` renders the components. The room's reference renderer is unchanged. Root Next.js is pinned to 15.5.28, the non-major patched release identified by npm audit during deployment preparation. Its PostCSS dependency is overridden to the compatible patched 8.5.30 release; the production build is checked with that override.
+Root Next.js remains pinned to 15.5.28, with its PostCSS dependency overridden to 8.5.30. The renderer's isolated Three.js version is unchanged.
 
 ## Current account diagnosis
 

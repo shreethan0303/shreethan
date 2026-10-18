@@ -67,14 +67,15 @@ During a renderer editing session, run `npm run watch:experience` in another ter
 ```bash
 npm run typecheck
 npm run format:check
+npm run test:search
 npm run build
 ```
 
-CI runs formatting and the production build. Browser validation is described in the workflow doc. Current inherited size warnings are recorded there; they are not hidden.
+CI runs formatting, the search configuration tests and the production build. Browser validation is described in the workflow doc. Current inherited size warnings are recorded there; they are not hidden.
 
 ## Status
 
-The garage-door entrance, desk, interactive lined résumé paper and centered monitor work. The original computer, chair, plant and desk props are disabled; their original source assets remain in the repository. `/desktop` is available directly. `/projects/robotics` includes an illustrative scroll-controlled assembly, not real project CAD. The supplied cube robot, FRC robot and RC car are connected to the room and shared project reader. The paper lifts/brightens on hover and opens a readable lorem ipsum placeholder with a PDF download. A modern PC, remaining verified project content and final résumé remain outstanding. Public deployment status must be verified in Vercel. Original branded assets require replacement before reintroducing them.
+The garage-door entrance, desk, interactive lined résumé paper and centered monitor work. The original computer, chair, plant and desk props are disabled; their original source assets remain in the repository. `/desktop` is available directly. `/projects` now lists the actual projects with readable HTML stories; the old illustrative `/projects/robotics` URL redirects to the FRC project. The supplied cube robot, FRC robot and RC car are connected to the room and shared project reader. The paper lifts/brightens on hover and opens a readable lorem ipsum placeholder with a PDF download. A modern PC, remaining verified project content and final résumé remain outstanding. Public deployment status must be verified in Vercel. Original branded assets require replacement before reintroducing them.
 
 The [fundamentals guide](docs/FUNDAMENTALS.md) explains browser basics, the actual build/deployment pipeline, storage, the room and entrance code, Onshape exports, model integration, and hands-on exercises.
 
@@ -91,3 +92,5 @@ See [adding FRC and RC models](docs/WORKSHOP-CAD.md) for exports, materials, pla
 The FRC models now preview their mechanisms on hover: the intake folds inward and the REEFSCAPE elevator rises. See [hover controls and dates](docs/WORKSHOP-CAD.md#hover-mechanisms-and-project-dates).
 
 The centered monitor now opens a CAD-inspired portfolio workspace with Projects, About and Résumé sections. Project readers support Expand/Restore. See [the monitor workflow and next 48 hours](docs/MONITOR-WORKSPACE.md) for implementation details, the flicker fix and the media/dictation plan.
+
+The [domain and search launch guide](docs/DOMAIN-AND-SEARCH.md) covers the recommended domain, purchase/DNS steps, SITE_URL, Google Search Console, shared project pages and usage limits.
