@@ -225,3 +225,7 @@ Desktop and 390×844 regression checks passed for mouse/touch monitor selection,
 ## Free-camera horizon
 
 Reproduced the exposed white upper half by enabling the camera control and dragging to the lowest orbit angle. The scene now renders a solid background sampled from the baked floor's outer color, accounting for Three r137's output-space clear color. Screenshot patches above/below the former horizon differed by about 56 color levels before the fix and less than 0.1 afterward. The original above-floor scene crop remained pixel-identical. Low, overhead, rear and zoomed-out views were inspected; no new room geometry, lighting or menu changes were needed. The production build passed.
+
+## Matching résumé label and lower startup transfer
+
+The résumé now shares the project label's styling and placement above the object. Chromium confirmed matching background, text color, font, padding, border and corner styles, paper open/close with focus return, and an in-viewport label at 390×844. The six unused original computer/decor/monitor assets were not requested, and no browser errors or failed asset responses occurred. The full production build and formatting/whitespace checks passed. This batch is published only to main; the reference branch's automatic Vercel deployment is disabled in configuration. Live account usage remains unverified.

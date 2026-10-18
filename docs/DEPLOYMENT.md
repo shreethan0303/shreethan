@@ -38,3 +38,11 @@ Implementation: `app/projects/[slug]/viewer.tsx` owns scroll progress; `app/comp
 The user opened a dashboard deployment under `shreethan-v474`. A public GitHub check for commit `719e2c7` links feedback to `shreethan-git-codex-reference-e3f1bd-shreethan-pallas-projects.vercel.app`, indicating another Vercel project named `shreethan` is connected. This is evidence of a preview address, not proof of its current runtime state. Avoid creating more duplicate projects. Choose one connected project and inspect its actual deployment status. Do not delete either project until the intended site works.
 
 This agent cannot read the signed-in browser tab or Vercel logs with its current tools. GitHub public check pages can expose limited status/preview metadata. If deployment fails, the first error and deployed commit remain necessary evidence.
+
+## Usage discipline
+
+Publish each tested batch once to `main`. Do not also push the same commit to the reference branch; `vercel.json` disables automatic deployments for `codex/reference-baseline` as a second safeguard. Other development branches can still produce intentional previews. Use local builds/browser checks while iterating instead of repeated Vercel redeploys. GitHub Actions runs separately from Vercel and does not consume Vercel build time.
+
+The main portfolio is statically generated; its Three.js rendering happens on the visitor's device. Unused original computer/decor models and textures are excluded from startup downloads (about 2.4 MB per uncached visit). Compressed display models and images reduce transfer, and project videos use `preload="none"` so clips download on demand. Static delivery still consumes transfer/request quotas, and repeated deployments consume build resources; client-side rendering does not make hosting unlimited.
+
+Check the team's **Usage** page and any available usage/budget notifications against the actual plan. This workspace cannot inspect the signed-in account's live totals or configure its notifications. Keep one intended Vercel project connected to this repository: previous sessions identified multiple connected projects, which can build the same push separately. Inspect those connections before disconnecting an obsolete one; do not delete projects blindly. No quota values or account-wide monitoring are claimed by this repository configuration.

@@ -65,7 +65,7 @@ const ResumePaper: React.FC = () => {
 
     return <>
         <button
-            id="resume-paper-access" className="paper-access" ref={access}
+            id="resume-paper-access" className="cube-robot-access paper-access" ref={access}
             hidden aria-label="Open résumé"
             onFocus={() => UIEventBus.dispatch('resume:focus', true)}
             onBlur={() => UIEventBus.dispatch('resume:focus', false)}

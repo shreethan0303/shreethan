@@ -143,8 +143,8 @@ export default class ResumePaper {
         const top = (1 - Math.max(...points.map(p => p.y))) / 2 * screenHeight;
         const bottom = (1 - Math.min(...points.map(p => p.y))) / 2 * screenHeight;
         this.rect = { x: left, y: top, width: right - left, height: bottom - top };
-        button.style.left = `${(left + right) / 2}px`;
-        button.style.top = `${bottom + 8}px`;
+        button.style.left = `${THREE.MathUtils.clamp((left + right) / 2, Math.min(145, screenWidth / 2), Math.max(screenWidth - 145, screenWidth / 2))}px`;
+        button.style.top = `${Math.max(40, top - 12)}px`;
         button.dataset.paperX = `${(left + right) / 2}`;
         button.dataset.paperY = `${(top + bottom) / 2}`;
         button.dataset.lift = this.lift.toFixed(3);
