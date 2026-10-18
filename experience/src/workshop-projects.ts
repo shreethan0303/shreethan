@@ -36,3 +36,12 @@ export const elevatorProject: ProjectContent = {
     videoUrl: null, previewImage: '/projects/frc-elevator/cad-preview.jpg',
     cadUrl: null, githubUrl: null, story: [], reflections: [],
 };
+
+export const dirtbikeProject: ProjectContent = {
+    title: 'Dirtbike Projects', pagePath: '/projects/dirtbike', date: '2025',
+    brief: 'Projects I’ve worked on with my dirtbike.',
+    details: 'This CRF450 is a temporary visual stand-in for my own bike. I’ll add the individual projects, photos and build notes here.',
+    videoUrl: null, previewImage: '/projects/dirtbike/preview.jpg',
+    previewAlt: 'Representative CRF450 model with plain red plastics and gold forks.',
+    cadUrl: null, githubUrl: null, story: [], reflections: [],
+};

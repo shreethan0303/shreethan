@@ -21,9 +21,9 @@ Search Console measures search impressions, queries, clicks and indexing. It is 
 ## What is ready in the repository
 
 - The homepage retains the 3D workshop and its plain-name title. A keyboard reading link and no-JavaScript fallback make the project pages accessible without manipulating 3D objects.
-- `/projects` and the four project pages are static HTML. They use the same project data as the workshop readers; each reader links to its full page in a new tab, preserving the workshop state.
+- `/projects` and the five project pages are static HTML. They use the same project data as the workshop readers; each reader links to its full page in a new tab, preserving the workshop state.
 - The cube and RC car pages include the existing supplied stories and media. Videos use `preload="none"`, images below the hero load lazily, and these HTML pages do not download the workshop's GLBs.
-- The FRC pages remain shareable but have `noindex` until their real stories are supplied. Placeholder résumé and legacy desktop routes are also not indexed. Old illustrative project routes redirect to the actual project or project list. Existing prototype source files remain in Git.
+- The FRC and dirtbike pages remain shareable but have `noindex` until their real stories are supplied. Placeholder résumé and legacy desktop routes are also not indexed. Old illustrative project routes redirect to the actual project or project list. Existing prototype source files remain in Git.
 - Titles, descriptions and sharing metadata describe the actual projects. Canonicals, Person/CreativeWork structured data and the sitemap use SITE_URL; nothing assumes ownership of a contemplated domain. The sitemap omits thin project placeholders. Preview deployments carry noindex metadata and emit no sitemap entries.
 - Update facts/media in `experience/src/cube-project.ts` or `experience/src/workshop-projects.ts`; the HTML and 3D readers stay in sync. No unprovided school, awards, employment, dates or project contributions are invented.
 

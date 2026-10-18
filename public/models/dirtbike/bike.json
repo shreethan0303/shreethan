@@ -1,0 +1,40 @@
+{
+  "sourceBlendSha256": "8ebfb0d408cfbde77f3e9ee3d61e0340706f02db9f6e6db290ccb11d5f19fae9",
+  "sourceTriangles": 94645,
+  "displayTriangles": 137767,
+  "pitchRadians": 0.0010436773890978657,
+  "wheelGroundDifferenceMeters": 3.427267074584961e-7,
+  "dimensionsMeters": [
+    0.8502494692802429, 2.1623167991638184, 1.2750173807144165
+  ],
+  "materialReplacements": {
+    "BLACK PLASTICS": "Black hardware",
+    "FORKGUARD": "Solid red plastics",
+    "METAL": "Brushed aluminum",
+    "FENDERS": "Solid red plastics",
+    "": "Brushed aluminum",
+    "NUMBERPLATES": "Solid red plastics",
+    "SHROUDS": "Solid red plastics",
+    "SEAT": "Black seat and bar pad",
+    "Honda Red": "Solid red plastics",
+    "WHITE": "Neutral hardware",
+    "Honda Red Seat": "Solid red plastics",
+    "EXHAUST SHINE": "Warm exhaust metal",
+    "EXHAUST FLAT": "Warm exhaust metal",
+    "EXHAUST BLACK": "Black hardware",
+    "FORK": "Gold anodized forks",
+    "FORK LOWERS": "Brushed aluminum",
+    "RIMS": "Black hardware",
+    "BARPAD": "Black seat and bar pad",
+    "HANDLEBAR": "Black hardware",
+    "brakes": "Brake steel",
+    "TIRE": "Tire rubber"
+  },
+  "rawSizeBytes": 5853824,
+  "texturesExported": false,
+  "role": "Temporary CRF450 stand-in; actual dirtbike projects and media pending.",
+  "sizeBytes": 1077548,
+  "archiveSha256": "059afd7cb337b6e03cdfdb0f246d63258ce1bba46b543253f4a0d1aeb069467b",
+  "sourceArchive": "free-honda-crf-450.zip",
+  "attribution": "User-supplied downloaded model; author, source URL and license were not included in the archive."
+}

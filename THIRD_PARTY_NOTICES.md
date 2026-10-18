@@ -10,3 +10,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Owner-supplied CRF450 stand-in
+
+`public/models/dirtbike/bike.glb` is a modified display copy of the owner's uploaded `free-honda-crf-450.zip` (containing `2022 CRF 450.blend` and an FBX copy). The archive did not include an author, source URL or license document; none is invented here. Source hashes and the material/geometry conversion record are in `public/models/dirtbike/bike.json`. Original decals were replaced with solid finishes, while the fork finish remains gold. The asset represents the owner's dirtbike-related projects; neither construction of the motorcycle nor authorship of the downloaded model is attributed to Shreethan.

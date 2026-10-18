@@ -8,18 +8,28 @@ export const workshopLayout = {
         duration: 1000, // Milliseconds to travel from overview to desk.
     },
     monitor: {
-        position: [-1400, -451.9, -450] as [number, number, number],
+        position: [-1850, -451.9, -450] as [number, number, number],
         width: 2100,
         height: 1312.5,
         screenHeight: 950,
     },
     keyboard: {
-        position: [-1300, -451.9, 700] as [number, number, number],
+        position: [-1850, -451.9, 700] as [number, number, number],
         rotation: 0,
     },
     mouse: {
-        position: [-370, -451.9, 650] as [number, number, number],
+        position: [-700, -439.9, 650] as [number, number, number],
         rotation: -.08,
+    },
+    mousepad: {
+        position: [-700, -451.9, 650] as [number, number, number],
+        width: 820, depth: 740, thickness: 12,
+    },
+    dirtbike: {
+        position: [-6800, -2984.18927, -1300] as [number, number, number],
+        rotation: -.95,
+        length: 4400,
+        lift: 35,
     },
     cubeRobot: {
         position: [450, -451.9, 1050] as [number, number, number],
@@ -67,7 +77,7 @@ export const workshopLayout = {
         lift: 25,
     },
     resume: {
-        position: [-2600, -440, 650] as [number, number, number],
+        position: [-3950, -440, 650] as [number, number, number],
         rotation: .12, // Radians around the vertical axis.
         width: 900,
         height: 1164,

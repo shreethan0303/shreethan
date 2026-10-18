@@ -20,6 +20,7 @@ export default class DeskPeripherals {
     application = new Application();
     keyboard = new THREE.Group();
     mouse = new THREE.Group();
+    mousepad = new THREE.Group();
     constructor() {
         this.keyboard.name = '75 percent mechanical keyboard';
         this.keyboard.position.fromArray(workshopLayout.keyboard.position);
@@ -28,7 +29,12 @@ export default class DeskPeripherals {
         this.mouse.position.fromArray(workshopLayout.mouse.position);
         this.mouse.rotation.y = workshopLayout.mouse.rotation;
         this.makeKeyboard(); this.makeMouse();
-        this.application.scene.add(this.keyboard, this.mouse);
+        const pad = workshopLayout.mousepad;
+        this.mousepad.name = 'Charcoal mousepad';
+        this.mousepad.position.fromArray(pad.position);
+        this.add(this.mousepad, roundedBox(pad.width, pad.thickness, pad.depth, 38), new THREE.MeshStandardMaterial({ color: 0x24272a, roughness: 1, metalness: 0 }));
+        this.application.scene.add(this.keyboard, this.mouse, this.mousepad);
+        this.contactShadow(this.mousepad, 900, 820);
         this.contactShadow(this.keyboard, 1410, 620);
         this.contactShadow(this.mouse, 380, 560);
     }

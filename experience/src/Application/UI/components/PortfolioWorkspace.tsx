@@ -5,6 +5,7 @@ import {
     frcProject,
     elevatorProject,
     rcProject,
+    dirtbikeProject,
 } from '../../../workshop-projects';
 import { portfolioCopy } from '../../../portfolio-copy';
 import { ProjectContent } from '../../../project-story';
@@ -14,6 +15,7 @@ const projects: ProjectContent[] = [
     rcProject,
     frcProject,
     elevatorProject,
+    dirtbikeProject,
 ];
 type Tab = 'projects' | 'about' | 'resume';
 

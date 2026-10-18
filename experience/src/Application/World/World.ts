@@ -15,7 +15,7 @@ import CubeRobot from './CubeRobot';
 import PortfolioMonitor from './PortfolioMonitor';
 import WorkshopProject from './WorkshopProject';
 import { workshopLayout } from './WorkshopLayout';
-import { frcProject, rcProject, elevatorProject } from '../../workshop-projects';
+import { frcProject, rcProject, elevatorProject, dirtbikeProject } from '../../workshop-projects';
 import { CameraKey } from '../Camera/Camera';
 export default class World {
     application: Application;
@@ -58,6 +58,7 @@ export default class World {
                 new WorkshopProject('frcRobotModel', frcProject, workshopLayout.frcRobot, 'frc-robot-access'),
                 new WorkshopProject('rcCarModel', rcProject, workshopLayout.rcCar, 'rc-car-access'),
                 new WorkshopProject('frcElevatorModel', elevatorProject, workshopLayout.elevatorRobot, 'frc-elevator-access'),
+                new WorkshopProject('dirtbikeModel', dirtbikeProject, workshopLayout.dirtbike, 'dirtbike-access'),
             ];
             // Frame the complete workshop so floor projects remain discoverable on phones.
             bounds.union(new THREE.Box3().setFromObject(this.cubeRobot.group));

@@ -60,7 +60,7 @@ ao = nodes.new('ShaderNodeAmbientOcclusion'); ao.inputs['Color'].default_value=f
 mix = nodes.new('ShaderNodeMixRGB'); links.new(mask.outputs[0], mix.inputs[0]); links.new(texture.outputs['Color'], mix.inputs[1]); links.new(ao.outputs['Color'], mix.inputs[2]); links.new(mix.outputs[0], emission.inputs['Color'])
 background.data.materials.clear(); background.data.materials.append(mat)
 
-# Same tabletop extents, height and four leg positions as the original desk.
+# Extend only the left edge by 1200 scene units; keep the right edge and desk height.
 def material(name, color):
     m = bpy.data.materials.new(name); m.use_nodes=True
     p=m.node_tree.nodes.get('Principled BSDF'); p.inputs['Base Color'].default_value=(*color,1); p.inputs['Roughness'].default_value=.85
@@ -76,8 +76,9 @@ def box(name, center, size, material, bevel):
     modifier=obj.modifiers.new('Subtle edge', 'BEVEL'); modifier.width=bevel; modifier.segments=3
     bpy.context.view_layer.objects.active=obj; bpy.ops.object.modifier_apply(modifier=modifier.name)
     parts.append(obj)
-box('Tabletop', (-.6147,-.27345,-.5713), (6.74265,3.09459,.13825), wood, .012)
-for i,(x,y) in enumerate([(-3.74,1.001),(2.475,1.001),(-3.74,-1.559),(2.475,-1.559)]):
+left_extension = 1200 / 900
+box('Tabletop', (-.6147-left_extension/2,-.27345,-.5713), (6.74265+left_extension,3.09459,.13825), wood, .012)
+for i,(x,y) in enumerate([(-3.74-left_extension,1.001),(2.475,1.001),(-3.74-left_extension,-1.559),(2.475,-1.559)]):
     box('Leg_'+str(i+1), (x,y,(-3.30959-.64)/2), (.224,.224,3.30959-.64), metal, .009)
 
 # Pack the existing backdrop UVs and new desk into one lightweight baked atlas.
@@ -109,7 +110,7 @@ for obj in [background]+parts: obj.select_set(True)
 bpy.context.view_layer.objects.active=background
 scene.render.bake.margin=8
 bpy.ops.object.bake(type='COMBINED')
-assert max(image.pixels[::4]) > .1, 'Bake produced an empty image'
+assert max(image.pixels[:][::4]) > .1, 'Bake produced an empty image'
 image.filepath_raw=str(OUT / 'baked_empty_workbench.jpg'); image.file_format='JPEG'; scene.render.image_settings.quality=95; image.save()
 # The renderer supplies the atlas; retain only the UV map used by that atlas.
 for obj in [background]+parts:
