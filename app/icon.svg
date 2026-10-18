@@ -1,3 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <text x="64" y="88" text-anchor="middle" font-size="64" font-family="Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, sans-serif">🏎️🔥</text>
+  <g transform="rotate(-20 64 64)">
+    <path fill="#f04421" d="M48 48C30 42 27 55 5 46L20 61 2 69C22 72 27 85 48 72Z"/>
+    <path fill="#ffab23" d="M46 53C33 51 30 62 14 58L28 67 19 71C34 78 39 69 48 68Z"/>
+    <path fill="#ffe38a" d="M46 58 30 63 36 67 47 65Z"/>
+    <path fill="#202124" stroke="#fff" stroke-width="2" stroke-linejoin="round" d="M43 44H52V66H43ZM106 67H123V75H106Z"/>
+    <path fill="#e52c37" stroke="#fff" stroke-width="2" stroke-linejoin="round" d="M47 57 60 49H80L88 57 113 63 117 70H46Z"/>
+    <path fill="#202124" stroke="#fff" stroke-width="2" d="M66 49 72 40H82L87 52H78L76 47H73L71 52Z"/>
+    <path fill="#fff" d="M58 56H77L84 63H55Z"/>
+    <path stroke="#a61925" stroke-width="3" d="M88 63 109 67"/>
+    <g fill="#202124" stroke="#fff" stroke-width="2">
+      <circle cx="56" cy="70" r="12"/>
+      <circle cx="104" cy="71" r="10"/>
+    </g>
+    <g fill="#aeb4bc">
+      <circle cx="56" cy="70" r="5"/>
+      <circle cx="104" cy="71" r="4"/>
+    </g>
+  </g>
 </svg>
