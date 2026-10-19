@@ -1,5 +1,6 @@
 const sources: Resource[] = [
-    { name: 'tennisRacketModel', type: 'gltfModel', path: '/models/tennis/racket-frame.glb' },
+    { name: 'tennisBladeModel', type: 'gltfModel', path: '/models/tennis/wilson-blade.glb' },
+    { name: 'tennisWilsonModel', type: 'gltfModel', path: '/models/tennis/wilson-racket.glb' },
     { name: 'dirtbikeModel', type: 'gltfModel', path: '/models/dirtbike/bike.glb' },
     { name: 'frcRobotModel', type: 'gltfModel', path: '/models/frc-robot/robot.glb' },
     { name: 'frcElevatorModel', type: 'gltfModel', path: '/models/frc-elevator/robot.glb' },
