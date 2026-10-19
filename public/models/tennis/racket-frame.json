@@ -1,0 +1,13 @@
+{
+  "source": "https://github.com/Vichack18/Tennis-Racket-3D-Model",
+  "sourceCommit": "5ebffe9301440f987ad88df16d9a1a7ab3eade47",
+  "sourceFile": "Tennis Racket 3D Model_.stl",
+  "sourceSha256": "98021934310456920c4628b48adcd3a902035ccd7bfba640f9de30d35e1b5c4f",
+  "permission": "I left a .STL file to you, so feel free to use it!",
+  "modifications": [
+    "Retain CAD frame and throat; remove original grip and flat lattice.",
+    "Rescale to a 686 mm racket with 268 mm head width and 21 mm beam depth.",
+    "Apply black graphite finish; runtime adds 16x19 strings, Wilson-style stencil, grip and trim."
+  ],
+  "note": "Adapted generic CAD geometry styled after a black Wilson Pro Staff; not an official Wilson CAD model."
+}

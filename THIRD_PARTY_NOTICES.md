@@ -14,3 +14,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 ## Owner-supplied CRF450 stand-in
 
 `public/models/dirtbike/bike.glb` is a modified display copy of the owner's uploaded `free-honda-crf-450.zip` (containing `2022 CRF 450.blend` and an FBX copy). The archive did not include an author, source URL or license document; none is invented here. Source hashes and the material/geometry conversion record are in `public/models/dirtbike/bike.json`. Original decals were replaced with solid finishes, while the fork finish remains gold. The asset represents the owner's dirtbike-related projects; neither construction of the motorcycle nor authorship of the downloaded model is attributed to Shreethan.
+
+## Tennis racket CAD frame
+
+`public/models/tennis/racket-frame.glb` adapts the hoop and throat from [Vichack18's Tennis Racket 3D Model](https://github.com/Vichack18/Tennis-Racket-3D-Model). The source README states: “I left a .STL file to you, so feel free to use it!” Source commit, hash and modifications are recorded in `public/models/tennis/racket-frame.json`. The generic CAD frame has been reshaped and styled after a black Wilson Pro Staff; it is not an official Wilson CAD asset. The grips, strings, stencil detailing and wooden storage rack are built in the scene code.

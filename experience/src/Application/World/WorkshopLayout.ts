@@ -71,8 +71,8 @@ export const workshopLayout = {
         ],
     },
     tennisRacket: {
-        position: [-6200, -2984.18927, 1000] as [number, number, number],
-        rotation: -.2, length: 1500, lift: 35,
+        position: [-6500, -2984.18927, 1000] as [number, number, number],
+        rotation: -.2, length: 2800, lift: 35,
     },
     rcCar: {
         position: [1750, -451.9, 0] as [number, number, number],

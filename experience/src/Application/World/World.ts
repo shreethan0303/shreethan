@@ -59,7 +59,7 @@ export default class World {
                 new WorkshopProject('frcRobotModel', frcProject, workshopLayout.frcRobot, 'frc-robot-access'),
                 new WorkshopProject('rcCarModel', rcProject, workshopLayout.rcCar, 'rc-car-access'),
                 new WorkshopProject('frcElevatorModel', elevatorProject, workshopLayout.elevatorRobot, 'frc-elevator-access'),
-                new WorkshopProject(tennisRacket(), tennisProject, workshopLayout.tennisRacket, 'tennis-racket-access'),
+                new WorkshopProject(tennisRacket(this.resources.items.gltfModel.tennisRacketModel.scene), tennisProject, workshopLayout.tennisRacket, 'tennis-racket-access'),
                 new WorkshopProject('dirtbikeModel', dirtbikeProject, workshopLayout.dirtbike, 'dirtbike-access'),
             ];
             // Frame the complete workshop so floor projects remain discoverable on phones.
