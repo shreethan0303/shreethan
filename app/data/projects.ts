@@ -4,6 +4,7 @@ import {
   rcProject,
   elevatorProject,
   dirtbikeProject,
+  tennisProject,
 } from "../../experience/src/workshop-projects";
 import type { ProjectContent } from "../../experience/src/project-story";
 
@@ -14,6 +15,7 @@ export const projects: { slug: string; content: ProjectContent }[] = [
   { slug: "frc-robot", content: frcProject },
   { slug: "frc-elevator", content: elevatorProject },
   { slug: "dirtbike", content: dirtbikeProject },
+  { slug: "tennis-serve-analysis", content: tennisProject },
 ];
 
 // Keep sparse project placeholders out of search until their stories are supplied.

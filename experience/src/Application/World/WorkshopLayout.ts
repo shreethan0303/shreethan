@@ -60,8 +60,8 @@ export const workshopLayout = {
         ] as [number, number, number][],
     },
     elevatorRobot: {
-        position: [9200, -2984.18927, -900] as [number, number, number],
-        rotation: -.4,
+        position: [9200, -2984.18927, -250] as [number, number, number],
+        rotation: -.25,
         length: 3900,
         lift: 35,
         // The preserved CAD groups use Z-up locally; the assembly maps Z to world Y.
@@ -69,6 +69,10 @@ export const workshopLayout = {
             { node: 'ElevatorMiddle', axis: 'z' as const, distance: .18 },
             { node: 'ElevatorCarriage', axis: 'z' as const, distance: .36 },
         ],
+    },
+    tennisRacket: {
+        position: [-6200, -2984.18927, 1000] as [number, number, number],
+        rotation: -.2, length: 1500, lift: 35,
     },
     rcCar: {
         position: [1750, -451.9, 0] as [number, number, number],

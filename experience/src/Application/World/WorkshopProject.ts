@@ -50,8 +50,8 @@ export default class WorkshopProject {
     motions: { object: THREE.Object3D; position: THREE.Vector3; rotation: THREE.Euler; axis: 'x' | 'y' | 'z'; distance: number; angle: number }[] = [];
     rect = { x: 0, y: 0, width: 0, height: 0 };
 
-    constructor(resource: string, public content: ProjectContent, public placement: Placement, id: string) {
-        const model = this.application.resources.items.gltfModel[resource].scene;
+    constructor(resource: string | THREE.Object3D, public content: ProjectContent, public placement: Placement, id: string) {
+        const model = typeof resource === 'string' ? this.application.resources.items.gltfModel[resource].scene : resource;
         prepareCadPicking(model);
         const bounds = new THREE.Box3().setFromObject(model);
         const size = bounds.getSize(new THREE.Vector3());

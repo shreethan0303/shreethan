@@ -45,3 +45,10 @@ export const dirtbikeProject: ProjectContent = {
     previewAlt: 'Representative CRF450 model with plain red plastics and gold forks.',
     cadUrl: null, githubUrl: null, story: [], reflections: [],
 };
+
+export const tennisProject: ProjectContent = {
+    title: 'Tennis & Serve Analysis', pagePath: '/projects/tennis-serve-analysis', date: '',
+    brief: 'Tennis and serve analysis.',
+    details: 'Project notes and serve analysis will be added here.',
+    videoUrl: null, cadUrl: null, githubUrl: null, story: [], reflections: [],
+};
