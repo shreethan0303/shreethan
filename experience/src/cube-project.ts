@@ -6,7 +6,7 @@ export const cubeProject = {
     pagePath: '/projects/cube-solver',
     date: 'March 2023',
     brief: 'A six-axis Rubik’s Cube-solving robot I built in seventh grade.',
-    details: 'I salvaged the stepper motors from my old 3D printer and built around the hardware I had. Five frame iterations and repeated code and motion tuning took the project from individual motor tests to a first solve.',
+    details: 'More details coming soon.',
     videoUrl: '/projects/cube-solver/first-solve.mp4',
     videoPoster: '/projects/cube-solver/first-solve.jpg',
     cadUrl: null as string | null,
@@ -16,7 +16,7 @@ export const cubeProject = {
         {
             id: 'motor-test', title: 'Getting a stepper motor moving',
             media: [{ type: 'video', src: '/projects/cube-solver/stepper-motor-test.mp4', poster: '/projects/cube-solver/stepper-motor-test.jpg', caption: 'The first step: getting a stepper motor to work.' }],
-            summary: 'I took apart my old 3D printer to salvage its stepper motors. I started by getting one motor working, using the hardware I already had rather than buying a new set.',
+            summary: 'I tested the stepper motors before assembling the robot.',
         },
         {
             id: 'one-axis', title: 'Single-axis testing',
@@ -65,7 +65,7 @@ export const cubeProject = {
         },
     ] as StoryStage[],
     reflections: [
-        { title: 'What I made', text: 'I designed and iterated the magnetic frame five times, tuned the motor-control code and tested the robot using motors salvaged from my old 3D printer.' },
+        { title: 'What I made', text: 'I designed the frame, tuned the motor-control code and tested the robot.' },
         { title: 'What I learned', text: 'I learned to troubleshoot wiring, motor control and mechanical rigidity as one system. Consistent commanded steps are useful, but they do not measure the actual shaft position or guarantee that no steps were missed.' },
         { title: 'What inspired me', text: 'The frustration of intermittent cable connections pushed me toward designing my own PCBs for future projects.' },
         { title: 'What’s next', text: 'I would keep the convenient magnetic loading design, build a more secure frame and add motor-position feedback, such as encoders, so I could check shaft position rather than relying only on commanded steps.' },

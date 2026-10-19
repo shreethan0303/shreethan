@@ -4,14 +4,14 @@ import { ProjectContent } from './project-story';
 export const frcProject: ProjectContent = {
     title: 'FRC Robot', pagePath: '/projects/frc-robot', date: '2026 · REBUILT',
     brief: 'A robot from my FRC season.',
-    details: 'Build photos, testing footage and my contribution to the team’s robot will be added here.',
+    details: 'More details coming soon.',
     videoUrl: null, previewImage: '/projects/frc-robot/cad-preview.jpg',
     cadUrl: null, githubUrl: null, story: [], reflections: [],
 };
 export const rcProject: ProjectContent = {
     title: 'RC Car', pagePath: '/projects/rc-car', date: 'August 2023',
     brief: 'An RC car project with custom drivetrain assemblies.',
-    details: 'I spent three months learning CAD, building and refining the car, then improving its gearing and strength. The drivetrain includes custom differentials, gearbox gearing and driveshafts.',
+    details: 'More details coming soon.',
     videoUrl: null, previewImage: '/projects/rc-car/assembled-car-workbench.webp',
     previewAlt: 'The assembled RC car on a workbench.',
     cadUrl: null, githubUrl: null, story: [
@@ -32,23 +32,23 @@ export const rcProject: ProjectContent = {
 export const elevatorProject: ProjectContent = {
     title: 'FRC Elevator Robot', pagePath: '/projects/frc-elevator', date: '2025 · REEFSCAPE',
     brief: 'An FRC robot with a multi-stage elevator.',
-    details: 'Build photos, testing footage and my contribution to the team’s robot will be added here.',
+    details: 'More details coming soon.',
     videoUrl: null, previewImage: '/projects/frc-elevator/cad-preview.jpg',
     cadUrl: null, githubUrl: null, story: [], reflections: [],
 };
 
 export const dirtbikeProject: ProjectContent = {
     title: 'Dirtbike Projects', pagePath: '/projects/dirtbike', date: '2025',
-    brief: 'Projects I’ve worked on with my dirtbike.',
-    details: 'This CRF450 is a temporary visual stand-in for my own bike. I’ll add the individual projects, photos and build notes here.',
+    brief: 'Inertial measurement data collection and analysis for my dirtbike.',
+    details: 'Projects and details coming soon.',
     videoUrl: null, previewImage: '/projects/dirtbike/preview.jpg',
-    previewAlt: 'Representative CRF450 model with plain red plastics and gold forks.',
+    previewAlt: 'Dirtbike with red plastics and gold forks.',
     cadUrl: null, githubUrl: null, story: [], reflections: [],
 };
 
 export const tennisProject: ProjectContent = {
     title: 'Tennis & Serve Analysis', pagePath: '/projects/tennis-serve-analysis', date: '',
     brief: 'Tennis and serve analysis.',
-    details: 'Project notes and serve analysis will be added here.',
+    details: 'More details coming soon.',
     videoUrl: null, cadUrl: null, githubUrl: null, story: [], reflections: [],
 };
